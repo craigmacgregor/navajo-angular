@@ -1,0 +1,108 @@
+{
+    "pending" : [
+        
+        {
+            "title" : "NAV Masternodes System",
+            "text" : "We are planning to add masternodes to the network. Each NAV user will be able to run his/her own masternode for a specified amount of NAV coins and receive more coins in return, bu running NAV masternode."
+        },
+        {
+            "title" : "Official Promotional Video",
+            "text" : "We will make a short video, which will summarise all features of Navajo Coin and explain it's Anonymous Technology to viewers in easy way. This will attract more average users and investors to Navajo Coin."
+        },
+        {
+            "title" : "NAV Cooperation System",
+            "text" : "This System will involve Community more in the project by creating certain privileges for holding a specified amount of NAV coins. There will be 3 groups, each having other tasks and rights in planning & creating the future of Navajo Coin."
+        },
+        {
+            "title" : "Official Promotional Video",
+            "text" : "We will make a short video, which will summarise all features of Navajo Coin and explain it's Anonymous Technology to viewers in easy way. This will attract more average users and investors to Navajo Coin."
+        }        
+    ],
+    
+    "inProgress" : [
+        {
+            "title" : "Press Releases and new Marketing Material",
+            "text" : "We are working on improving our marketing strategy: Press releases, new & simple white paper as well as infographic are being prepared.",
+            "progress" : 85
+        },
+        {
+            "title" : "Web Wallet",
+            "text" : "It's designed to allow Everyone to use Navajo Coin without having a client installed on computer. It will make Navajo Coin even easier to use for an average user.",
+            "progress" : 75
+        },
+        {
+            "title" : "Decentralization of NAV Anonymous Technology",
+            "text" : "Our next big step in improving NAV Anonymous Transactions System is decentralizing this technology. We are working on decentralising the anonymous nodes so that anyone running a webserver can install it and process Anonymous transactions.",
+            "progress" : 60
+        },
+        {
+            "title" : "Mobile Wallet",
+            "text" : "Based on Web Wallet, Mobile version will allow Navajo Coin users to send & receive their NAV coins on the move, simply with using their mobile devices.",
+            "progress" : 50
+        }
+        
+    ],
+    
+    "complete" : [
+        {
+            "title" : "Navajo Coin Redesign",
+            "text" : "We have decided that Navajo Coin needs new, fresh and more professional look including NAV logo, announcement's OP and wallet design."
+        },
+        {
+            "title" : "Official Forum",
+            "text" : "We will launch a dedicated forum for Navajo Coin. Every cryptocurrency needs a place where their developers and supporters can meet, without fudders or trolls."
+        },
+        {
+            "title" : "Official Navajo Coin Multipool",
+            "text" : "Multipool will allow all miners to get paid in NAV by mining the current most profitable POW coins. In result there will be more buy support on exchanges."
+        },
+        {
+            "title" : "Anonymous Transaction Refinement",
+            "text" : "We have deployed our upgrades to the Navajo Anonymous Network. Including restructuring of the sending algorithm to be more efficient. Some of these algorithm improvements are also steps towards making the anon nodes re-distributable. Adding extra error catching, around what happens if the node is unable to decipher the encrypted destination. The node will now return the coins to the sender if it is unable to decrypt and verify the destination address at the entry node. Rather than rounding the final transaction amounts to factors of 10, it now will send the amounts to the final destination in a randomly selected amount of transactions, each with randomly allocated amounts to help obscure the transactions further."
+        },
+        {
+            "title" : "Anonymous Transactions Public Release",
+            "text" : "With the main block chain successfully hard forked, the network stabilised and the major exchanges successfully running on the new wallet we are able to move forward into the final stage of deployment. The double encrypted Navajo Anonymous network will be fully functional and open to the public from Monday 23rd of March 2015."
+        },
+        {
+            "title" : "Anonymous Transactions Hard Fork",
+            "text" : "We are very pleased to announce the start of the release phase for our Anonymous Technology to the Main Navajocoin Block Chain! Since the success of the unencrypted beta test of the transaction infrastructure, the Dev team has been busily working, adding the asymmetric double encryption to the anonymous system as well as SSL across all of the network nodes. We will be ready to hardfork the main block chain on the 9th of March 2015!"
+        },
+        {
+            "title" : "Anonymous Transactions Beta Test",
+            "text" : "The public beta test of our Navajo Anonymous Transactions system will begin on the 1st of February 2015. It will run for two weeks at which point it will close and we will begin processing the beta results. During the testing phase there will be a bounty set for anyone who can successfully trace the transactions from origin to destination. The beta test will be unencrypted to help us with analysis and testing."
+        },
+        {
+            "title" : "Anonymous Technology - Testing Phase",
+            "text" : "Our Anonymous Technology is now in Testing Phase! We are working on releasing the system in the Beta Network on January 2015."
+        },
+        {
+            "title" : "Market Ticker & Staking Calculator",
+            "text" : "We have added two new features to the wallet. First is the market ticker which lets you know in real time the price of NAV/BTC. Second one is the Staking Calculator which can show you how much free NAV you have earned from staking over the last day, week and month."
+        },
+        {
+            "title" : "Improved Chat Feature",
+            "text" : "New version of the Chat feature with improved and new features."
+        },
+        {
+            "title" : "Navajo Faucet",
+            "text" : "We will be adding a Navajo faucet to the website. You will be able to register your wallet address with the faucet and be in the lottery to get sent free Navajo coins."
+        },
+        {
+            "title" : "Beta Wallet Messaging System",
+            "text" : "In October we will be releasing the 3rd iteration of the beta wallet. This stage focuses on amends to the chat client's functionality. As this is being tested by the community we will continue to apply feedback from the previous rounds and work towards the next stage of the beta client."
+        },
+        {
+            "title" : "Block Explorer & Rich List",
+            "text" : "We will be adding a Block Explorer and a Rich List to the Navajo Coin website. The block explorer allows people to look up wallet addresses and see its public balance and transactions."
+        },
+        {
+            "title" : "Beta Wallet User Interface Update",
+            "text" : "With the first round of feedback collated from the Beta test, we will begin to release updates to the beta wallet in stages. The first stage focuses on amends to the user interface. Round two of the testing and feedback will commence while work continues on the next stage of the beta release."
+        },
+        {
+            "title" : "Messaging feature built into the wallet",
+            "text" : "Our first project is a decentralized messaging system that runs on the main network. At this early stage and implementation, It will allow users to share information by chatting right from the client and discuss & share information. We consider the messaging system to be another backbone of other subchain features we plan on releasing."
+        }        
+    ]
+}

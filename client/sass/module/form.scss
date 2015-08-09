@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/05/2015, 5:10:57 PM
+    Author     : craigmacgregor
+*/
+
+.form-heading {
+    margin-top: 50px;
+    padding-bottom: 5px;
+}
+
+.form-input, .form-select, .form-textarea {
+    margin-top: 20px;
+}
+
+.form-input {
+    
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    width: 100%;
+    font-style: italic;
+    
+    &::-webkit-input-placeholder { font-weight: lighter; color: $grey; }
+    &:-moz-placeholder { font-weight: lighter; color: $grey; }
+    &::-moz-placeholder { font-weight: lighter; color: $grey; }
+    &:-ms-input-placeholder { font-weight: lighter; color: $grey; }
+}
+
+.form-select {
+    outline: none;
+}
+
+.form-subtext {
+    vertical-align: middle;
+    text-align: right;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.form-error {
+    vertical-align: middle;
+    text-align: left;
+    font-size: 17px;
+    font-weight: lighter;
+    color: red;
+    margin-top: 5px;
+}
+
+.form-footer {
+    margin-top: 50px;
+}

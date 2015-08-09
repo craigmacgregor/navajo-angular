@@ -1,0 +1,19 @@
+  <!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" ng-class="{active: activeTab == 1}">
+      <a data-id="1" href="#tab1" role="tab" class="projects-tab">Future</a>
+  </li>
+  <li role="presentation" ng-class="{active: activeTab == 2}">
+      <a data-id="2" href="#tab2" role="tab" class="projects-tab">Current</a>
+  </li>
+  <li role="presentation" ng-class="{active: activeTab == 3}">
+      <a data-id="3" href="#tab3" role="tab" class="projects-tab">Completed</a>
+  </li>    
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane" ng-class="{active: activeTab == 1}">HOME</div>
+  <div role="tabpanel" class="tab-pane" ng-class="{active: activeTab == 2}">PROFILE</div>
+  <div role="tabpanel" class="tab-pane" ng-class="{active: activeTab == 3}">MESSAGES</div>
+</div>

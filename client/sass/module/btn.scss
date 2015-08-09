@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/06/2015, 5:11:38 PM
+    Author     : craigmacgregor
+*/
+
+.btn-primary {
+    &:link, &:visited {
+        background-color: $grape;
+        border-color: darken($grape, 20%);
+    }
+    &:hover, &:active {
+        background-color: lighten($grape, 10%);
+        border-color: $grape;
+    }
+    &.disabled {
+        background-color: $grey;
+        color: $black;
+        border-color: $grey-dark;
+    }
+}

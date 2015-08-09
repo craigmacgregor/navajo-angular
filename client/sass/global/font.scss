@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/06/2015, 4:12:00 PM
+    Author     : craigmacgregor
+*/
+
+.font-black { 
+    color: $black; 
+    &:hover, &:active, &:visited, &:link {
+        color: $black;
+    }
+}
+
+.font-white { 
+    color: $white; 
+    &:hover, &:active, &:visited, &:link {
+        color: $white;
+    }
+}
+
+.font-grey {
+    color: $grey;
+}
+
+.font-grey-dark {
+    color: $grey-dark;
+}
+
+.font-purple {
+    color: $purple;
+}
+
+.font-grape {
+    color: $grape;
+}
+
+.font-blue {
+    color: $blue;
+}
+
+.font-ice {
+    color: $ice;
+}
+
+.font-xxl { 
+    font-size: $font-xxl; 
+    @media (max-width: $mobile-width){
+        font-size: $font-xxl * 0.75;
+    }
+}
+.font-xl { 
+    font-size: $font-xl; 
+    @media (max-width: $mobile-width){
+        font-size: $font-xl * 0.75;
+    }
+}
+.font-large { 
+    font-size: $font-large; 
+    @media (max-width: $mobile-width){
+        font-size: $font-large * 0.75;
+    }
+}
+.font-medium { 
+    font-size: $font-medium; 
+    @media (max-width: $mobile-width){
+        font-size: $font-medium * 0.9;
+    }
+}
+.font-small { 
+    font-size: $font-small; 
+    @media (max-width: $mobile-width){
+        font-size: $font-small * 0.9;
+    }
+}
+.font-xs { 
+    font-size: $font-xs; 
+    @media (max-width: $mobile-width){
+        font-size: $font-xs * 0.9;
+    }
+}
+
+@font-face {
+    font-family: 'Replica-Bold';
+    src: url('/fonts/ReplicaStdBold');
+}
+
+.replica-bold {
+    font-family: "Replica-Bold";
+    font-weight: bold;
+}
+
+.helvetica {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

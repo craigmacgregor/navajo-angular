@@ -15,9 +15,74 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+@mixin border-radius($topLeft, $topRight, $bottomLeft, $bottomRight){
+    -webkit-border-radius: $topLeft $topRight $bottomLeft $bottomRight;
+    -moz-border-radius: $topLeft $topRight $bottomLeft $bottomRight;
+    border-radius: $topLeft $topRight $bottomLeft $bottomRight;
+}
+
+@mixin calc($property, $expression){
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: -o-calc(#{$expression});
+    #{$property}: calc(#{$expression});    
+}
+
+@mixin box-shadow($x, $y, $blur, $color){
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin transform($transformation){
+    -ms-transform: $transformation; 
+    -webkit-transform: $transformation; 
+    transform: $transformation;
+}
+
+
+
+/* COLORS */
+$white: #FFF;
+$grey-light: #F5F5F5;
+$grey: #c7c5c5;
+$grey-dark: #828282;
+$black: #333;
+$purple: #c926b5;
+$grape: #7d59b5;
+$blue: #0e4bbe;
+$ice: #43b5eb;
+
+/* SIZES */
+$mobile-width: 480px;
+$mobile-height: 480px;
+$site-max: 1140px;
+
+/* FONTS */
+$font-xxl: 106px; 
+$font-xl: 42px; 
+$font-large: 24px; 
+$font-medium: 16px; 
+$font-small: 14px; 
+$font-xs: 12px; 
+$font-xxs: 10px;
+
 // Component styles are injected through grunt
 // injector
-@import 'account/login/login.scss';
-@import 'admin/admin.scss';
+@import 'components/footer/footer.scss';
+@import 'components/modal/modal.scss';
+@import 'components/navbar/navbar.scss';
 @import 'main/main.scss';
+@import 'routes/downloads/downloads.scss';
+@import 'routes/index/index.scss';
+@import 'routes/projects/projects.scss';
+@import 'global/base.scss';
+@import 'global/colors.scss';
+@import 'global/font.scss';
+@import 'global/formatting.scss';
+@import 'module/btn.scss';
+@import 'module/divider.scss';
+@import 'module/form.scss';
+@import 'module/icon.scss';
+@import 'module/template.scss';
 // endinjector

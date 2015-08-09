@@ -1,0 +1,29 @@
+<div class="navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <div class="default-container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a href="/" class="navbar-brand"><img src="/assets/images/logo-mark.png" /></a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in menu" class="dropdown" ng-class="{active: isActive(item.link), dropdown: item.items}">
+            
+            <a ng-if="!item.items" ng-href="{{item.link}}">{{item.title}}</a>
+            
+            
+            <a ng-if="item.items"href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{item.title}}<span class="caret"></span></a>
+            <ul ng-if="item.items" class="dropdown-menu">
+                <li ng-repeat="subitem in item.items"><a ng-href="{{subitem.link}}">{{subitem.title}}</a></li>
+            </ul>
+            
+            
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

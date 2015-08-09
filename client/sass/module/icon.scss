@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/08/2015, 3:52:56 PM
+    Author     : craig
+*/
+
+.icon-tile {
+    padding: 40px 20px;
+    background-color: $grey-light;
+    @include border-radius(5px,5px,5px,5px);
+    border: 1px solid #DDD;
+    margin: 15px 0;
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+.icon-caption {
+    margin-top: 20px;
+}
