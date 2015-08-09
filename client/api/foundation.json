@@ -1,0 +1,37 @@
+{
+    "core" : [
+        {
+            "name" : "Soopy452000",
+            "title" : "Lead Developer",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=158610"
+        },
+        {
+            "name" : "Craig MacGregor",
+            "alias" : "Pakage",
+            "title" : "Developer",
+            "picture" : "",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=354673"
+        },
+        {
+            "name" : "Shahim",
+            "title" : "Systems Engineer",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=218228"
+        },
+        {
+            "name" : "Strugg",
+            "title" : "Community Manager",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=312847"
+        },
+        {
+            "name" : "Sophia Lees",
+            "title" : "Public Relations"
+        }        
+    ],
+    "community" : [
+        {
+            "name" : "Wasada",
+            "title" : "Investor",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=337424"
+        }
+    ]
+}

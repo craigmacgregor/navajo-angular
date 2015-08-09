@@ -1,0 +1,59 @@
+<div class="default-container row default-title">
+
+    <div class="col-xs-12">
+        
+        <h2 class="font-grape">Foundation</h2>
+        <p class="font-grey-dark italic">Meet the team</p>
+    </div>
+    
+</div>
+
+<div class="default-container row">
+    <div class="col-xs-12">
+        <h4 class="font-purple">Core Members</h4>
+    </div>
+</div>
+
+<div class="divider default-container"></div>
+
+
+<div class="default-container row">
+        
+    <div class="col-sm-4 center" ng-repeat="member in foundation.core">
+       <div class="icon-tile full-width">
+           <div class="fa fa-user font-xxl font-ice block"></div>
+           <div class="foundation-member">
+            <p class="icon-caption bold">{{member.name}}</p>
+            <span ng-if="member.alias" class=" foundation-alias font-grey-dark italic">aka {{member.alias}}</span>
+           </div>
+           <h4 class="bold foundation-title">{{member.title}}</h4>
+       </div>
+    </div>
+   
+</div>
+
+<div class="divider default-container"></div>
+
+<div class="default-container row">
+    <div class="col-xs-12">
+        <h4 class="font-purple">Community Members</h4>
+    </div>
+</div>
+
+<div class="divider default-container"></div>
+
+
+<div class="default-container row">
+        
+    <div class="col-sm-4 center" ng-repeat="member in foundation.community">
+       <div class="icon-tile full-width">
+           <div class="fa fa-user font-xxl font-ice block"></div>
+           <div class="foundation-member">
+            <p class="icon-caption bold">{{member.name}}</p>
+            <span ng-if="member.alias" class=" foundation-alias font-grey-dark italic">aka {{member.alias}}</span>
+           </div>
+           <h4 class="bold foundation-title">{{member.title}}</h4>
+       </div>
+    </div>
+   
+</div>

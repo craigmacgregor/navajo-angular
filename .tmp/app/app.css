@@ -7217,6 +7217,16 @@ and open the template in the editor.
   .colored-unit.white {
     background-color: #FFF; }
 
+.foundation-member {
+  height: 38px; }
+
+.foundation-alias {
+  margin-top: -10px;
+  display: block; }
+
+.foundation-title {
+  margin-top: 0px; }
+
 .project-tile {
   padding: 10px 0; }
 
