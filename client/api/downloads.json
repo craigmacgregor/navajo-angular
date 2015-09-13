@@ -1,0 +1,57 @@
+[
+    {
+        "name" : "Windows Wallet (zip)",
+        "type" : "Wallet Download",
+        "icon" : "fa-windows",
+        "link" : "http://www.navajocoin.org/downloads/NavajoCoin_3.0.0_Windows_IRC.zip",
+        "button" : "Download (3.0.0)"
+    },
+    {
+        "name" : "Windows Installer (exe)",
+        "type" : "Wallet Download",
+        "icon" : "fa-windows",
+        "link" : "http://www.navajocoin.org/downloads/NavajoCoin_3.0.0.exe",
+        "button" : "Download (3.0.0)"
+    },
+    {
+        "name" : "Mac Wallet",
+        "type" : "Coming Soon",
+        "icon" : "fa-apple",
+        "link" : ""
+    },
+    {
+        "name" : "Linux Source",
+        "type" : "Wallet Download",
+        "icon" : "fa-linux",
+        "link" : "https://github.com/sherlockcoin/navajocoin/commit/7859e48a0f50315cd247caf675c3563fa4c06c06",
+        "button" : "Download (3.0.0)"
+    },
+    {
+        "name" : "Github",
+        "type" : "Source Code",
+        "icon" : "fa-github",
+        "link" : "https://github.com/sherlockcoin/navajocoin",
+        "button" : "View Source"
+    },
+    {
+        "name" : "Blockchain Data",
+        "type" : "Data Download",
+        "icon" : "fa-chain",
+        "link" : "http://www.navajocoin.org/downloads/Navajo-Blockchain.zip",
+        "button" : "Download"
+    },
+    {
+        "name" : "Whitepaper (pdf)",
+        "type" : "Resource Download",
+        "icon" : "fa-file-pdf-o",
+        "link" : "http://www.navajocoin.org/pdf/navajocoin.pdf",
+        "button" : "Download"
+    },
+    {
+        "name" : "Taipei Presentation (pdf)",
+        "type" : "Resource Download",
+        "icon" : "fa-file-pdf-o",
+        "link" : "http://www.navajocoin.org/files/navajo-coin-taipei-2015.pdf",
+        "button" : "Download"
+    }
+]

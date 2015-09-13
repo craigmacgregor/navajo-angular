@@ -9,13 +9,43 @@ and open the template in the editor.
 */
 
 .btn-primary {
+    font-weight: normal;
+    color: $white;
+    background-color: $grape;
+    border-color: darken($grape, 20%);
     &:link, &:visited {
+        font-weight: normal;
+        color: $white;
         background-color: $grape;
         border-color: darken($grape, 20%);
     }
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
+        color: $white;
         background-color: lighten($grape, 10%);
         border-color: $grape;
+    }
+    &.disabled {
+        background-color: $grey;
+        color: $black;
+        border-color: $grey-dark;
+    }
+}
+
+.btn-secondary {
+    color: $white;
+    background-color: $ice;
+    font-weight: normal;
+    border-color: darken($ice, 20%);
+    &:link, &:visited {
+        font-weight: normal;
+        color: $white;
+        background-color: $ice;
+        border-color: darken($ice, 20%);
+    }
+    &:hover, &:active, &:focus {
+        color: $white;
+        background-color: lighten($ice, 10%);
+        border-color: $ice;
     }
     &.disabled {
         background-color: $grey;

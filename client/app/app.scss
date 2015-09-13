@@ -40,8 +40,6 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     transform: $transformation;
 }
 
-
-
 /* COLORS */
 $white: #FFF;
 $grey-light: #F5F5F5;
@@ -56,6 +54,7 @@ $ice: #43b5eb;
 /* SIZES */
 $mobile-width: 480px;
 $mobile-height: 480px;
+$tablet-width: 991px;
 $site-max: 1140px;
 
 /* FONTS */
@@ -73,10 +72,15 @@ $font-xxs: 10px;
 @import 'components/modal/modal.scss';
 @import 'components/navbar/navbar.scss';
 @import 'main/main.scss';
+@import 'routes/block/block.scss';
+@import 'routes/contact/contact.scss';
 @import 'routes/downloads/downloads.scss';
+@import 'routes/faucet/faucet.scss';
 @import 'routes/foundation/foundation.scss';
 @import 'routes/index/index.scss';
 @import 'routes/projects/projects.scss';
+@import 'routes/rich-list/rich-list.scss';
+@import 'global/backgrounds.scss';
 @import 'global/base.scss';
 @import 'global/colors.scss';
 @import 'global/font.scss';

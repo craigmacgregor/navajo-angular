@@ -1,0 +1,228 @@
+<div class="default-container row default-title">
+
+    <div class="col-xs-12">
+        
+        <h2 class="font-grape">Contact</h2>
+        <p class="font-grey-dark italic">Need help?</p>
+    </div>
+    
+</div>
+
+<div class="default-container row">
+    
+    <div class='col-md-8'>
+        
+        <div ng-class="{hidden: !success}">
+            <div class="icon-tile center">
+                <h3>
+                    <span class="fa fa-check-circle-o font-grape contact-check"></span>Message Received
+                </h3>
+            </div>
+            
+            <button type='submit' class='btn btn-primary' id="contact-reset" contact-reset>Reset</button>
+            
+        </div>        
+        
+        <form cm-form name='contactForm' ng-class="{hidden: success}">
+            <div class="input-group form-input">
+                <span class="input-group-addon"><span class='fa fa-user'></span></span>
+                <input type="text" name='name' class="form-control" placeholder="Name" ng-model='contact.name' cm-notempty>
+            </div>
+            <div class="form-error" ng-show="contactForm.name.$error.notempty">Please enter your name</div>            
+            <div class="input-group form-input">
+                <span class="input-group-addon"><span class='fa fa-envelope'></span></span>
+                <input type="text" name='email' class="form-control" placeholder="Email" ng-model='contact.email' cm-notempty cm-email>
+            </div>
+            <div class="form-error" ng-show="contactForm.email.$error.notempty">Please enter your email</div>        
+            <div class="form-error" ng-show="contactForm.email.$error.email">Please enter a valid email</div>        
+            <div class="input-group form-input">
+                <span class="input-group-addon"><span class='fa fa-pencil'></span></span>
+                <input type="text" name='subject' class="form-control" placeholder="Subject" ng-model='contact.subject' cm-notempty>
+            </div>
+            <div class="form-error" ng-show="contactForm.subject.$error.notempty">Please enter the subject of your message</div>        
+            <textarea name='message' class="form-control form-textarea" rows="12" ng-model='contact.message' cm-notempty></textarea>
+            <div class="form-error" ng-show="contactForm.message.$error.notempty">Please enter your message</div>        
+            <button type='submit' class='btn btn-primary form-submit'>Send</button>
+        </form>
+        
+    </div>
+    
+    <div class="row divider-row visible-sm visible-xs">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
+        </div>
+    </div>
+    
+    <div class='col-md-4 visible-md visible-lg'>
+        
+        <div class='icon-tile contact-social'>
+        
+            <h4>Social Channels</h4>
+
+            <div>
+                <a class="btn btn-secondary block" href='https://www.facebook.com/pages/Navajo-Coin/275085062670816' target='e'>
+                    <span class='contact-icon'>
+                        <span class='fa fa-facebook'></span>
+                    </span>
+                    Facebook
+                </a>
+            </div>
+            <div>
+                <a class="btn btn-secondary block" href='https://twitter.com/NavajoCoin' target='e'>
+                    <span class='contact-icon'>
+                        <span class='fa fa-twitter'></span>
+                    </span>
+                    Twitter
+                </a>
+            </div>
+            <div>
+                <a class="btn btn-secondary block" href='http://www.reddit.com/r/navajocoin' target='e'>
+                    <span class='contact-icon'>
+                        <span class='fa fa-reddit'></span>
+                    </span>
+                    Reddit
+                </a>
+            </div>
+            <div>
+                <a class="btn btn-secondary block" href='https://navajocoin.slack.com' target='e'>
+                    <span class='contact-icon'>
+                        <span class='fa fa-slack'></span>
+                    </span>
+                    Slack
+                </a>
+            </div>
+             <div>
+                <a class="btn btn-secondary block" href='http://forum.navajocointalk.org/' target='e'>
+                    <span class='contact-icon'>
+                        <span class='fa italic bold'>N</span>
+                    </span>
+                    Official Forum
+                </a>
+            </div>
+            <div>
+                <a class="btn btn-secondary block" href='https://kiwiirc.com/client/irc.freenode.net/navajocoin' target='e'>
+                    <span class='contact-icon'>
+                        <span class='fa italic bold'>#</span>
+                    </span>
+                    IRC
+                </a>
+            </div>
+
+        </div>
+        
+    </div>
+   
+</div>
+
+<div class="visible-sm visible-xs">
+    
+    <div class="default-container row">
+        <div class='col-sm-12'>
+            <h4>Social Channels</h4>
+        </div>
+    </div>
+    
+    <div class="default-container row">
+
+        <div class='col-md-4 col-sm-6 col-xs-12'>
+        
+            <div class='icon-tile contact-social'>
+
+                <div>
+                    <a class="btn btn-secondary block" href='https://www.facebook.com/pages/Navajo-Coin/275085062670816' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa fa-facebook'></span>
+                        </span>
+                        Facebook
+                    </a>
+                </div>
+                <div>
+                    <a class="btn btn-secondary block" href='https://twitter.com/NavajoCoin' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa fa-twitter'></span>
+                        </span>
+                        Twitter
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='col-md-4 col-sm-6 col-xs-12'>
+        
+            <div class='icon-tile contact-social'>
+
+                <div>
+                    <a class="btn btn-secondary block" href='http://www.reddit.com/r/navajocoin' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa fa-reddit'></span>
+                        </span>
+                        Reddit
+                    </a>
+                </div>
+                <div>
+                    <a class="btn btn-secondary block" href='http://forum.navajocointalk.org/' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa italic bold'>N</span>
+                        </span>
+                        Official Forum
+                    </a>
+                </div>
+                
+
+            </div>
+
+        </div>
+        
+        <div class='col-md-4 col-sm-6 col-xs-12'>
+        
+            <div class='icon-tile contact-social'>
+                
+                <div>
+                    <a class="btn btn-secondary block" href='https://navajocoin.slack.com' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa fa-slack'></span>
+                        </span>
+                        Slack
+                    </a>
+                </div>
+                 
+                <div>
+                    <a class="btn btn-secondary block" href='https://kiwiirc.com/client/irc.freenode.net/navajocoin' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa italic bold'>#</span>
+                        </span>
+                        IRC
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="visible-sm visible-xs col-sm-6 col-xs-12 center">
+            <div class='icon-tile contact-social'>
+                
+                <div>
+                    <a class="btn btn-secondary block" href='https://cryptocrunch.wordpress.com' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa fa-wordpress'></span>
+                        </span>
+                        Blog
+                    </a>
+                </div>
+                 
+                <div>
+                    <a class="btn btn-secondary block" href='http://coinmarketcap.com/currencies/navajo' target='e'>
+                        <span class='contact-icon'>
+                            <span class='fa fa-dollar'></span>
+                        </span>
+                        Market Cap
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>

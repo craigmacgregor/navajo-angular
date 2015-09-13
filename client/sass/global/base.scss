@@ -47,12 +47,13 @@ h6 {
 
 p { font-size: 14px; }
 
-a, a:link, a:active, a:visited, a:focus { 
-    
+a, a:link, a:visited { 
+    color: $black;
+    font-weight: bold;
 }
 
-a:hover {
-    
+a:hover, a:active, a:focus {
+    color: $blue;
 }
 
 button {
@@ -73,5 +74,5 @@ textarea {
 }
 
 .default-title {
-    margin: 50px auto;
+    margin: 20px auto;
 }

@@ -1,3 +1,15 @@
 #index-banner {
 
 }
+
+#index-download {
+    margin-top: 20px;
+    width: 100%;
+    font-size: $font-large;
+//    font-weight: bold;
+    text-transform: uppercase;
+    @media(max-width:$tablet-width){
+        margin-top: 10px;
+        font-size: $font-medium;
+    }
+}

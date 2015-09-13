@@ -27,10 +27,8 @@
     <![endif]-->
     
     <div ng-include="'app/components/navbar/navbar.html'"></div>
-    
     <!-- Add your site or application content here -->
     <div ng-view=""></div>
-
     <div ng-include="'app/components/footer/footer.html'"></div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -65,18 +63,35 @@
         <script src="app/app.js"></script>
           <!-- injector:js -->
           <script src="app/components/bootstrap-tabs/bootstrap-tabs.directive.js"></script>
+          <script src="app/components/cm-validation/cm-alphanum.js"></script>
+          <script src="app/components/cm-validation/cm-email.js"></script>
+          <script src="app/components/cm-validation/cm-form.js"></script>
+          <script src="app/components/cm-validation/cm-integer.js"></script>
+          <script src="app/components/cm-validation/cm-match.js"></script>
+          <script src="app/components/cm-validation/cm-minlength.js"></script>
+          <script src="app/components/cm-validation/cm-notempty.js"></script>
+          <script src="app/components/cm-validation/cm-password.js"></script>
+          <script src="app/components/cm-validation/cm-string.js"></script>
           <script src="app/components/footer/footer.controller.js"></script>
           <script src="app/components/modal/modal.service.js"></script>
           <script src="app/components/navbar/navbar.controller.js"></script>
           <script src="app/main/main.controller.js"></script>
+          <script src="app/routes/block/block.controller.js"></script>
+          <script src="app/routes/block/block.js"></script>
+          <script src="app/routes/contact/contact.controller.js"></script>
+          <script src="app/routes/contact/contact.js"></script>
           <script src="app/routes/downloads/downloads.controller.js"></script>
           <script src="app/routes/downloads/downloads.js"></script>
+          <script src="app/routes/faucet/faucet.controller.js"></script>
+          <script src="app/routes/faucet/faucet.js"></script>
           <script src="app/routes/foundation/foundation.controller.js"></script>
           <script src="app/routes/foundation/foundation.js"></script>
           <script src="app/routes/index/index.controller.js"></script>
           <script src="app/routes/index/index.js"></script>
           <script src="app/routes/projects/projects.controller.js"></script>
           <script src="app/routes/projects/projects.js"></script>
+          <script src="app/routes/rich-list/rich-list.controller.js"></script>
+          <script src="app/routes/rich-list/rich-list.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->
 </body>

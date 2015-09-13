@@ -7169,6 +7169,8 @@ and open the template in the editor.
   padding: 30px 0;
   margin-top: 70px;
   border-top: 1px solid #E5E5E5; }
+  .footer .footer-nav {
+    margin-bottom: 20px; }
 
 .modal-primary .modal-header,
 .modal-info .modal-header,
@@ -7205,6 +7207,9 @@ and open the template in the editor.
 .navbar-default {
   border-bottom: 1px solid #DDD; }
 
+.navbar-nav a, .navbar-nav a:link, .navbar-nav a:visited {
+  font-weight: normal; }
+
 .navbar-brand img {
   height: 24px; }
 
@@ -7216,22 +7221,132 @@ and open the template in the editor.
     background-color: #F5F5F5; }
   .colored-unit.white {
     background-color: #FFF; }
+  @media (max-width: 768px) {
+    .colored-unit {
+      padding: 20px 0; } }
+
+#block-iframe {
+  border: 0;
+  width: 100%;
+  height: 100%; }
+
+.contact-social.icon-tile {
+  padding: 20px; }
+  .contact-social.icon-tile .btn {
+    text-align: left;
+    font-size: 24px; }
+
+.contact-icon {
+  width: 40px;
+  display: inline-block;
+  text-align: center; }
+
+.contact-check {
+  margin-right: 10px; }
+
+#faucet-iframe {
+  border: 0;
+  width: 100%;
+  height: 100%; }
+
+.foundation-tile.icon-tile {
+  padding-bottom: 60px;
+  display: block; }
+  .foundation-tile.icon-tile .foundation-profile {
+    position: absolute;
+    height: 31px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .foundation-tile.icon-tile .foundation-profile .btn {
+      box-shadow: 0px 0px 20px 0px #7d59b5; }
+  .foundation-tile.icon-tile:hover {
+    text-decoration: none; }
+    .foundation-tile.icon-tile:hover .foundation-rollover {
+      display: block; }
+
+.foundation-rollover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 5px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none; }
 
 .foundation-member {
   height: 38px; }
 
 .foundation-alias {
-  margin-top: -10px;
+  margin-top: -7px;
   display: block; }
 
 .foundation-title {
-  margin-top: 0px; }
+  margin-top: 0px;
+  width: 100%;
+  bottom: 10px;
+  background-color: #c7c5c5;
+  padding: 6px 0;
+  border-top: 1px solid #959191;
+  border-bottom: 1px solid #959191; }
+
+#index-download {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase; }
+  @media (max-width: 991px) {
+    #index-download {
+      margin-top: 10px;
+      font-size: 16px; } }
 
 .project-tile {
   padding: 10px 0; }
 
 .project-caption {
   margin-top: 5px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/09/2015, 3:41:40 PM
+    Author     : craig
+*/
+.bg-stripes {
+  background-size: 50px 50px;
+  /* Controls the size of the stripes */ }
+
+.bg-angled {
+  background-color: #ac0;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.bg-angled-135, .icon-tile, .icon-rollover {
+  background-color: #c16;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.bg-angled-135-bold {
+  background-color: #c16;
+  background-image: linear-gradient(-45deg, white 25%, transparent 25%, transparent 50%, white 50%, white 75%, transparent 75%, transparent); }
+
+.bg-horizontal {
+  background-color: #0ae;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent); }
+
+.bg-vertical {
+  background-color: #f90;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent); }
+
+.bg-checkered {
+  background-image: linear-gradient(45deg, #555 25%, transparent 25%, transparent), linear-gradient(-45deg, #555 25%, transparent 25%, transparent), linear-gradient(45deg, transparent 75%, #555 75%), linear-gradient(-45deg, transparent 75%, #555 75%); }
+
+.bg-picnic {
+  background-color: white;
+  background-image: linear-gradient(transparent 50%, rgba(200, 0, 0, 0.5) 50%, rgba(200, 0, 0, 0.5)), linear-gradient(0deg, transparent 50%, rgba(200, 0, 0, 0.5) 50%, rgba(200, 0, 0, 0.5)); }
 
 html, body {
   background-color: #FFF;
@@ -7280,6 +7395,13 @@ h6 {
 p {
   font-size: 14px; }
 
+a, a:link, a:visited {
+  color: #333;
+  font-weight: bold; }
+
+a:hover, a:active, a:focus {
+  color: #0e4bbe; }
+
 button {
   outline: none;
   border: none;
@@ -7295,7 +7417,7 @@ textarea {
   padding: 0 20px; }
 
 .default-title {
-  margin: 50px auto; }
+  margin: 20px auto; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -7457,6 +7579,9 @@ and open the template in the editor.
 .fixed {
   position: fixed; }
 
+.margin-auto {
+  margin: 0 auto; }
+
 /* SIZE */
 .full-width {
   width: 100%; }
@@ -7531,16 +7656,43 @@ and open the template in the editor.
     Created on : 25/06/2015, 5:11:38 PM
     Author     : craigmacgregor
 */
-.btn-primary:link, .btn-primary:visited {
+.btn-primary {
+  font-weight: normal;
+  color: #FFF;
   background-color: #7d59b5;
   border-color: #4d3474; }
-.btn-primary:hover, .btn-primary:active {
-  background-color: #997cc5;
-  border-color: #7d59b5; }
-.btn-primary.disabled {
-  background-color: #c7c5c5;
-  color: #333;
-  border-color: #828282; }
+  .btn-primary:link, .btn-primary:visited {
+    font-weight: normal;
+    color: #FFF;
+    background-color: #7d59b5;
+    border-color: #4d3474; }
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    color: #FFF;
+    background-color: #997cc5;
+    border-color: #7d59b5; }
+  .btn-primary.disabled {
+    background-color: #c7c5c5;
+    color: #333;
+    border-color: #828282; }
+
+.btn-secondary {
+  color: #FFF;
+  background-color: #43b5eb;
+  font-weight: normal;
+  border-color: #1381b5; }
+  .btn-secondary:link, .btn-secondary:visited {
+    font-weight: normal;
+    color: #FFF;
+    background-color: #43b5eb;
+    border-color: #1381b5; }
+  .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+    color: #FFF;
+    background-color: #71c7f0;
+    border-color: #43b5eb; }
+  .btn-secondary.disabled {
+    background-color: #c7c5c5;
+    color: #333;
+    border-color: #828282; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -7556,6 +7708,9 @@ and open the template in the editor.
   background-color: #c7c5c5;
   margin: 20px auto; }
 
+.divider-row {
+  padding: 0 15px; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -7569,13 +7724,12 @@ and open the template in the editor.
   margin-top: 50px;
   padding-bottom: 5px; }
 
-.form-input, .form-select, .form-textarea {
+.form-input, .form-select, .form-textarea, .form-submit {
   margin-top: 20px; }
 
 .form-input {
   border: none;
   outline: none;
-  padding: 0px 10px;
   width: 100%;
   font-style: italic; }
   .form-input::-webkit-input-placeholder {
@@ -7603,13 +7757,17 @@ and open the template in the editor.
 .form-error {
   vertical-align: middle;
   text-align: left;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: lighter;
+  font-style: italic;
   color: red;
   margin-top: 5px; }
 
 .form-footer {
   margin-top: 50px; }
+
+.input-group-addon {
+  width: 40px; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -7621,16 +7779,117 @@ and open the template in the editor.
     Author     : craig
 */
 .icon-tile {
-  padding: 40px 20px;
-  background-color: #F5F5F5;
+  padding: 40px;
+  background-color: #e8e8e8;
   border-radius: 5px 5px 5px 5px;
   border: 1px solid #DDD;
-  margin: 15px 0; }
+  margin: 15px 0;
+  background-size: 75px 75px; }
   .icon-tile .btn {
     margin-top: 10px; }
+  @media (max-width: 480px) {
+    .icon-tile {
+      padding: 20px; } }
+
+.icon-right-col {
+  height: 100%;
+  display: inline-block;
+  position: absolute; }
+  @media (max-width: 768px) {
+    .icon-right-col {
+      position: relative;
+      display: block;
+      padding-top: 20px; } }
+
+.icon-left-col {
+  height: 100%;
+  display: inline-block;
+  position: absolute; }
+  @media (max-width: 768px) {
+    .icon-left-col {
+      position: relative;
+      display: block; } }
+
+.icon-tile-plain {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #DDD; }
+  @media (max-width: 768px) {
+    .icon-tile-plain {
+      padding: 15px 0; } }
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .outer {
+      position: relative; } }
+
+.middle {
+  display: table-cell;
+  vertical-align: middle; }
 
 .icon-caption {
   margin-top: 20px; }
+
+.icon-link-tile {
+  padding-bottom: 60px;
+  display: block; }
+  .icon-link-tile .icon-link {
+    position: absolute;
+    height: 31px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .icon-link-tile .icon-link .btn {
+      box-shadow: 0px 0px 20px 0px #7d59b5; }
+  .icon-link-tile:hover {
+    text-decoration: none; }
+    .icon-link-tile:hover .icon-rollover {
+      display: block; }
+
+.icon-rollover {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: 75px 75px;
+  border-radius: 5px 5px 5px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none; }
+
+.icon-caption {
+  height: 24px; }
+
+.icon-subtitle {
+  margin-top: -14px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0; }
+
+.icon-label {
+  margin-top: 0px;
+  width: 100%;
+  bottom: 10px;
+  background-color: #c7c5c5;
+  padding: 6px 0;
+  border-top: 1px solid #959191;
+  border-bottom: 1px solid #959191;
+  left: 0; }
+
+.icon-svg {
+  display: inline-block;
+  height: 106px;
+  color: #333; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

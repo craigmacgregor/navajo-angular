@@ -12,6 +12,12 @@ and open the template in the editor.
     border-bottom: 1px solid #DDD;
 }
 
+.navbar-nav {
+    a, a:link, a:visited {
+        font-weight: normal;
+    }
+}
+
 .navbar-brand {
     img {
         height: 24px;

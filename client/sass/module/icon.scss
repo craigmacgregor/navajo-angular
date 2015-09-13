@@ -9,16 +9,142 @@ and open the template in the editor.
 */
 
 .icon-tile {
-    padding: 40px 20px;
-    background-color: $grey-light;
+    padding: 40px;
+    background-color: darken($grey-light, 5%);
+    
     @include border-radius(5px,5px,5px,5px);
     border: 1px solid #DDD;
     margin: 15px 0;
     .btn {
         margin-top: 10px;
     }
+    background-size: 75px 75px;
+    @extend .bg-angled-135;
+    @media(max-width:$mobile-width){
+        padding: 20px;
+    }    
+}
+
+.icon-right-col {
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    @media(max-width: 768px){
+        position: relative;
+        display: block;
+        padding-top: 20px;
+    }
+}
+
+.icon-left-col {
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    @media(max-width: 768px){
+        position: relative;
+        display: block;
+    }
+}
+
+.icon-tile-plain {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: lighten($grey-light, 1%);
+    @include border-radius(5px,5px,5px,5px);
+    border: 1px solid #DDD;
+    @media(max-width: 768px){
+        padding: 15px 0;
+    }
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @media(max-width: 768px){
+        position: relative;
+    }
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .icon-caption {
     margin-top: 20px;
+}
+
+.icon-link-tile {
+    padding-bottom: 60px;
+    display: block;
+    
+    .icon-link {
+        position: absolute;
+        height: 31px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .btn {
+            -webkit-box-shadow: 0px 0px 20px 0px $grape;
+            -moz-box-shadow: 0px 0px 20px 0px $grape;
+            box-shadow: 0px 0px 20px 0px $grape;
+        }
+        
+    }
+
+    &:hover {
+        text-decoration: none;
+        .icon-rollover {
+            display: block;
+        }
+        
+    }
+}
+
+.icon-rollover {
+    background-color: rgba(255,255,255,0.5);
+    background-size: 75px 75px;
+    @extend .bg-angled-135;
+    @include border-radius(5px,5px,5px,5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+
+.icon-caption {
+    height: 24px;
+}
+
+.icon-subtitle {
+    margin-top: -14px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left:0;
+}
+
+.icon-label {
+    margin-top: 0px;
+    width: 100%;
+    bottom: 10px;
+    background-color: $grey;
+    padding: 6px 0;
+    border-top: 1px solid darken($grey, 20%);
+    border-bottom: 1px solid darken($grey, 20%);
+    left: 0;
+}
+
+.icon-svg {
+    display: inline-block;
+    height: $font-xxl;
+    color: $black;
 }

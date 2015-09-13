@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/var/www/navajo-angular/client/app/routes/downloads/downloads.html</file>
-            <file>file:/var/www/navajo-angular/client/app/app.scss</file>
-            <file>file:/var/www/navajo-angular/client/sass/module/divider.scss</file>
-            <file>file:/var/www/navajo-angular/client/app/components/bootstrap-tabs/bootstrap-tabs.directive.js</file>
-            <file>file:/var/www/navajo-angular/client/sass/global/base.scss</file>
-            <file>file:/var/www/navajo-angular/client/api/projects.json</file>
-            <file>file:/var/www/navajo-angular/client/app/routes/projects/projects.scss</file>
-            <file>file:/var/www/navajo-angular/client/sass/module/btn.scss</file>
-            <file>file:/var/www/navajo-angular/client/sass/global/font.scss</file>
-            <file>file:/var/www/navajo-angular/client/app/routes/projects/projects.html</file>
-            <file>file:/var/www/navajo-angular/client/app/routes/projects/projects.controller.js</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

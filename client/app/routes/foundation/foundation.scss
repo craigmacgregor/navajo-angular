@@ -1,13 +1,58 @@
+.foundation-tile.icon-tile {
+    padding-bottom: 60px;
+    display: block;
+    
+    .foundation-profile {
+        position: absolute;
+        height: 31px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .btn {
+            -webkit-box-shadow: 0px 0px 20px 0px $grape;
+            -moz-box-shadow: 0px 0px 20px 0px $grape;
+            box-shadow: 0px 0px 20px 0px $grape;
+        }
+        
+    }
+
+    &:hover {
+        text-decoration: none;
+        .foundation-rollover {
+            display: block;
+        }
+        
+    }
+}
+
+.foundation-rollover {
+    background-color: rgba(255,255,255,0.5);
+    @include border-radius(5px,5px,5px,5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+
 .foundation-member {
     height: 38px;
 }
 
-
 .foundation-alias {
-    margin-top: -10px;
+    margin-top: -7px;
     display: block;
 }
 
 .foundation-title {
     margin-top: 0px;
+    width: 100%;
+    bottom: 10px;
+    background-color: $grey;
+    padding: 6px 0;
+    border-top: 1px solid darken($grey, 20%);
+    border-bottom: 1px solid darken($grey, 20%);
 }
