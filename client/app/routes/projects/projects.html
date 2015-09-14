@@ -43,7 +43,7 @@
         <p>{{project.text}}</p>
         
          <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="{{project.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{project.progress}}%"
                         ng-class="{
@@ -51,7 +51,6 @@
                             'progress-bar-info' : project.progress >= 50 && project.progress < 75,
                             'progress-bar-warning' : project.progress >= 25 && project.progress < 50,
                             'progress-bar-danger' : project.progress > 0 && project.progress < 25,
-                            
                         }">
                         {{project.progress}}%
                     </div>

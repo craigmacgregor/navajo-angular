@@ -3,14 +3,14 @@
         "name" : "Windows Wallet (zip)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/downloads/NavajoCoin_3.0.0_Windows_IRC.zip",
+        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.0.0_Windows_IRC.zip",
         "button" : "Download (3.0.0)"
     },
     {
         "name" : "Windows Installer (exe)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/downloads/NavajoCoin_3.0.0.exe",
+        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.0.0.exe",
         "button" : "Download (3.0.0)"
     },
     {
@@ -37,14 +37,14 @@
         "name" : "Blockchain Data",
         "type" : "Data Download",
         "icon" : "fa-chain",
-        "link" : "http://www.navajocoin.org/downloads/Navajo-Blockchain.zip",
+        "link" : "http://www.navajocoin.org/files/Navajo-Blockchain.zip",
         "button" : "Download"
     },
     {
         "name" : "Whitepaper (pdf)",
         "type" : "Resource Download",
         "icon" : "fa-file-pdf-o",
-        "link" : "http://www.navajocoin.org/pdf/navajocoin.pdf",
+        "link" : "http://www.navajocoin.org/files/navajocoin.pdf",
         "button" : "Download"
     },
     {
