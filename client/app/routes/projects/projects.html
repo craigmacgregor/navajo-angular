@@ -8,77 +8,83 @@
     
 </div>
 
-<div class="default-container row" ng-repeat="project in projects.pending">
+<loading-animation ng-if="loading"></loading-animation>
 
-    <div class="col-sm-2 col-xs-3">
-        <div class="center project-tile full-width">
-            <span class="fa fa-clock-o font-ice font-xl"></span>
-            <p class="project-caption font-xs italic font-grey-dark">Pending</p>
+<div class="loading-content" ng-if="!loading">
+
+    <div class="default-container row" ng-repeat="project in projects.pending">
+
+        <div class="col-sm-2 col-xs-3">
+            <div class="center project-tile full-width">
+                <span class="fa fa-clock-o font-ice font-xl"></span>
+                <p class="project-caption font-xs italic font-grey-dark">Pending</p>
+            </div>
+        </div>
+
+        <div class="col-sm-10 col-xs-9">
+            <h4>{{project.title}}</h4>
+            <p>{{project.text}}</p>
         </div>
     </div>
 
-    <div class="col-sm-10 col-xs-9">
-        <h4>{{project.title}}</h4>
-        <p>{{project.text}}</p>
-    </div>
-</div>
-
-<div class="default-container row divider-row">
-    <div class='col-xs-12'>
-        <div class='divider'></div>
-    </div>
-</div>
-
-<div class="default-container row" ng-repeat="project in projects.inProgress">
-
-    <div class="col-sm-2 col-xs-3">
-        <div class="center project-tile full-width">
-            <span class="fa fa-ellipsis-h font-blue font-xl"></span>
-            <p class="project-caption font-xs italic font-grey-dark">In Progress</p>
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
         </div>
     </div>
 
-    <div class="col-sm-10 col-xs-9">
-        <h4>{{project.title}}</h4>
-        <p>{{project.text}}</p>
-        
-         <div class="row">
-            <div class="col-xs-12">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="{{project.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{project.progress}}%"
-                        ng-class="{
-                            'progress-bar-success' : project.progress >= 75, 
-                            'progress-bar-info' : project.progress >= 50 && project.progress < 75,
-                            'progress-bar-warning' : project.progress >= 25 && project.progress < 50,
-                            'progress-bar-danger' : project.progress > 0 && project.progress < 25,
-                        }">
-                        {{project.progress}}%
+    <div class="default-container row" ng-repeat="project in projects.inProgress">
+
+        <div class="col-sm-2 col-xs-3">
+            <div class="center project-tile full-width">
+                <span class="fa fa-ellipsis-h font-blue font-xl"></span>
+                <p class="project-caption font-xs italic font-grey-dark">In Progress</p>
+            </div>
+        </div>
+
+        <div class="col-sm-10 col-xs-9">
+            <h4>{{project.title}}</h4>
+            <p>{{project.text}}</p>
+
+             <div class="row">
+                <div class="col-xs-12">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{project.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{project.progress}}%"
+                            ng-class="{
+                                'progress-bar-success' : project.progress >= 75, 
+                                'progress-bar-info' : project.progress >= 50 && project.progress < 75,
+                                'progress-bar-warning' : project.progress >= 25 && project.progress < 50,
+                                'progress-bar-danger' : project.progress > 0 && project.progress < 25,
+                            }">
+                            {{project.progress}}%
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        
-    </div>
-</div>    
+    </div>    
 
-<div class="default-container row divider-row">
-    <div class='col-xs-12'>
-        <div class='divider'></div>
-    </div>
-</div>
-
-<div class="default-container row" ng-repeat="project in projects.complete">
-
-    <div class="col-sm-2 col-xs-3">
-        <div class="center project-tile full-width">
-            <span class="fa fa-check-circle-o font-grape font-xl"></span>
-            <p class="project-caption font-xs italic font-grey-dark">Complete</p>
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
         </div>
     </div>
 
-    <div class="col-sm-10 col-xs-9">
-        <h4>{{project.title}}</h4>
-        <p>{{project.text}}</p>
-                
+    <div class="default-container row" ng-repeat="project in projects.complete">
+
+        <div class="col-sm-2 col-xs-3">
+            <div class="center project-tile full-width">
+                <span class="fa fa-check-circle-o font-grape font-xl"></span>
+                <p class="project-caption font-xs italic font-grey-dark">Complete</p>
+            </div>
+        </div>
+
+        <div class="col-sm-10 col-xs-9">
+            <h4>{{project.title}}</h4>
+            <p>{{project.text}}</p>
+
+        </div>
     </div>
+    
 </div>

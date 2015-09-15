@@ -2,7 +2,9 @@
 
 angular.module('navajoAngularApp')
   .controller('FaucetCtrl', function ($scope, $http, $interval) {
-                
+        
+        $scope.loading = true;
+              
         try{
             document.domain = "navajocoin.org";
         }catch(err){
@@ -32,7 +34,10 @@ angular.module('navajoAngularApp')
         scope.iFrameHeight = "500px";
         
         elm.on('load', function (event) {
-                                                            
+            scope.$apply(function(){
+                scope.loading = false;
+            });
+            
             try{
                 scope.iFrameHeight = elm[0].contentWindow.document.body.scrollHeight + 'px';           
             }catch(err){

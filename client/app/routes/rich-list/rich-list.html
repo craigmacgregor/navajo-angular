@@ -8,7 +8,9 @@
     
 </div>
 
-<div class="default-container row">
+<loading-animation ng-if="loading"></loading-animation>
+
+<div class="default-container row" ng-show="!loading">
     
     <div class="col-xs-12">
         

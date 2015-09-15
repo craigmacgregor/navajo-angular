@@ -8,88 +8,93 @@
     
 </div>
 
-<div class="default-container row">
-    <div class="col-xs-12">
-        <h4>Core Members</h4>
-    </div>
-</div>
+<loading-animation ng-if="loading"></loading-animation>
 
-<div class="default-container row divider-row">
-    <div class='col-xs-12'>
-        <div class='divider'></div>
-    </div>
-</div>
-
-<div class="default-container row">
+<div class="loading-content" ng-if="!loading">
     
-    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="member in foundation.core">
-       <div class="font-black icon-tile icon-link-tile full-width relative">
-           <div ng-if="member.profile" class="icon-rollover full-width full-height">
-                <div class="icon-link">
-                    <a ng-href="{{member.profile}}" target="e" class="btn btn-primary">View Profile</a>
-                </div>
+    <div class="default-container row">
+        <div class="col-xs-12">
+            <h4>Core Members</h4>
+        </div>
+    </div>
+
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
+        </div>
+    </div>
+    
+    <div class="default-container row">
+
+        <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="member in foundation.core">
+           <div class="font-black icon-tile icon-link-tile full-width relative">
+               <div ng-if="member.profile" class="icon-rollover full-width full-height">
+                    <div class="icon-link">
+                        <a ng-href="{{member.profile}}" target="e" class="btn btn-primary">View Profile</a>
+                    </div>
+               </div>
+               <div class="fa font-xxl block fa-user" ng-class="{'font-grey' : !member.profile, 'font-ice' : member.profile}"></div>
+               <div class="icon-text">
+                <p class="icon-caption bold">{{member.name}}</p>
+                <span ng-if="member.alias" class="icon-subtitle font-grey-dark italic">aka {{member.alias}}</span>
+               </div>
+               <h4 class="bold icon-label absolute">{{member.title}}</h4>
            </div>
-           <div class="fa font-xxl block fa-user" ng-class="{'font-grey' : !member.profile, 'font-ice' : member.profile}"></div>
-           <div class="icon-text">
-            <p class="icon-caption bold">{{member.name}}</p>
-            <span ng-if="member.alias" class="icon-subtitle font-grey-dark italic">aka {{member.alias}}</span>
+        </div>
+
+    </div>
+
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
+        </div>
+    </div>
+
+    <div class="default-container row">
+        <div class="col-xs-12">
+            <h4>Community Members</h4>
+        </div>
+    </div>
+
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
+        </div>
+    </div>
+
+    <div class="default-container row">
+
+        <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="member in foundation.community">
+           <div class="font-black icon-tile icon-link-tile full-width relative">
+               <div ng-if="member.profile" class="icon-rollover full-width full-height">
+                    <div class="icon-link">
+                        <a ng-href="{{member.profile}}" target="e" class="btn btn-primary">View Profile</a>
+                    </div>
+               </div>
+               <div class="fa font-xxl block fa-group" ng-class="{'font-grey' : !member.profile, 'font-ice' : member.profile}"></div>
+               <div class="icon-text">
+                <p class="icon-caption bold">{{member.name}}</p>
+                <span ng-if="member.alias" class="icon-subtitle font-grey-dark italic">aka {{member.alias}}</span>
+               </div>
+               <h4 class="bold icon-label absolute">{{member.title}}</h4>
            </div>
-           <h4 class="bold icon-label absolute">{{member.title}}</h4>
-       </div>
-    </div>
-   
-</div>
+        </div>
 
-<div class="default-container row divider-row">
-    <div class='col-xs-12'>
-        <div class='divider'></div>
     </div>
-</div>
 
-<div class="default-container row">
-    <div class="col-xs-12">
-        <h4>Community Members</h4>
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
+        </div>
     </div>
-</div>
 
-<div class="default-container row divider-row">
-    <div class='col-xs-12'>
-        <div class='divider'></div>
-    </div>
-</div>
-
-<div class="default-container row">
-        
-    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="member in foundation.community">
-       <div class="font-black icon-tile icon-link-tile full-width relative">
-           <div ng-if="member.profile" class="icon-rollover full-width full-height">
-                <div class="icon-link">
-                    <a ng-href="{{member.profile}}" target="e" class="btn btn-primary">View Profile</a>
-                </div>
-           </div>
-           <div class="fa font-xxl block fa-group" ng-class="{'font-grey' : !member.profile, 'font-ice' : member.profile}"></div>
-           <div class="icon-text">
-            <p class="icon-caption bold">{{member.name}}</p>
-            <span ng-if="member.alias" class="icon-subtitle font-grey-dark italic">aka {{member.alias}}</span>
-           </div>
-           <h4 class="bold icon-label absolute">{{member.title}}</h4>
-       </div>
-    </div>
-   
-</div>
-
-<div class="default-container row divider-row">
-    <div class='col-xs-12'>
-        <div class='divider'></div>
-    </div>
-</div>
-
-<div class="default-container row">
-    <div class="col-xs-12">
-        <h4>Apply for yourself!</h4>
-        <p>Do you want to become a member of the Navajocoin foundation? Details are in the bitcointalk thread.</p>
-    </div>
-    <div class="col-xs-12">
-        <a class="btn btn-primary" href="https://bitcointalk.org/index.php?topic=680884.0" target="e">Join the Foundation</a>
+    <div class="default-container row">
+        <div class="col-xs-12">
+            <h4>Apply for yourself!</h4>
+            <p>Do you want to become a member of the Navajocoin foundation? Details are in the bitcointalk thread.</p>
+        </div>
+        <div class="col-xs-12">
+            <a class="btn btn-primary" href="https://bitcointalk.org/index.php?topic=680884.0" target="e">Join the Foundation</a>
+        </div>
     </div>
 </div>

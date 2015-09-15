@@ -69,6 +69,7 @@ $font-xxs: 10px;
 // Component styles are injected through grunt
 // injector
 @import 'components/footer/footer.scss';
+@import 'components/loader/loader.scss';
 @import 'components/modal/modal.scss';
 @import 'components/navbar/navbar.scss';
 @import 'main/main.scss';

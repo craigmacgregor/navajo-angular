@@ -3,6 +3,8 @@
 angular.module('navajoAngularApp')
   .controller('RichListCtrl', function ($scope, $http) {
       
+      $scope.loading = true;
+      
       $http.get('/richlist/richlist.txt').
         then(function(response) {
 
@@ -13,6 +15,8 @@ angular.module('navajoAngularApp')
           for(var i=0; i< rows.length; i++){
               $scope.list.push(rows[i].split(" "));
           }
+          
+          $scope.loading = false;
 
         }, function(response) {
             //error

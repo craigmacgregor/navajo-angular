@@ -12,7 +12,7 @@
     
     <div class='col-md-8'>
         
-        <div ng-class="{hidden: !success}">
+        <div ng-show="success">
             <div class="icon-tile center">
                 <h3>
                     <span class="fa fa-check-circle-o font-grape contact-check"></span>Message Received
@@ -41,7 +41,12 @@
             </div>
             <div class="form-error" ng-show="contactForm.subject.$error.notempty">Please enter the subject of your message</div>        
             <textarea name='message' class="form-control form-textarea" rows="12" ng-model='contact.message' cm-notempty></textarea>
-            <div class="form-error" ng-show="contactForm.message.$error.notempty">Please enter your message</div>        
+            <div class="form-error" ng-show="contactForm.message.$error.notempty">Please enter your message</div>       
+                        
+            <div  ng-show="error" class=" form-alert alert alert-danger">
+                Something went wrong, please try again later
+            </div>
+            
             <button type='submit' class='btn btn-primary form-submit'>Send</button>
         </form>
         
@@ -92,7 +97,7 @@
                 </a>
             </div>
              <div>
-                <a class="btn btn-secondary block" href='http://forum.navajocointalk.org/' target='e'>
+                <a class="btn btn-secondary block" href='http://navcointalk.org/' target='e'>
                     <span class='contact-icon'>
                         <span class='fa italic bold'>N</span>
                     </span>
@@ -158,7 +163,7 @@
                             </a>
                         </div>
                         <div>
-                            <a class="btn btn-secondary block" href='http://forum.navajocointalk.org/' target='e'>
+                            <a class="btn btn-secondary block" href='http://navcointalk.org/' target='e'>
                                 <span class='contact-icon'>
                                     <span class='fa italic bold'>N</span>
                                 </span>

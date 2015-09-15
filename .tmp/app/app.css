@@ -7172,6 +7172,19 @@ and open the template in the editor.
   .footer .footer-nav {
     margin-bottom: 20px; }
 
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/09/2015, 10:56:14 PM
+    Author     : craig
+*/
+@media (max-width: 470px) {
+  .loader-gif {
+    width: 100%; } }
+
 .modal-primary .modal-header,
 .modal-info .modal-header,
 .modal-success .modal-header,
@@ -7786,6 +7799,9 @@ and open the template in the editor.
   font-style: italic;
   color: red;
   margin-top: 5px; }
+
+.form-alert.alert {
+  margin: 20px 0 0 0; }
 
 .form-footer {
   margin-top: 50px; }

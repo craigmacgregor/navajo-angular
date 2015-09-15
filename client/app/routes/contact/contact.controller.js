@@ -4,7 +4,7 @@ angular.module('navajoAngularApp')
   .controller('ContactCtrl', function ($scope, $rootScope, $location, $http, $routeParams) {
    
     $scope.contact = {};
-    
+    $scope.error = false;
     $scope.success = $routeParams.success;
         
     $scope.resetForm = function(){
@@ -17,17 +17,24 @@ angular.module('navajoAngularApp')
     };
       
     $scope.submitForm = function(){
+        $scope.error = false;
+        var req = {
+            method: "post",
+            url: "/api/send-contact-form",
+            header: "application/json"
+        };
         
-        //@TODO: change to post when hitting real service
-        $http.get('api/contact.json', $scope.contact).
-        then(function(response) {
-
-           if(response.data.response === "SUCCESS"){
+        $http(req)
+          .then(function(response){
+              console.log(response);
+            if(response.data.response === "SUCCESS"){
                $location.path("contact/success");
+           }else{
+               $scope.error = true;
            }
-
-        }, function(response) {
-            //error
+        },function(err){
+            console.log(err);
+            $scope.error = true;
         });
         
     };
