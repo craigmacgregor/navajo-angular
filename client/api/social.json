@@ -1,0 +1,50 @@
+[
+    {
+        "name" : "Facebook",
+        "icon" : "/assets/images/social/facebook.png",
+        "link" : "https://www.facebook.com/NAVCoin",
+        "button" : "Go to Facebook"
+    },
+    {
+        "name" : "Twitter",
+        "icon" : "/assets/images/social/twitter.png",
+        "link" : "https://twitter.com/NavCoin",
+        "button" : "Go to Twitter"
+    },
+    {
+        "name" : "Reddit",
+        "icon" : "/assets/images/social/reddit.png",
+        "link" : "http://www.reddit.com/r/navajocoin",
+        "button" : "Go to Reddit"
+    },
+    {
+        "name" : "Bitcointalk",
+        "icon" : "/assets/images/social/bitcointalk.png",
+        "link" : "https://bitcointalk.org/index.php?topic=679791",
+        "button" : "Go to Bitcointalk"
+    },
+    {
+        "name" : "Navcointalk",
+        "icon" : "/assets/images/social/navcointalk.png",
+        "link" : "http://navcointalk.org/",
+        "button" : "Go to Navcointalk"
+    },
+    {
+        "name" : "Slack",
+        "icon" : "/assets/images/social/slack.png",
+        "link" : "https://navajocoin.slack.com",
+        "button" : "Go to Slack"
+    },
+    {
+        "name" : "Cryptocereal",
+        "icon" : "/assets/images/social/cryptocereal.jpg",
+        "link" : "https://www.cryptocereal.com",
+        "button" : "Go to Cryptocereal"
+    },
+    {
+        "name" : "Kiwichat IRC",
+        "icon" : "/assets/images/social/kiwichat.png",
+        "link" : "https://kiwiirc.com/client/irc.freenode.net/navajocoin",
+        "button" : "Go to Kiwichat IRC"
+    }
+]

@@ -8,16 +8,25 @@ angular.module('navajoAngularApp')
             'link': '/'
         },
         {
+<<<<<<< HEAD
             'title': 'Bounty',
             'link': '/bounty'
         },
         {
             'title': 'Charity',
             'link': '/charity'
+=======
+            'title': 'Projects',
+            'link': '/projects'
+>>>>>>> dev
         },
         {
             'title': 'Downloads',
             'link': '/downloads'
+        },
+        {
+            'title': 'Exchanges',
+            'link': '/exchanges'
         },
         {
             'title': 'Tools',
@@ -33,20 +42,43 @@ angular.module('navajoAngularApp')
                 {
                     'title': 'Faucet',
                     'link': '/faucet'
+                },
+                {
+                    'title': 'Market Cap',
+                    'link': 'http://coinmarketcap.com/currencies/navajo',
+                    'target': 'e'
                 }
             ]
         },
         {
-            'title': 'Projects',
-            'link': '/projects'
+            'title': 'Community',
+            'items' : [
+                {
+                    'title': 'Social Channels',
+                    'link': '/social'
+                },
+                {
+                    'title': 'Foundation',
+                    'link': '/foundation'
+                },
+                {
+                    'title': 'Contact',
+                    'link': '/contact'
+                }
+            ]
         },
         {
-            'title': 'Foundation',
-            'link': '/foundation'
-        },
-        {
-            'title': 'Contact',
-            'link': '/contact'
+            'title': 'Contribute',
+            'items' : [
+                {
+                    'title': 'Bounty',
+                    'link': '/bounty'
+                },
+                {
+                    'title': 'Charity',
+                    'link': '/charity'
+                }
+            ]
         }
     ];
 

@@ -1,0 +1,40 @@
+[
+    {
+        "name" : "Bittrex",
+        "icon" : "/assets/images/exchanges/bittrex.png",
+        "link" : "https://bittrex.com/Market/Index?MarketName=BTC-NAV",
+        "button" : "Go to Bittrex"
+    },
+    {
+        "name" : "Poloniex",
+        "icon" : "/assets/images/exchanges/poloniex.png",
+        "link" : "https://poloniex.com/exchange#btc_nav",
+        "button" : "Go to Poloniex"
+    },
+    {
+        "name" : "AlcurEX",
+        "icon" : "/assets/images/exchanges/alcurex.png",
+        "link" : "https://alcurex.org/index.php/crypto/index",
+        "button" : "Go to AlcurEX"
+    },
+    {
+        "name" : "Yobit",
+        "icon" : "/assets/images/exchanges/yobit.png",
+        "link" : "https://yobit.net/en/trade/NAV/BTC",
+        "alert" : {
+            "type": "alert-info",
+            "text": "Wallet under maintenance."
+        },
+        "button" : "Go to Yobit"
+    },
+    {
+        "name" : "Bter",
+        "icon" : "/assets/images/exchanges/bter.png",
+        "link" : "https://bter.com/trade/nav_btc",
+        "alert" : {
+            "type": "alert-danger",
+            "text": "Users reporting suspicious activity on this exchange. Trade at your own risk."
+        },
+        "button" : "Go to Bter"
+    }
+]

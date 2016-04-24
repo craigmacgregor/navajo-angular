@@ -79,12 +79,17 @@ $font-xxs: 10px;
 @import 'routes/charity/charity.scss';
 @import 'routes/contact/contact.scss';
 @import 'routes/downloads/downloads.scss';
+@import 'routes/exchanges/exchanges.scss';
 @import 'routes/faucet/faucet.scss';
 @import 'routes/foundation/foundation.scss';
 @import 'routes/index/index.scss';
 @import 'routes/projects/projects.scss';
 @import 'routes/rich-list/rich-list.scss';
+<<<<<<< HEAD
 @import 'routes/upgrade/upgrade.scss';
+=======
+@import 'routes/social/social.scss';
+>>>>>>> dev
 @import 'global/backgrounds.scss';
 @import 'global/base.scss';
 @import 'global/colors.scss';

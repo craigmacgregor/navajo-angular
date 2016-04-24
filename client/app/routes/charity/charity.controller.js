@@ -6,7 +6,11 @@ angular.module('navajoAngularApp')
         $scope.navLoading = true;
         $scope.navError = false;
         
+<<<<<<< HEAD
         var navExplorer = 'http://www.navajocoin.org/abe/address/sRiAYMxKcqZWAcLbmsWB3oaQRcJVAsqzEZ';
+=======
+        var navExplorer = 'http://www.navcoin.org/abe/address/sRiAYMxKcqZWAcLbmsWB3oaQRcJVAsqzEZ';
+>>>>>>> dev
         
         if ($window.location.hostname === 'localhost') {
             navExplorer = '/explorer.html';

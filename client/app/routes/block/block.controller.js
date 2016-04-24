@@ -6,7 +6,7 @@ angular.module('navajoAngularApp')
         $scope.loading = true;
 
         try{
-            document.domain = "navajocoin.org";
+            document.domain = "navcoin.org";
         }catch(err){
             //console.log(err);
         }

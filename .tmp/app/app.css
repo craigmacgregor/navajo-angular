@@ -7250,6 +7250,15 @@ and open the template in the editor.
 .contact-check {
   margin-right: 10px; }
 
+.exchanges-icon {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 0 10px 0; }
+
+.exchanges-alert {
+  margin: 20px;
+  padding: 10px; }
+
 #faucet-iframe {
   border: 0;
   width: 100%;
@@ -7337,8 +7346,15 @@ and open the template in the editor.
 .project-caption {
   margin-top: 5px; }
 
+<<<<<<< HEAD
 .charity-image-row {
   margin: 40px 0; }
+=======
+.exchanges-icon {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 0 10px 0; }
+>>>>>>> dev
 
 /*
 To change this license header, choose License Headers in Project Properties.

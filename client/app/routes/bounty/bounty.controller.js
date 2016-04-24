@@ -32,7 +32,11 @@ angular.module('navajoAngularApp')
                 $scope.btcLoading = false;
         });
         
+<<<<<<< HEAD
         var navExplorer = 'http://www.navajocoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen';
+=======
+        var navExplorer = 'http://www.navcoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen';
+>>>>>>> dev
         
         if ($window.location.hostname === 'localhost') {
             navExplorer = '/explorer.html';

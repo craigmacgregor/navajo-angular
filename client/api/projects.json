@@ -8,10 +8,13 @@
             "title" : "Merchant Gateway",
             "text" : "We will implement both point of sale tools for merhcants to allow users to purchase real products with their NAV coins online and in store."
         },   
+<<<<<<< HEAD
         {
             "title" : "NAV Anonymous Challenge",
             "text" : "We will reinstate the bounty which was offered to anyone who can crack the anonymous network. The previous bount was unclaimed and this fact backs up our confidence that our system is unbreakable"
         },
+=======
+>>>>>>> dev
         {
             "title" : "Official Promotional Video",
             "text" : "We will make a short video, which will summarise all features of Navajo Coin and explain it's Anonymous Technology to viewers in easy way. This will attract more average users and investors to Navajo Coin."
@@ -27,17 +30,32 @@
         {
             "title" : "Decentralization Implementation",
             "text" : "We are now developing the release candidate for the anonymous decentralization. We are removing the reliance on an API to select an incoming server for processing anonymous transactions. Instead, the server list will be written into the wallet itself and distributed through the existing peer to peer mesh network which distributes the blockchain. Each server will become self registering so they can be brought online and begin processing transactions without human intervention.",
+<<<<<<< HEAD
             "progress" : 45
+=======
+            "progress" : 60
+>>>>>>> dev
         },
         {
             "title" : "Rasperry Pi Staking Unit",
             "text" : "We are in the process of designing and developing a Raspberry Pi controlled Staking Unit for NAV. The final implementation will be a Raspberry Pi with an interactive touch screen which allows you to setup the wallet address, view the balance and withdraw the coins all from the touch screen. All you will need to do is plug it into the network, send it some coins to stake and it will begin earning you coins. This will allow coins to be earned with very minimal setup and running costs.",
+<<<<<<< HEAD
             "progress" : 40
+=======
+            "progress" : 50
+>>>>>>> dev
         }
     ],
     
     "complete" : [
         {
+<<<<<<< HEAD
+=======
+            "title" : "NAV Anonymous Challenge",
+            "text" : "We will reinstate the bounty which was offered to anyone who can crack the anonymous network. The previous bount was unclaimed and this fact backs up our confidence that our system is unbreakable"
+        },
+        {
+>>>>>>> dev
             "title" : "Decentralization Research & Development",
             "text" : "The Research & Development phase of the anonymous decentralization has been completed. The white paper has now been released to the public, press releases sent and NIP1 has been initialized in github."
         },

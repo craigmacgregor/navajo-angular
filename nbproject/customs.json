@@ -1,0 +1,8 @@
+{
+    "attributes": {
+        "contact-reset": {
+            "context": "button"
+        }
+    },
+    "elements": {}
+}
