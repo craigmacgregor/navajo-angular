@@ -12,7 +12,12 @@ and open the template in the editor.
     height: 1px;
     background-color: $grey;
     margin: 20px auto;
-    
+    &.dashed {
+        background-color: transparent;
+        height: 0px;
+        border-bottom: 1px dashed $grey;
+        margin: 20px auto 30px auto;
+    }
 }
 
 .divider-row {

@@ -39,6 +39,7 @@ angular.module('navajoAngularApp')
         
     };
         
+        
   }).directive('contactReset', function () {
     return {
       link: function (scope, elm, attrs, ctrl) {

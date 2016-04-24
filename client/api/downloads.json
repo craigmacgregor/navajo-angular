@@ -3,15 +3,15 @@
         "name" : "Windows Wallet (zip)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.0.0_Windows_IRC.zip",
-        "button" : "Download (3.0.0)"
+        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.2.0_Windows_Wallet.zip",
+        "button" : "Download (3.2.0)"
     },
     {
         "name" : "Windows Installer (exe)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.0.0.exe",
-        "button" : "Download (3.0.0)"
+        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.2.0.exe",
+        "button" : "Download (3.2.0)"
     },
     {
         "name" : "Mac Wallet",
@@ -23,14 +23,14 @@
         "name" : "Linux Source",
         "type" : "Wallet Download",
         "icon" : "fa-linux",
-        "link" : "https://github.com/sherlockcoin/navajocoin/commit/7859e48a0f50315cd247caf675c3563fa4c06c06",
-        "button" : "Download (3.0.0)"
+        "link" : "https://github.com/navajocoindev/navajocoin/tree/master",
+        "button" : "Download (3.2.0)"
     },
     {
         "name" : "Github",
         "type" : "Source Code",
         "icon" : "fa-github",
-        "link" : "https://github.com/sherlockcoin/navajocoin",
+        "link" : "https://github.com/navajocoindev/navajocoin",
         "button" : "View Source"
     },
     {
@@ -41,10 +41,17 @@
         "button" : "Download"
     },
     {
-        "name" : "Whitepaper (pdf)",
+        "name" : "Decentralization White Paper (pdf)",
         "type" : "Resource Download",
         "icon" : "fa-file-pdf-o",
-        "link" : "http://www.navajocoin.org/files/navajocoin.pdf",
+        "link" : "http://www.navajocoin.org/files/nav-decentralized-whitepaper.pdf",
+        "button" : "Download"
+    },
+    {
+        "name" : "Anonymous White Paper 2015 (pdf)",
+        "type" : "Resource Download",
+        "icon" : "fa-file-pdf-o",
+        "link" : "http://www.navajocoin.org/files/navajo_whitepaper_march2015.pdf",
         "button" : "Download"
     },
     {

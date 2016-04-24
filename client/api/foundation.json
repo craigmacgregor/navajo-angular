@@ -3,14 +3,20 @@
         {
             "name" : "Soopy452000",
             "title" : "Lead Developer",
-            "profile" : "https://bitcointalk.org/index.php?action=profile;u=158610"
+            "profile" : "https://github.com/sherlockcoin"
         },
         {
             "name" : "Craig MacGregor",
             "alias" : "Pakage",
             "title" : "Senior Developer",
             "picture" : "",
-            "profile" : "https://bitcointalk.org/index.php?action=profile;u=354673"
+            "profile" : "https://github.com/craigmacgregor"
+        },
+        {
+            "name" : "Paul Headington",
+            "alias" : "Gilgamesh",
+            "title" : "Senior Developer",
+            "profile" : "https://github.com/paul-headington"
         },
         {
             "name" : "Shahim",
@@ -23,8 +29,9 @@
             "profile" : "https://bitcointalk.org/index.php?action=profile;u=312847"
         },
         {
-            "name" : "Sophia Lees",
-            "title" : "Public Relations"
+            "name" : "Sophia Lockhart",
+            "title" : "Business Strategist",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=681364"
         }        
     ],
     "community" : [

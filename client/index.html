@@ -7,17 +7,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="/">
-    <title>Navajo Coin</title>
+    <title>NAV Coin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    
+
     <meta property="og:url" content="http://www.navajocoin.org" />
     <meta property="og:title" content="Anonymous Crypto Currency" />
-    <meta property="og:site_name" content="Navajo Coin"/>
-    <meta property="og:description" content="Navajo Coin is the worlds first fully anonymous cryptocurrency. Navajo Coin offers optional anonymous transactions that are sent through our double encrypted network of servers which all run on decentralized block chain technology." />
+    <meta property="og:site_name" content="NAV Coin"/>
+    <meta property="og:description" content="NAV Coin is the worlds first fully anonymous cryptocurrency. NAV Coin offers optional anonymous transactions that are sent through our double encrypted network of servers which all run on decentralized block chain technology." />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.navajocoin.org/assets/images/navajo-coin-social.png" />
-          
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
@@ -29,20 +29,21 @@
       <link rel="stylesheet" href="app/app.css">
       <!-- endinjector -->
     <!-- endbuild -->
-    
+
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    
+
   </head>
   <body ng-app="navajoAngularApp" ng-controller="MainCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
     <div ng-include="'app/components/navbar/navbar.html'"></div>
+    <div ng-include="'app/components/announcement/announcement.html'"></div>
     <!-- Add your site or application content here -->
     <div ng-view=""></div>
     <div ng-include="'app/components/footer/footer.html'"></div>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -74,6 +75,7 @@
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/components/announcement/announcement.controller.js"></script>
           <script src="app/components/bootstrap-tabs/bootstrap-tabs.directive.js"></script>
           <script src="app/components/cm-validation/cm-alphanum.js"></script>
           <script src="app/components/cm-validation/cm-email.js"></script>
@@ -91,6 +93,10 @@
           <script src="app/main/main.controller.js"></script>
           <script src="app/routes/block/block.controller.js"></script>
           <script src="app/routes/block/block.js"></script>
+          <script src="app/routes/bounty/bounty.controller.js"></script>
+          <script src="app/routes/bounty/bounty.js"></script>
+          <script src="app/routes/charity/charity.controller.js"></script>
+          <script src="app/routes/charity/charity.js"></script>
           <script src="app/routes/contact/contact.controller.js"></script>
           <script src="app/routes/contact/contact.js"></script>
           <script src="app/routes/downloads/downloads.controller.js"></script>
@@ -105,6 +111,8 @@
           <script src="app/routes/projects/projects.js"></script>
           <script src="app/routes/rich-list/rich-list.controller.js"></script>
           <script src="app/routes/rich-list/rich-list.js"></script>
+          <script src="app/routes/upgrade/upgrade.controller.js"></script>
+          <script src="app/routes/upgrade/upgrade.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->
 </body>

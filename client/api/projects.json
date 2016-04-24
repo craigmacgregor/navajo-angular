@@ -1,45 +1,54 @@
 {
     "pending" : [
-        
         {
-            "title" : "NAV Masternodes System",
-            "text" : "We are planning to add masternodes to the network. Each NAV user will be able to run his/her own masternode for a specified amount of NAV coins and receive more coins in return, bu running NAV masternode."
+            "title" : "Anonymous Merchant Integration",
+            "text" : "We will integrate the merchant gateway with our anonymous network to allow for the anonymous purchasing of products."
         },
         {
-            "title" : "NAV Cooperation System",
-            "text" : "This System will involve Community more in the project by creating certain privileges for holding a specified amount of NAV coins. There will be 3 groups, each having other tasks and rights in planning & creating the future of Navajo Coin."
+            "title" : "Merchant Gateway",
+            "text" : "We will implement both point of sale tools for merhcants to allow users to purchase real products with their NAV coins online and in store."
+        },   
+        {
+            "title" : "NAV Anonymous Challenge",
+            "text" : "We will reinstate the bounty which was offered to anyone who can crack the anonymous network. The previous bount was unclaimed and this fact backs up our confidence that our system is unbreakable"
         },
         {
             "title" : "Official Promotional Video",
             "text" : "We will make a short video, which will summarise all features of Navajo Coin and explain it's Anonymous Technology to viewers in easy way. This will attract more average users and investors to Navajo Coin."
-        }        
+        }     
     ],
     
     "inProgress" : [
         {
-            "title" : "Press Releases and new Marketing Material",
-            "text" : "We are working on improving our marketing strategy: Press releases, new & simple white paper as well as infographic are being prepared.",
-            "progress" : 85
+            "title" : "Hierarchical Deterministic Wallet Implementaion",
+            "text" : "Based on Bitcoin's BIP32 implementation, this will allow users to send & receive their NAV coins without needing to store the entire blockchain, simply using their mobile devices or a web wallet.",
+            "progress" : 65
         },
         {
-            "title" : "Web Wallet",
-            "text" : "It's designed to allow Everyone to use Navajo Coin without having a client installed on computer. It will make Navajo Coin even easier to use for an average user.",
-            "progress" : 75
+            "title" : "Decentralization Implementation",
+            "text" : "We are now developing the release candidate for the anonymous decentralization. We are removing the reliance on an API to select an incoming server for processing anonymous transactions. Instead, the server list will be written into the wallet itself and distributed through the existing peer to peer mesh network which distributes the blockchain. Each server will become self registering so they can be brought online and begin processing transactions without human intervention.",
+            "progress" : 45
         },
         {
-            "title" : "Decentralization of NAV Anonymous Technology",
-            "text" : "Our next big step in improving NAV Anonymous Transactions System is decentralizing this technology. We are working on decentralising the anonymous nodes so that anyone running a webserver can install it and process Anonymous transactions.",
-            "progress" : 60
-        },
-        {
-            "title" : "Mobile Wallet",
-            "text" : "Based on Web Wallet, Mobile version will allow Navajo Coin users to send & receive their NAV coins on the move, simply with using their mobile devices.",
-            "progress" : 50
+            "title" : "Rasperry Pi Staking Unit",
+            "text" : "We are in the process of designing and developing a Raspberry Pi controlled Staking Unit for NAV. The final implementation will be a Raspberry Pi with an interactive touch screen which allows you to setup the wallet address, view the balance and withdraw the coins all from the touch screen. All you will need to do is plug it into the network, send it some coins to stake and it will begin earning you coins. This will allow coins to be earned with very minimal setup and running costs.",
+            "progress" : 40
         }
-        
     ],
     
     "complete" : [
+        {
+            "title" : "Decentralization Research & Development",
+            "text" : "The Research & Development phase of the anonymous decentralization has been completed. The white paper has now been released to the public, press releases sent and NIP1 has been initialized in github."
+        },
+        {
+            "title" : "Rasperry Pi Staking Unit Beta",
+            "text" : "The Beta version of the Raspberry Pi image used on the staking devices is ready to be distributed for testing."
+        },
+        {
+            "title" : "Press Releases and new Marketing Material",
+            "text" : "We are working on improving our marketing strategy: Press releases, new & simple white paper as well as infographic are being prepared."
+        },
         {
             "title" : "Navajo Coin Redesign",
             "text" : "We have decided that Navajo Coin needs new, fresh and more professional look including NAV logo, announcement's OP and wallet design."
@@ -62,7 +71,7 @@
         },
         {
             "title" : "Anonymous Transactions Hard Fork",
-            "text" : "We are very pleased to announce the start of the release phase for our Anonymous Technology to the Main Navajocoin Block Chain! Since the success of the unencrypted beta test of the transaction infrastructure, the Dev team has been busily working, adding the asymmetric double encryption to the anonymous system as well as SSL across all of the network nodes. We will be ready to hardfork the main block chain on the 9th of March 2015!"
+            "text" : "We are very pleased to announce the start of the release phase for our Anonymous Technology to the Main NAV Block Chain! Since the success of the unencrypted beta test of the transaction infrastructure, the Dev team has been busily working, adding the asymmetric double encryption to the anonymous system as well as SSL across all of the network nodes. We will be ready to hardfork the main block chain on the 9th of March 2015!"
         },
         {
             "title" : "Anonymous Transactions Beta Test",
@@ -82,7 +91,7 @@
         },
         {
             "title" : "Navajo Faucet",
-            "text" : "We will be adding a Navajo faucet to the website. You will be able to register your wallet address with the faucet and be in the lottery to get sent free Navajo coins."
+            "text" : "We will be adding a Navajo faucet to the website. You will be able to register your wallet address with the faucet and be in the lottery to get sent free NAVs."
         },
         {
             "title" : "Beta Wallet Messaging System",

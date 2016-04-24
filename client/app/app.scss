@@ -68,12 +68,15 @@ $font-xxs: 10px;
 
 // Component styles are injected through grunt
 // injector
+@import 'components/announcement/announcement.scss';
 @import 'components/footer/footer.scss';
 @import 'components/loader/loader.scss';
 @import 'components/modal/modal.scss';
 @import 'components/navbar/navbar.scss';
 @import 'main/main.scss';
 @import 'routes/block/block.scss';
+@import 'routes/bounty/bounty.scss';
+@import 'routes/charity/charity.scss';
 @import 'routes/contact/contact.scss';
 @import 'routes/downloads/downloads.scss';
 @import 'routes/faucet/faucet.scss';
@@ -81,6 +84,7 @@ $font-xxs: 10px;
 @import 'routes/index/index.scss';
 @import 'routes/projects/projects.scss';
 @import 'routes/rich-list/rich-list.scss';
+@import 'routes/upgrade/upgrade.scss';
 @import 'global/backgrounds.scss';
 @import 'global/base.scss';
 @import 'global/colors.scss';

@@ -8,6 +8,14 @@ angular.module('navajoAngularApp')
             'link': '/'
         },
         {
+            'title': 'Bounty',
+            'link': '/bounty'
+        },
+        {
+            'title': 'Charity',
+            'link': '/charity'
+        },
+        {
             'title': 'Downloads',
             'link': '/downloads'
         },

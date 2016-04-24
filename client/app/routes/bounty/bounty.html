@@ -1,0 +1,89 @@
+<div class="default-container row default-title">
+
+    <div class="col-xs-12">
+        
+        <h2 class="font-grape">Bounty</h2>
+        <p class="font-grey-dark italic">Can you crack the code?</p>
+    </div>
+    
+</div>
+
+<loading-animation ng-show="btcLoading || navLoading"></loading-animation>
+<div class="colored-unit white" ng-show="!btcLoading && !navLoading">
+
+    <div class="default-container row">
+        <div class="col-xs-12">
+            
+            <p>
+                It’s pretty easy to get bank records if you’re a bank, government official or perhaps Mr. Robot; even the Bitcoin can be traced to a simple IP address. 
+                However, we have created a piece of double encryption sub chain technology that not even a genius can unravel. Are you more than a genius?
+            </p>
+            
+            <p>
+                You’ll need to know more than my mother’s maiden name and the name of my fist pet to crack this one.
+            </p>
+            
+
+            <p>We're offering a community raised bounty to anyone who can successfully trace a transaction routed through the NAV anonymous network. 
+                To be eligible to receive the bounty, we have to be able to reproduce your findings.
+                If you think you've cracked the code, email your results to <a href='mailto:navbounty@gmail.com'>navbounty@gmail.com</a>.
+            </p>
+            <p>
+                If you'd like to see the bounty grow and drive interest in NAV then please make a donation to either of the wallets below and share the bounty with your networks.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="colored-unit grey" ng-show="!btcLoading && !navLoading">
+
+    <div class="default-container row">
+        <div class="col-sm-6 center">
+            
+            <h3>NAV Bounty Wallet</h3>
+
+            <p class='bold bounty-address'>Address: sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen</p>
+            <p class="bold bounty-button">
+                <a class="btn btn-secondary" href="http://www.navajocoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen" target="e">View in Block Explorer</a>
+            </p>
+
+            <p class='bold' ng-bind-html="navDetails" ng-if="!navError && navDetails"></p>
+            <p class="bold" ng-if="navError || !navDetails">
+                Something when wrong, please try again later.
+            </p>        
+
+        </div>
+        
+        <div class="col-xs-12 visible-xs">
+            <div class="divider dashed"></div>
+        </div>        
+
+        <div class="col-sm-6 center">
+            
+            <h3>Bitcoin Bounty Wallet</h3>
+
+            <p class='bold bounty-address'>Address: 12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ</p>
+            <p class='bold bounty-button'>
+                <a class="btn btn-secondary" href="https://blockexplorer.com/address/12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ" target="e">View in Block Explorer</a>
+            </p>
+            <p class='bold' ng-if="!btcError && (bitcoinBalance === 0 || bitcoinBalance > 0)">
+                Balance: {{bitcoinBalance}} BTC<br />
+                Total Received:  {{bitcoinTReceived}} BTC<br />
+                Total Sent: {{bitcoinTSent}} BTC<br />
+                Total Unconfirmed: {{bitcoinUnconfirmed}} BTC
+            </p>
+            <p class="bold" ng-if="btcError || (bitcoinBalance !== 0 && !bitcoinBalance)">
+                Something when wrong, please try again later.
+            </p>            
+
+        </div>
+
+    </div>
+</div>
+
+<div class="default-container row " ng-show="!btcLoading && !navLoading">
+    <div class="col-xs-12">
+        <p class="bounty-terms">
+            <span class="bold">Terms and Conditions:</span> The bounty will run for a certain period of time (TBC) and if the bounty remains unclaimed at the end of this period, the NAV Foundation may either extend the bounty period or use the funds (or part there of) to help cover some of the running costs of the NAV anonymous network. To claim the bounty you have to privately send reproducible positive results of a traced transaction sent through our anonymous system to navbounty@gmail.com. Publicly posting your findings will result in forfeiting the bounty. Awarding the bounty is up to the discretion of the NAV Development Team. All Rights Reserved.
+        </p>
+    </div>
+</div>
