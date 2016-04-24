@@ -1,11 +1,11 @@
 <div class="default-container row default-title">
 
     <div class="col-xs-12">
-        
+
         <h2 class="font-grape">Bounty</h2>
         <p class="font-grey-dark italic">Can you crack the code?</p>
     </div>
-    
+
 </div>
 
 <loading-animation ng-show="btcLoading || navLoading"></loading-animation>
@@ -13,18 +13,18 @@
 
     <div class="default-container row">
         <div class="col-xs-12">
-            
+
             <p>
-                It’s pretty easy to get bank records if you’re a bank, government official or perhaps Mr. Robot; even the Bitcoin can be traced to a simple IP address. 
+                It’s pretty easy to get bank records if you’re a bank, government official or perhaps Mr. Robot; even the Bitcoin can be traced to a simple IP address.
                 However, we have created a piece of double encryption sub chain technology that not even a genius can unravel. Are you more than a genius?
             </p>
-            
+
             <p>
                 You’ll need to know more than my mother’s maiden name and the name of my fist pet to crack this one.
             </p>
-            
 
-            <p>We're offering a community raised bounty to anyone who can successfully trace a transaction routed through the NAV anonymous network. 
+
+            <p>We're offering a community raised bounty to anyone who can successfully trace a transaction routed through the NAV anonymous network.
                 To be eligible to receive the bounty, we have to be able to reproduce your findings.
                 If you think you've cracked the code, email your results to <a href='mailto:navbounty@gmail.com'>navbounty@gmail.com</a>.
             </p>
@@ -38,31 +38,27 @@
 
     <div class="default-container row">
         <div class="col-sm-6 center">
-            
+
             <h3>NAV Bounty Wallet</h3>
 
             <p class='bold bounty-address'>Address: sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen</p>
             <p class="bold bounty-button">
-<<<<<<< HEAD
-                <a class="btn btn-secondary" href="http://www.navajocoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen" target="e">View in Block Explorer</a>
-=======
                 <a class="btn btn-secondary" href="http://www.navcoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen" target="e">View in Block Explorer</a>
->>>>>>> dev
             </p>
 
             <p class='bold' ng-bind-html="navDetails" ng-if="!navError && navDetails"></p>
             <p class="bold" ng-if="navError || !navDetails">
                 Something when wrong, please try again later.
-            </p>        
+            </p>
 
         </div>
-        
+
         <div class="col-xs-12 visible-xs">
             <div class="divider dashed"></div>
-        </div>        
+        </div>
 
         <div class="col-sm-6 center">
-            
+
             <h3>Bitcoin Bounty Wallet</h3>
 
             <p class='bold bounty-address'>Address: 12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ</p>
@@ -77,7 +73,7 @@
             </p>
             <p class="bold" ng-if="btcError || (bitcoinBalance !== 0 && !bitcoinBalance)">
                 Something when wrong, please try again later.
-            </p>            
+            </p>
 
         </div>
 

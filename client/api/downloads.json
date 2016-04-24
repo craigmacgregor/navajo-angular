@@ -3,25 +3,15 @@
         "name" : "Windows Wallet (zip)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-<<<<<<< HEAD
-        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.2.0_Windows_Wallet.zip",
-        "button" : "Download (3.2.0)"
-=======
         "link" : "http://www.navcoin.org/files/NavCoin%203.3.0%20Windows%20Wallet.zip",
         "button" : "Download (3.3.0)"
->>>>>>> dev
     },
     {
         "name" : "Windows Installer (exe)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-<<<<<<< HEAD
-        "link" : "http://www.navajocoin.org/files/NavajoCoin_3.2.0.exe",
-        "button" : "Download (3.2.0)"
-=======
         "link" : "http://www.navcoin.org/files/NavCoin_3.3.0.exe",
         "button" : "Download (3.3.0)"
->>>>>>> dev
     },
     {
         "name" : "Mac Wallet",
@@ -34,11 +24,7 @@
         "type" : "Wallet Download",
         "icon" : "fa-linux",
         "link" : "https://github.com/navajocoindev/navajocoin/tree/master",
-<<<<<<< HEAD
-        "button" : "Download (3.2.0)"
-=======
         "button" : "Download (3.3.0)"
->>>>>>> dev
     },
     {
         "name" : "Github",
@@ -58,22 +44,14 @@
         "name" : "Decentralization White Paper (pdf)",
         "type" : "Resource Download",
         "icon" : "fa-file-pdf-o",
-<<<<<<< HEAD
-        "link" : "http://www.navajocoin.org/files/nav-decentralized-whitepaper.pdf",
-=======
         "link" : "http://www.navcoin.org/files/nav-decentralized-whitepaper.pdf",
->>>>>>> dev
         "button" : "Download"
     },
     {
         "name" : "Anonymous White Paper 2015 (pdf)",
         "type" : "Resource Download",
         "icon" : "fa-file-pdf-o",
-<<<<<<< HEAD
-        "link" : "http://www.navajocoin.org/files/navajo_whitepaper_march2015.pdf",
-=======
         "link" : "http://www.navcoin.org/files/navajo_whitepaper_march2015.pdf",
->>>>>>> dev
         "button" : "Download"
     },
     {
