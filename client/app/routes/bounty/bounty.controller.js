@@ -3,50 +3,42 @@
 angular.module('navajoAngularApp')
   .controller('BountyCtrl', function ($scope, $http, $window, $q) {
 
+        $scope.bitcoinAddress = '15SBFTamJqXMyGS6crRNVgWfCM5iehJhX9';
+        $scope.navCoinAddress = 'NQH5nkBpxgjuEvqBRRbMJAKZB6UgVkwRNE';
+
         $scope.btcLoading = true;
         $scope.navLoading = true;
         $scope.navError = false;
         $scope.btcError = false;
 
-        var bitcoinBalance = 'https://blockexplorer.com/api/addr/12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ/balance';
-        var bitcoinTReceived = 'https://blockexplorer.com/api/addr/12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ/totalReceived';
-        var bitcoinTSent = 'https://blockexplorer.com/api/addr/12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ/totalSent';
-        var bitcoinUnconfirmed = 'https://blockexplorer.com/api/addr/12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ/unconfirmedBalance';
+        var bitcoinBalance = 'https://blockchain.info/q/addressbalance/' + $scope.bitcoinAddress;
 
         var promise1 = $http.get(bitcoinBalance);
-        var promise2 = $http.get(bitcoinTReceived);
-        var promise3 = $http.get(bitcoinTSent);
-        var promise4 = $http.get(bitcoinUnconfirmed);
 
-        $q.all([promise1, promise2, promise3, promise4]).
+        $q.all([promise1]).
             then(function(response) {
                 $scope.bitcoinBalance = response[0].data / 100000000;
-                $scope.bitcoinTReceived = response[1].data / 100000000;
-                $scope.bitcoinTSent = response[2].data / 100000000;
-                $scope.bitcoinUnconfirmed = response[3].data / 100000000;
-
                 $scope.btcLoading = false;
             }, function(response) {
                 //error
                 $scope.btcError = true;
                 $scope.btcLoading = false;
         });
-        
-        var navExplorer = 'http://www.navcoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen';
 
-        if ($window.location.hostname === 'localhost') {
-            navExplorer = '/explorer.html';
-        }
+        var navBalance = "http://www.navcoin.org/api/get-nav-balance/address/" + $scope.navCoinAddress;
 
-        $http.get(navExplorer).
-                then(function(response) {
-                var explorerPage = angular.element(response.data);
-                var shortlink = explorerPage.find('.shortlink');
-                $scope.navDetails = shortlink.next().html();
+        var promiseN1 = $http.get(navBalance);
+
+        $q.all([promiseN1]).
+            then(function(response) {
+              console.log(response);
+                $scope.navBalance = response[0].data.data.balance;
                 $scope.navLoading = false;
             }, function(response) {
                 //error
+                console.log(response);
                 $scope.navError = true;
                 $scope.navLoading = false;
         });
+
   });

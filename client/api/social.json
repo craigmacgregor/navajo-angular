@@ -24,12 +24,6 @@
         "button" : "Go to Bitcointalk"
     },
     {
-        "name" : "Navcointalk",
-        "icon" : "/assets/images/social/navcointalk.png",
-        "link" : "http://navcointalk.org/",
-        "button" : "Go to Navcointalk"
-    },
-    {
         "name" : "Slack",
         "icon" : "/assets/images/social/slack.png",
         "link" : "https://navajocoin.slack.com",
@@ -40,11 +34,5 @@
         "icon" : "/assets/images/social/cryptocereal.jpg",
         "link" : "https://www.cryptocereal.com",
         "button" : "Go to Cryptocereal"
-    },
-    {
-        "name" : "Kiwichat IRC",
-        "icon" : "/assets/images/social/kiwichat.png",
-        "link" : "https://kiwiirc.com/client/irc.freenode.net/navajocoin",
-        "button" : "Go to Kiwichat IRC"
     }
 ]

@@ -1,0 +1,34 @@
+.wp-posts {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .more-link {
+      @extend .btn;
+      @extend .btn-primary;
+  }
+}
+.wp-post-listing {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  .wp-caption-text {
+    @extend .italic;
+    @extend .font-grey-dark;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .wp-caption {
+    margin: 20px 0;
+    img {
+      margin: 0;
+    }
+  }
+}

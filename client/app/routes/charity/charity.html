@@ -43,16 +43,17 @@
 
             <h3>Kimochi Donation Wallet</h3>
 
-            <p class='bold bounty-address'>Address: sRiAYMxKcqZWAcLbmsWB3oaQRcJVAsqzEZ</p>
+            <p class='bold bounty-address'>Address: {{navCoinAddress}}</p>
             <p class="bold bounty-button">
-                <a class="btn btn-secondary" href="http://www.navcoin.org/abe/address/sRiAYMxKcqZWAcLbmsWB3oaQRcJVAsqzEZ" target="e">View in Block Explorer</a>
+                <a class="btn btn-secondary" href="https://chainz.cryptoid.info/nav/address.dws?{{navCoinAddress}}.htm" target="e">View in Block Explorer</a>
             </p>
 
-            <p class='bold' ng-bind-html="navDetails" ng-if="!navError && navDetails"></p>
-            <p class="bold" ng-if="navError || !navDetails">
-                Something when wrong, please try again later.
+            <p class='bold' ng-if="!navError && navBalance">
+                Balance: {{navBalance}} NAV
             </p>
-
+            <p class="bold" ng-if="navError || !navBalance">
+                Unable to display balance, please try again later.
+            </p>
         </div>
 
     </div>
@@ -193,19 +194,19 @@
 
         <div class="col-sm-6 col-sm-offset-3 center">
 
-            <h3>Kimochi Donation Wallet</h3>
+          <h3>Kimochi Donation Wallet</h3>
 
-            <p>You can donate NAV coins this wallet address and help Charles Cambridge and the Navajo tribe.</p>
+          <p class='bold bounty-address'>Address: {{navCoinAddress}}</p>
+          <p class="bold bounty-button">
+              <a class="btn btn-secondary" href="https://chainz.cryptoid.info/nav/address.dws?{{navCoinAddress}}.htm" target="e">View in Block Explorer</a>
+          </p>
 
-            <p class='bold bounty-address'>Address: sRiAYMxKcqZWAcLbmsWB3oaQRcJVAsqzEZ</p>
-            <p class="bold bounty-button">
-                <a class="btn btn-secondary" href="http://www.navcoin.org/abe/address/sRiAYMxKcqZWAcLbmsWB3oaQRcJVAsqzEZ" target="e">View in Block Explorer</a>
-            </p>
-
-            <p class='bold' ng-bind-html="navDetails" ng-if="!navError && navDetails"></p>
-            <p class="bold" ng-if="navError || !navDetails">
-                Something when wrong, please try again later.
-            </p>
+          <p class='bold' ng-if="!navError && navBalance">
+              Balance: {{navBalance}} NAV
+          </p>
+          <p class="bold" ng-if="navError">
+              Unable to display balance, please try again later.
+          </p>
 
         </div>
 

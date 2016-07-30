@@ -37,18 +37,21 @@
 <div class="colored-unit grey" ng-show="!btcLoading && !navLoading">
 
     <div class="default-container row">
+
         <div class="col-sm-6 center">
 
             <h3>NAV Bounty Wallet</h3>
 
-            <p class='bold bounty-address'>Address: sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen</p>
+            <p class='bold bounty-address'>Address: {{navCoinAddress}}</p>
             <p class="bold bounty-button">
-                <a class="btn btn-secondary" href="http://www.navcoin.org/abe/address/sVKbj8DddwjQ3aSVUSd4ywdeaBdvfWVVen" target="e">View in Block Explorer</a>
+                <a class="btn btn-secondary" href="https://chainz.cryptoid.info/nav/address.dws?{{navCoinAddress}}.htm" target="e">View in Block Explorer</a>
             </p>
 
-            <p class='bold' ng-bind-html="navDetails" ng-if="!navError && navDetails"></p>
-            <p class="bold" ng-if="navError || !navDetails">
-                Something when wrong, please try again later.
+            <p class='bold' ng-if="!navError && navBalance">
+                Balance: {{navBalance}} NAV
+            </p>
+            <p class="bold" ng-if="navError || !navBalance">
+                Can't display Balance, please try again later.
             </p>
 
         </div>
@@ -61,18 +64,15 @@
 
             <h3>Bitcoin Bounty Wallet</h3>
 
-            <p class='bold bounty-address'>Address: 12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ</p>
+            <p class='bold bounty-address'>Address: {{bitcoinAddress}}</p>
             <p class='bold bounty-button'>
-                <a class="btn btn-secondary" href="https://blockexplorer.com/address/12o8h4VPB1X61USLikkL68VFuCn3kHZWyZ" target="e">View in Block Explorer</a>
+                <a class="btn btn-secondary" href="https://blockexplorer.com/address/{{bitcoinAddress}}" target="e">View in Block Explorer</a>
             </p>
             <p class='bold' ng-if="!btcError && (bitcoinBalance === 0 || bitcoinBalance > 0)">
                 Balance: {{bitcoinBalance}} BTC<br />
-                Total Received:  {{bitcoinTReceived}} BTC<br />
-                Total Sent: {{bitcoinTSent}} BTC<br />
-                Total Unconfirmed: {{bitcoinUnconfirmed}} BTC
             </p>
             <p class="bold" ng-if="btcError || (bitcoinBalance !== 0 && !bitcoinBalance)">
-                Something when wrong, please try again later.
+                Can't display Balance, please try again later.
             </p>
 
         </div>

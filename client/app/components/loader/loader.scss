@@ -3,10 +3,14 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 15/09/2015, 10:56:14 PM
     Author     : craig
 */
+
+.loader-container {
+  margin-bottom: 40px;
+}
 
 .loader-gif {
     @media(max-width:470px){

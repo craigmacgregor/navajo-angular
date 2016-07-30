@@ -8,6 +8,10 @@ angular.module('navajoAngularApp')
             'link': '/'
         },
         {
+            'title': 'News',
+            'link': '/news'
+        },
+        {
             'title': 'Projects',
             'link': '/projects'
         },
@@ -24,11 +28,13 @@ angular.module('navajoAngularApp')
             'items' : [
                 {
                     'title': 'Block Explorer',
-                    'link': '/block-explorer'
+                    'link': 'https://chainz.cryptoid.info/nav/',
+                    'target': 'e'
                 },
                 {
                     'title': 'Rich List',
-                    'link': '/rich-list'
+                    'link': 'https://chainz.cryptoid.info/nav/#!rich',
+                    'target': 'e'
                 },
                 {
                     'title': 'Faucet',
@@ -55,12 +61,7 @@ angular.module('navajoAngularApp')
                 {
                     'title': 'Contact',
                     'link': '/contact'
-                }
-            ]
-        },
-        {
-            'title': 'Contribute',
-            'items' : [
+                },
                 {
                     'title': 'Bounty',
                     'link': '/bounty'

@@ -1,29 +1,30 @@
 <div class="default-container row default-title">
 
     <div class="col-xs-12">
-        
+
         <h2 class="font-grape">NAV Exchanges</h2>
         <p class="font-grey-dark italic">Where you can buy NAV Coins</p>
     </div>
-    
+
 </div>
 
 <loading-animation ng-if="loading"></loading-animation>
 
 <div class="default-container row" ng-if="!loading">
-    
+
     <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="item in data">
        <div class="font-black icon-tile icon-link-tile full-width relative exchanges-icon-tile">
+         <div ng-if="item.alert" class="exchanges-alert alert {{item.alert.type}}">{{item.alert.text}}</div>
+
            <div ng-if="item.link" class="icon-rollover full-width full-height">
-               <div ng-if="item.alert" class="exchanges-alert alert {{item.alert.type}}">{{item.alert.text}}</div>
                 <div class="icon-link">
                     <a ng-href="{{item.link}}" target="e" class="btn btn-primary">{{item.button}}</a>
                 </div>
            </div>
-           
+
            <div><img ng-src="{{item.icon}}" class="exchanges-icon" /></div>
            <h4 class="bold icon-label absolute">{{item.name}}</h4>
        </div>
     </div>
-   
+
 </div>

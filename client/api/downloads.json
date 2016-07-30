@@ -1,64 +1,69 @@
 [
-    {
+  {
+    "title": "Nav Coin Downloads",
+    "subtitle": "All the downloads you need for running Nav Coin on your device.",
+    "items": [
+      {
         "name" : "Windows Wallet (zip)",
         "type" : "Wallet Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navcoin.org/files/NavCoin%203.3.0%20Windows%20Wallet.zip",
-        "button" : "Download (3.3.0)"
-    },
-    {
-        "name" : "Windows Installer (exe)",
+        "link" : "http://www.navajocoin.org/files/NavCoin_3.6.0_Windows_Wallet.zip",
+        "button" : "Download (3.6.0)"
+      },
+      {
+        "name" : "Linux Source",
         "type" : "Wallet Download",
-        "icon" : "fa-windows",
-        "link" : "http://www.navcoin.org/files/NavCoin_3.3.0.exe",
-        "button" : "Download (3.3.0)"
-    },
-    {
+        "icon" : "fa-linux",
+        "link" : "https://github.com/navcoindev/navcoin2/tree/master",
+        "button" : "Download (3.6.0)"
+      },
+      {
+        "name" : "Android Wallet",
+        "type" : "Wallet Download",
+        "icon" : "fa-android",
+        "link" : "https://play.google.com/store/apps/details?id=com.coinomi.navcoin.wallet",
+        "button" : "Google Play"
+      },
+      {
         "name" : "Mac Wallet",
         "type" : "Coming Soon",
         "icon" : "fa-apple",
         "link" : ""
-    },
-    {
-        "name" : "Linux Source",
-        "type" : "Wallet Download",
-        "icon" : "fa-linux",
-        "link" : "https://github.com/navajocoindev/navajocoin/tree/master",
-        "button" : "Download (3.3.0)"
-    },
-    {
-        "name" : "Github",
-        "type" : "Source Code",
-        "icon" : "fa-github",
-        "link" : "https://github.com/navajocoindev/navajocoin",
-        "button" : "View Source"
-    },
-    {
-        "name" : "Blockchain Data",
+      },
+      {
+        "name" : "Nav Coin Blockchain Data",
         "type" : "Data Download",
         "icon" : "fa-chain",
-        "link" : "http://www.navcoin.org/files/Navajo-Blockchain.zip",
+        "link" : "http://www.navcoin.org/files/Nav-Blockchain.zip",
         "button" : "Download"
-    },
-    {
+      }
+    ]
+  },
+  {
+    "title": "Resources",
+    "subtitle": "These downloads are public information about the NAV Coin project",
+    "items": [
+      {
+        "name" : "Media Kit",
+        "type" : "Resource Download",
+        "icon" : "fa-github",
+        "link" : "https://github.com/navcoindev/navcoin-media",
+        "button" : "Download"
+      },
+      {
         "name" : "Decentralization White Paper (pdf)",
         "type" : "Resource Download",
         "icon" : "fa-file-pdf-o",
         "link" : "http://www.navcoin.org/files/nav-decentralized-whitepaper.pdf",
         "button" : "Download"
-    },
-    {
+      },
+      {
         "name" : "Anonymous White Paper 2015 (pdf)",
         "type" : "Resource Download",
         "icon" : "fa-file-pdf-o",
         "link" : "http://www.navcoin.org/files/navajo_whitepaper_march2015.pdf",
         "button" : "Download"
-    },
-    {
-        "name" : "Taipei Presentation (pdf)",
-        "type" : "Resource Download",
-        "icon" : "fa-file-pdf-o",
-        "link" : "http://www.navcoin.org/files/navajo-coin-taipei-2015.pdf",
-        "button" : "Download"
-    }
+      }
+    ]
+  }
 ]

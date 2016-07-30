@@ -1,0 +1,44 @@
+<div class="default-container row default-title">
+
+    <div class="col-xs-12">
+
+        <h2 class="font-grape">News</h2>
+        <p class="font-grey-dark italic">The latest News from the Nav Coin Team</p>
+    </div>
+
+</div>
+
+<loading-animation ng-if="loading"></loading-animation>
+
+<div ng-if="!loading">
+
+  <div class="default-container row" ng-if="error" style="margin-bottom: 40px;">
+    <div class="col-xs-12">
+      <h3 class="font-grape">Error loading news item</h3>
+      <p>Something went wrong, please try reloading the page</p>
+    </div>
+  </div>
+
+  <div ng-if="!error" class="wp-posts-container">
+    <div class="default-container row">
+      <div class="col-sm-8 wp-post-listing">
+        <h3>{{data.post.title}}</h3>
+        <p class="font-grey-dark italic">
+          {{data.post.date | date : "MMMM dd, yyyy"}} / {{data.post.author}}
+        </p>
+        <p ng-bind-html="data.post.content"></p>
+        <a class="btn btn-primary" href="/news">back</a>
+      </div>
+      <div class="col-sm-4" style="margin-bottom: 40px;">
+        <h3 class="font-grape">Recent Publications</h3>
+        <div ng-repeat="(key, article) in articles">
+          <div class="font-grey-dark italic">{{article.website}} - {{article.date}}</div>
+          <a ng-href="{{article.url}}" target="e">
+            <div class="font-medium">{{article.title}}</div>
+          </a>
+          <hr ng-if="key+1 < articles.length" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

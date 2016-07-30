@@ -1,18 +1,23 @@
 <div class="default-container row default-title">
 
     <div class="col-xs-12">
-        
+
         <h2 class="font-grape">Downloads</h2>
         <p class="font-grey-dark italic">Wallets, Source code & Resources</p>
     </div>
-    
+
 </div>
 
 <loading-animation ng-if="loading"></loading-animation>
 
-<div class="default-container row" ng-if="!loading">
-    
-    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="download in downloads">
+<div class="default-container row" ng-if="!loading" ng-repeat="section in downloads">
+  <div class="col-xs-12">
+    <hr />
+    <h3 class="font-grape">{{section.title}}</h3>
+    <p class="font-grey-dark italic">{{section.subtitle}}</p>
+  </div>
+
+    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="download in section.items">
        <div class="font-black icon-tile icon-link-tile full-width relative">
            <div ng-if="download.link" class="icon-rollover full-width full-height">
                 <div class="icon-link">
@@ -26,5 +31,5 @@
            <h4 class="bold icon-label absolute">{{download.type}}</h4>
        </div>
     </div>
-   
+
 </div>
