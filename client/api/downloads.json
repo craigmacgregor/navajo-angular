@@ -11,6 +11,13 @@
         "button" : "Download (3.6.0)"
       },
       {
+        "name" : "Windows Installer (exe)",
+        "type" : "Wallet Download",
+        "icon" : "fa-windows",
+        "link" : "http://www.navajocoin.org/files/NavCoin_3.6.0.exe",
+        "button" : "Download (3.6.0)"
+      },
+      {
         "name" : "Linux Source",
         "type" : "Wallet Download",
         "icon" : "fa-linux",
@@ -25,16 +32,17 @@
         "button" : "Google Play"
       },
       {
-        "name" : "Mac Wallet",
-        "type" : "Coming Soon",
-        "icon" : "fa-apple",
-        "link" : ""
-      },
-      {
         "name" : "Nav Coin Blockchain Data",
         "type" : "Data Download",
         "icon" : "fa-chain",
         "link" : "http://www.navcoin.org/files/Nav-Blockchain.zip",
+        "button" : "Download"
+      },
+      {
+        "name" : "Nav Coin Configure Assist",
+        "type" : "Configuration Tool",
+        "icon" : "fa-rocket",
+        "link" : "http://www.navcoin.org/files/NavCoinConfigurationAssist.exe",
         "button" : "Download"
       }
     ]
