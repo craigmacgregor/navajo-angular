@@ -3,20 +3,20 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 25/06/2015, 4:12:00 PM
     Author     : craigmacgregor
 */
 
-.font-black { 
-    color: $black; 
+.font-black {
+    color: $black;
     &:hover, &:active, &:visited, &:link {
         color: $black;
     }
 }
 
-.font-white { 
-    color: $white; 
+.font-white {
+    color: $white;
     &:hover, &:active, &:visited, &:link {
         color: $white;
     }
@@ -46,40 +46,40 @@ and open the template in the editor.
     color: $ice;
 }
 
-.font-xxl { 
-    font-size: $font-xxl; 
+.font-xxl {
+    font-size: $font-xxl!important;
     @media (max-width: $mobile-width){
-        font-size: $font-xxl * 0.75;
+        font-size: $font-xxl * 0.75!important;
     }
 }
-.font-xl { 
-    font-size: $font-xl; 
+.font-xl {
+    font-size: $font-xl!important;
     @media (max-width: $mobile-width){
-        font-size: $font-xl * 0.75;
+        font-size: $font-xl * 0.75!important;
     }
 }
-.font-large { 
-    font-size: $font-large; 
+.font-large {
+    font-size: $font-large!important;
     @media (max-width: $mobile-width){
-        font-size: $font-large * 0.75;
+        font-size: $font-large * 0.75!important;
     }
 }
-.font-medium { 
-    font-size: $font-medium; 
+.font-medium {
+    font-size: $font-medium!important;
     @media (max-width: $mobile-width){
-        font-size: $font-medium * 0.9;
+        font-size: $font-medium * 0.9!important;
     }
 }
-.font-small { 
-    font-size: $font-small; 
+.font-small {
+    font-size: $font-small!important;
     @media (max-width: $mobile-width){
-        font-size: $font-small * 0.9;
+        font-size: $font-small * 0.9!important;
     }
 }
-.font-xs { 
-    font-size: $font-xs; 
+.font-xs {
+    font-size: $font-xs!important;
     @media (max-width: $mobile-width){
-        font-size: $font-xs * 0.9;
+        font-size: $font-xs * 0.9!important;
     }
 }
 

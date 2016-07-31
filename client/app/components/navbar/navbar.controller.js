@@ -25,6 +25,7 @@ angular.module('navajoAngularApp')
         },
         {
             'title': 'Tools',
+            'link': '/tools',
             'items' : [
                 {
                     'title': 'Block Explorer',
@@ -49,6 +50,7 @@ angular.module('navajoAngularApp')
         },
         {
             'title': 'Community',
+            'link': '/community',
             'items' : [
                 {
                     'title': 'Social Channels',
@@ -77,6 +79,17 @@ angular.module('navajoAngularApp')
     $scope.isCollapsed = true;
 
     $scope.isActive = function(route) {
+
+      var path = $location.path();
+
+      if(route === '/news' && path.indexOf("/news/articles") !== -1) return true;
+
+      var communityLinks = ['/social', '/foundation', '/contact', '/bounty', '/charity'];
+      if(route === '/community' && communityLinks.indexOf(path) !== -1) return true;
+
+      var toolsLinks = ['/faucet'];
+      if(route === '/tools' && toolsLinks.indexOf(path) !== -1) return true;
+
       return route === $location.path();
     };
   });

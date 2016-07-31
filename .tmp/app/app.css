@@ -7412,6 +7412,11 @@ and open the template in the editor.
     .wp-post-listing .wp-caption img {
       margin: 0; }
 
+.news-social .btn, .news-social .wp-posts .more-link, .wp-posts .news-social .more-link {
+  width: 30px;
+  height: 30px;
+  padding: 7px; }
+
 .project-tile {
   padding: 10px 0; }
 
@@ -7573,7 +7578,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 25/06/2015, 4:12:00 PM
     Author     : craigmacgregor
 */
@@ -7606,40 +7611,40 @@ and open the template in the editor.
   color: #43b5eb; }
 
 .font-xxl {
-  font-size: 106px; }
+  font-size: 106px !important; }
   @media (max-width: 480px) {
     .font-xxl {
-      font-size: 79.5px; } }
+      font-size: 79.5px !important; } }
 
 .font-xl {
-  font-size: 42px; }
+  font-size: 42px !important; }
   @media (max-width: 480px) {
     .font-xl {
-      font-size: 31.5px; } }
+      font-size: 31.5px !important; } }
 
 .font-large {
-  font-size: 24px; }
+  font-size: 24px !important; }
   @media (max-width: 480px) {
     .font-large {
-      font-size: 18px; } }
+      font-size: 18px !important; } }
 
 .font-medium {
-  font-size: 16px; }
+  font-size: 16px !important; }
   @media (max-width: 480px) {
     .font-medium {
-      font-size: 14.4px; } }
+      font-size: 14.4px !important; } }
 
 .font-small {
-  font-size: 14px; }
+  font-size: 14px !important; }
   @media (max-width: 480px) {
     .font-small {
-      font-size: 12.6px; } }
+      font-size: 12.6px !important; } }
 
 .font-xs {
-  font-size: 12px; }
+  font-size: 12px !important; }
   @media (max-width: 480px) {
     .font-xs {
-      font-size: 10.8px; } }
+      font-size: 10.8px !important; } }
 
 @font-face {
   font-family: 'Replica-Bold';

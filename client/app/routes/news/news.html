@@ -24,10 +24,17 @@
       <div class="default-container row">
         <div class="col-sm-8 wp-posts">
           <div ng-repeat="(key, post) in posts">
-            <a href="/news/article/{{post.slug}}"><h3>{{post.title}}</h3></a>
+            <a href="/news/articles/post/{{post.slug}}"><h3>{{post.title}}</h3></a>
             <p class="font-grey-dark italic">
               {{post.date | date : "MMMM dd, yyyy"}} / {{post.author}}
             </p>
+            <div class="news-social" style="margin-bottom: 10px;">
+              <a class="btn btn-secondary fa fa-facebook" title="Facebook" target="e" ng-href="http://www.facebook.com/sharer.php?u=http://navcoin.org/news/articles/post/{{post.slug}}"></a>
+              <a class="btn btn-secondary fa fa-twitter" title="Twitter" target="e" ng-href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://navcoin.org/news/articles/post/{{post.slug}}"></a>
+              <a class="btn btn-secondary fa fa-reddit-alien" title="Reddit" target="e" ng-href="http://www.reddit.com/wubmit?url=http://navcoin.org/news/articles/post/{{post.slug}}"></a>
+              <a class="btn btn-secondary fa fa-google-plus" title="Google Plus" target="e" ng-href="https://plus.google.com/share?url=http://navcoin.org/news/articles/post/{{post.slug}}"></a>
+              <a class="btn btn-secondary fa fa-linkedin" title="Linkedin" target="e" ng-href="https://www.linkedin.com/shareArticle?url=http://navcoin.org/news/articles/post/{{post.slug}}&title={{post.title}}"></a>
+            </div>
             <p ng-bind-html="post.content"></p>
             <hr ng-if="key+1 < posts.length" />
           </div>

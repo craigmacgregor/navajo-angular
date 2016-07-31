@@ -26,8 +26,22 @@
         <p class="font-grey-dark italic">
           {{data.post.date | date : "MMMM dd, yyyy"}} / {{data.post.author}}
         </p>
+        <div class="news-social">
+          <a class="btn btn-secondary fa fa-facebook" title="Facebook" target="e" ng-href="http://www.facebook.com/sharer.php?u=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-twitter" title="Twitter" target="e" ng-href="https://twitter.com/intent/tweet?text={{data.post.title}}&url=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-reddit-alien" title="Reddit" target="e" ng-href="http://www.reddit.com/wubmit?url=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-google-plus" title="Google Plus" target="e" ng-href="https://plus.google.com/share?url=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-linkedin" title="Linkedin" target="e" ng-href="https://www.linkedin.com/shareArticle?url=http://navcoin.org/news/articles/post/{{data.post.slug}}&title={{data.post.title}}"></a>
+        </div>
         <p ng-bind-html="data.post.content"></p>
-        <a class="btn btn-primary" href="/news">back</a>
+        <div class="news-social">
+          <a class="btn btn-secondary fa fa-facebook" title="Facebook" target="e" ng-href="http://www.facebook.com/sharer.php?u=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-twitter" title="Twitter" target="e" ng-href="https://twitter.com/intent/tweet?text={{data.post.title}}&url=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-reddit-alien" title="Reddit" target="e" ng-href="http://www.reddit.com/wubmit?url=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-google-plus" title="Google Plus" target="e" ng-href="https://plus.google.com/share?url=http://navcoin.org/news/articles/post/{{data.post.slug}}"></a>
+          <a class="btn btn-secondary fa fa-linkedin" title="Linkedin" target="e" ng-href="https://www.linkedin.com/shareArticle?url=http://navcoin.org/news/articles/post/{{data.post.slug}}&title={{data.post.title}}"></a>
+        </div>
+        <a class="btn btn-primary" href="/news" style="margin-top: 20px;">back</a>
       </div>
       <div class="col-sm-4" style="margin-bottom: 40px;">
         <h3 class="font-grape">Recent Publications</h3>

@@ -26,7 +26,7 @@ angular.module('navajoAngularApp')
           formatted.push({
             title: post.title,
             excerpt: post.excerpt,
-            content: post.content.replace('<a href="http://cryptocereal.com/', '<a href="/news/article/'),
+            content: post.content.replace('<a href="http://cryptocereal.com/', '<a href="/news/articles/post/'),
             author: post.author.first_name + ' ' + post.author.last_name,
             attachments: post.attachments,
             slug: post.slug,
