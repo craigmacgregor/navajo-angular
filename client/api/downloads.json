@@ -1,6 +1,6 @@
 [
   {
-    "title": "Nav Coin Downloads",
+    "title": "Nav Coin Full Node Downloads",
     "subtitle": "All the downloads you need for running Nav Coin on your device.",
     "items": [
       {
@@ -25,11 +25,10 @@
         "button" : "Download (3.6.0)"
       },
       {
-        "name" : "Android Wallet",
-        "type" : "Wallet Download",
-        "icon" : "fa-android",
-        "link" : "https://play.google.com/store/apps/details?id=com.coinomi.navcoin.wallet",
-        "button" : "Google Play"
+        "name" : "OSX Wallet",
+        "type" : "Coming Soon",
+        "icon" : "fa-apple",
+        "button" : "Coming Soon"
       },
       {
         "name" : "Nav Coin Blockchain Data",
@@ -44,6 +43,66 @@
         "icon" : "fa-rocket",
         "link" : "http://www.navcoin.org/files/NavCoinConfigurationAssist.exe",
         "button" : "Download"
+      }
+    ]
+  },
+  {
+    "title": "Nav Coin Thin Client Downloads",
+    "subtitle": "All the downloads you need for running Nav Coin on your device.",
+    "items": [
+      {
+        "name" : "Windows Client (Installer)",
+        "type" : "Thin Client Download",
+        "icon" : "fa-windows",
+        "link" : "http://www.navajocoin.org/files/electrum-NAV.3.6.0-setup.exe",
+        "button" : "Download (3.6.0)"
+      },
+      {
+        "name" : "Windows Client (Portable)",
+        "type" : "Thin Client Download",
+        "icon" : "fa-windows",
+        "link" : "http://www.navajocoin.org/files/electrum-NAV.3.6.0-portable.exe",
+        "button" : "Download (3.6.0)"
+      },
+      {
+        "name" : "Linux Source",
+        "type" : "Thin Client Download",
+        "icon" : "fa-linux",
+        "link" : "https://github.com/navcoindev/Electrum-NavCoin/tree/master",
+        "button" : "Download (3.6.0)"
+      },
+      {
+        "name" : "OSX Client (Installer)",
+        "type" : "Thin Client Download",
+        "icon" : "fa-apple",
+        "link" : "http://www.navcoin.org/files/electrum-NAV.3.6.0-setup-macosx.dmg",
+        "button" : "Download"
+      },
+      {
+        "name" : "OSX Client (Portable)",
+        "type" : "Thin Client Download",
+        "icon" : "fa-apple",
+        "link" : "http://www.navcoin.org/files/electrum-NAV.3.6.0-portable-macosx.zip",
+        "button" : "Download"
+      }
+    ]
+  },
+  {
+    "title": "Nav Coin Mobile Downloads",
+    "subtitle": "All the downloads you need for running Nav Coin on your device.",
+    "items": [
+      {
+        "name" : "Android Wallet",
+        "type" : "Wallet Download",
+        "icon" : "fa-android",
+        "link" : "https://play.google.com/store/apps/details?id=com.coinomi.navcoin.wallet",
+        "button" : "Google Play"
+      },
+      {
+        "name" : "iOS Wallet",
+        "type" : "Coming Soon",
+        "icon" : "fa-apple",
+        "button" : "Coming Soon"
       }
     ]
   },

@@ -7,19 +7,18 @@
         {
             "title" : "Merchant Gateway",
             "text" : "We will implement both point of sale tools for merhcants to allow users to purchase real products with their NAV coins online and in store."
+        },
+        {
+            "title" : "Mobile Anonymous Sending",
+            "text" : "With the launch of our Android Wallet, we set our sights on one of our next lofty goal; enabling Anonymous Transactions from your mobile!"
         }
     ],
 
     "inProgress" : [
         {
             "title" : "Web Wallet",
-            "text" : "Similar to the Mobile wallet, this allows us to build a fully qualified wallet that you can use through your web browser. You could then either run the code from your computer and / or we could integrate it into the NAV website for you to use.",
-            "progress" : 90
-        },
-        {
-            "title" : "Mobile Wallet",
-            "text" : "We are building a mobile NAV wallet for both Android and IOS. This will be a fully qualified wallet with the coins stored on your device. When we release our mobile wallet we will in a very small club of Proof of Stake coins with a mobile wallet. Phase 2 of the mobile wallet the NAV Coin dev team will unlocked a massive milestone; World’s first anonymous cryptocurrency transaction using a mobile phone!",
-            "progress" : 85
+            "text" : "With our custom X13 Electrum server up and running we are now able to build fully qualified wallet that you can use through your web browser. You could then either run the code from your computer and / or we could integrate it into the NAV website for you to use.",
+            "progress" : 95
         },
         {
             "title" : "Rasperry Pi Staking Unit",
@@ -29,17 +28,30 @@
         {
             "title" : "Decentralization Implementation",
             "text" : "We are now developing the release candidate for the anonymous decentralization. We are removing the reliance on an API to select an incoming server for processing anonymous transactions. Instead, the server list will be written into the wallet itself and distributed through the existing peer to peer mesh network which distributes the blockchain. Each server will become self registering so they can be brought online and begin processing transactions without human intervention.",
-            "progress" : 60
+            "progress" : 70
         },
 
         {
             "title" : "Official Promotional Video",
             "text" : "We will make a short video, which will summarise all features of Navajo Coin and explain it's Anonymous Technology to viewers in easy way. This will attract more average users and investors to Navajo Coin.",
-            "progress" : 40
+            "progress" : 50
+        },
+        {
+            "title" : "Nav Coin China",
+            "text" : "After meeting a group of Business Leaders in Kuala Lumpur, Nav Coin is working towards entering the Chinese Market. We are collaborating with marketing teams from China on Mandarin transations of our website, press releases and wallet along with listings on Chinese Exchanges and CNY pairing.",
+            "progress" : 25
         }
     ],
 
     "complete" : [
+        {
+            "title" : "Thin Client for Desktop",
+            "text" : "Our custom X13 Electrum server also enables us to build a thin client for desktop. This will be a great addition to the Nav Coin software suite and give people instant access to their Nav Coin without having to sync the entire block chain!"
+        },
+        {
+            "title" : "Mobile Wallet",
+            "text" : "We are building a mobile NAV wallet initially for Android. This will be a fully qualified wallet with the coins stored on your device. When we release our mobile wallet we will in a very small club of Proof of Stake coins with a mobile wallet. Phase 2 of the mobile wallet the NAV Coin dev team will unlocked a massive milestone; World’s first anonymous cryptocurrency transaction using a mobile phone!"
+        },
         {
             "title" : "Hierarchical Deterministic Wallet Implementaion",
             "text" : "Based on Bitcoin's BIP32 implementation, this will allow users to send & receive their NAV coins without needing to store the entire blockchain, simply using their mobile devices or a web wallet."

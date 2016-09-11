@@ -43,9 +43,13 @@ angular.module('navajoAngularApp')
                 },
                 {
                     'title': 'Market Cap',
-                    'link': 'http://coinmarketcap.com/currencies/navajo',
+                    'link': 'http://coinmarketcap.com/currencies/nav-coin',
                     'target': 'e'
-                }
+                },
+                {
+                    'title': 'Guides',
+                    'link': '/guides'
+                },
             ]
         },
         {
