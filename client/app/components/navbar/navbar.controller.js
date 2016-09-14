@@ -91,7 +91,7 @@ angular.module('navajoAngularApp')
       var communityLinks = ['/social', '/foundation', '/contact', '/bounty', '/charity'];
       if(route === '/community' && communityLinks.indexOf(path) !== -1) return true;
 
-      var toolsLinks = ['/faucet'];
+      var toolsLinks = ['/faucet', '/guides'];
       if(route === '/tools' && toolsLinks.indexOf(path) !== -1) return true;
 
       return route === $location.path();
