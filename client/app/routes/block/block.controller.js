@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .controller('BlockCtrl', function ($scope, $http, $interval) {
        
         $scope.loading = true;

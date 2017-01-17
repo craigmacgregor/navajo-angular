@@ -1,44 +1,39 @@
 'use strict';
 
-angular.module('navajoAngularApp')
-  .controller('BountyCtrl', function ($scope, $http, $window, $q) {
+angular.module('navcoinAngularApp')
+  .controller('BountyCtrl', function ($scope, $http, $window, $q, preloader, appConfig) {
 
-        $scope.bitcoinAddress = '15SBFTamJqXMyGS6crRNVgWfCM5iehJhX9';
-        $scope.navCoinAddress = 'NQH5nkBpxgjuEvqBRRbMJAKZB6UgVkwRNE';
+      $scope.loading = true;
 
-        $scope.btcLoading = true;
-        $scope.navLoading = true;
-        $scope.navError = false;
-        $scope.btcError = false;
-
-        var bitcoinBalance = 'https://blockchain.info/q/addressbalance/' + $scope.bitcoinAddress;
-
-        var promise1 = $http.get(bitcoinBalance);
-
-        $q.all([promise1]).
-            then(function(response) {
-                $scope.bitcoinBalance = response[0].data / 100000000;
-                $scope.btcLoading = false;
-            }, function(response) {
-                //error
-                $scope.btcError = true;
-                $scope.btcLoading = false;
+      Prismic.api("http://navcoin.prismic.io/api", function(error, api) {
+        var options = { pageSize: 100, orderings: '[my.bounty.priority desc]' };
+        api.query(Prismic.Predicates.at('document.type', 'bounty'), options, function(error, response) {
+          if (error) {
+            console.error('error', error);
+            $scope.loading = false;
+            $scope.$applyAsync();
+          } else {
+            $scope.data = formatData(response.results);
+            console.log($scope.data)
+            $scope.loading = false;
+            $scope.$applyAsync();
+          }
         });
+      });
 
-        var navBalance = "http://www.navcoin.org/api/get-nav-balance/address/" + $scope.navCoinAddress;
-
-        var promiseN1 = $http.get(navBalance);
-
-        $q.all([promiseN1]).
-            then(function(response) {
-              console.log(response);
-                $scope.navBalance = response[0].data.data.balance;
-                $scope.navLoading = false;
-            }, function(response) {
-                //error
-                console.log(response);
-                $scope.navError = true;
-                $scope.navLoading = false;
+      function formatData(results) {
+        var formatted = [];
+        angular.forEach(results, function(result){
+          var temp = {
+            name: result.getText('bounty.name'),
+            description: result.getStructuredText('bounty.description').asHtml(),
+            terms: result.getStructuredText('bounty.terms').asHtml(),
+            nav: result.getNumber('bounty.nav'),
+            btc: result.getNumber('bounty.btc'),
+            priority: result.getNumber('bounty.priority'),
+          }
+          formatted.push(temp);
         });
-
+        return formatted;
+      };
   });

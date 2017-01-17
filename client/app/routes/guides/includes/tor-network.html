@@ -1,0 +1,109 @@
+<div class="colored-unit white">
+
+    <div class="default-container row">
+        <div class="col-xs-12">
+
+            <h3>Nav Coin Tor Network Setup</h3>
+            <p>
+              The Nav Coin Full Node Wallet is compatiable with usage through the Tor Network. BitcoinTalk User <a href="https://bitcointalk.org/index.php?action=profile;u=30">BitcoinFX</a> has configured a series of Tor Nodes for connecting to and sending Nav Coin transactions through the Tor Netowrk.
+            </p>
+            <p>
+              If you're unsure what TOR is, please head over to their website to learn all about their great service: <a href="https://www.torproject.org/about/overview.html.en">https://www.torproject.org/about/overview.html.en</a>
+            </p>
+            <p>
+              In basic terms, the TOR network is robust method of hiding your IP address from unwanted third parties.
+            </p>
+            <p>
+              Currently Nav Coin is secure, but just like any other Crypto Currencies because it is a public network, it is possible for third parties to see which IP addresses are connected at any given time. This does mean users lose an amount of anonymity because with some effort, it could be possible to trace a transaction back to an IP address and potentially infer who owns a wallet, or at least where they were broadcasting from.
+            </p>
+            <p>
+              Connecting your Nav Coin wallet through the TOR network, hides your IP address from the public record and stops this meta data inference from occuring. With this configuration you would be syncing the block chain, sending and receiving coins all through the TOR network rather than over the regular internet.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit grey">
+
+  <div class="default-container row" id="InstallTor">
+      <div class="col-xs-12">
+
+          <h3 class="font-grape">Install Tor</h3>
+          <p>
+            <strong>Step 1.</strong> Download and install the Tor Browser: <a href="https://www.torproject.org/download/download-easy.html.en">https://www.torproject.org/download/download-easy.html.en</a>
+          </p>
+          <p>
+            <strong>Step 2.</strong> Open the TOR browser and allow it to connect to the TOR network.
+          </p>
+      </div>
+  </div>
+</div>
+
+<div class="colored-unit white">
+
+  <div class="default-container row" id="AddP2PTorNodes">
+      <div class="col-xs-12">
+
+          <h3 class="font-grape">Adding P2P Tor Network Nodes</h3>
+          <p>
+            <strong>Step 1.</strong> Find your NavCoin2 folder in your users %AppData% directory. The AppData folder is hidden on most operating systems, so make sure you can view hidden files.
+          </p>
+          <ul>
+            <li>
+              <strong>Windows</strong> this is usually C:/Users/&lt;USERNAME&gt;/AppData/Roaming/NavCoin2/
+              <br />
+              (replacing &lt;USERNAME&gt; with your actual computer's username)
+            </li>
+            <li>
+              <strong>OSX</strong> this is usually ~/Library/Application Support/NavCoin2
+            </li>
+            <li>
+              <strong>Linux</strong> this is usually ~/.NavCoin2/
+            </li>
+          </ul>
+          <p>
+            <strong>Step 2.</strong> In this directory create and open a plain text file called "navcoin.conf". If this file already exists, save a copy of it for when you want to switch back to the regular setup and open the file.
+          </p>
+          <p>
+            <strong>Step 3.</strong> Replace the contents of this file (if any) with the following:
+          </p>
+          <pre>
+rpcuser=&lt;USERNAME&gt;
+rpcpassword=&lt;PASSWORD&gt;
+listen=0
+port=8443
+proxy=127.0.0.1:9150
+onion=127.0.0.1:9150
+onlynet=tor
+maxconnections=8
+addnode=navfxoktwa7zu3m2.onion:8443
+addnode=navfx2yawr6eb4fp.onion:8443
+addnode=navfxfkchwclvpbj.onion:8443
+addnode=navfxujp7ninsup6.onion:8443
+addnode=navcavlevqgjzozx.onion:8443
+addnode=navcaqr6y4yfvei4.onion:8443
+addnode=navcavq6roeray7h.onion:8443
+addnode=navcajegwg62zecy.onion:8443
+addnode=navfxkdrgk2oo3ja.onion:8443
+addnode=navfxu6w2iptaj3m.onion:8443
+addnode=navfxjtmt42smvcj.onion:8443
+addnode=navfxosoed7hd4db.onion:8443</pre>
+        <p>
+          <strong>Step 4.</strong> Replace &lt;USERNAME&gt; and &lt;PASSWORD&gt; with your chosen username and password. These credentials are for RPC access only which is an advanced feature not accessed by most users. It's not used for encrypting your wallet, you'll need to do that seperately.
+        </p>
+        <p>
+          <strong>Step 5.</strong> Save and close this file. Restart your Nav Coin Full Node Wallet.
+        </p>
+        <p>
+          You should see your wallet now says "tor" in the bottom right corner, indicating it has picked up this setup.
+        </p>
+        <p>
+          This really is a great service the BitcoinFX has setup for us all to use. It provides an extremely high level of anonymity even when just performing regular Nav Coin transactions.
+          Please be so kind as to donate to BitcoinFX to help keep this service running: <strong>NWeyG7jpQm1wWeYeV7tnNuYLUHmW4FMAr8</strong>
+        </p>
+        <p>
+          <strong>Disclaimer:</strong> Please be aware this is a third party service, use at your own discretion.
+        </p>
+      </div>
+  </div>
+</div>

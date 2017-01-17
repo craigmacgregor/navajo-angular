@@ -311,7 +311,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       options: {
         // This should be the name of your apps angular module
-        module: 'navajoAngularApp',
+        module: 'navcoinAngularApp',
         htmlmin: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
@@ -473,7 +473,7 @@ module.exports = function (grunt) {
             '<%= yeoman.client %>/bower_components',
             '<%= yeoman.client %>/sass',
             '<%= yeoman.client %>/app',
-            '<%= yeoman.client %>/components'            
+            '<%= yeoman.client %>/components'
           ],
           compass: false
         },
@@ -514,7 +514,7 @@ module.exports = function (grunt) {
           transform: function(filePath) {
               filePath = filePath.replace('/client/sass/', '');
             filePath = filePath.replace('/client/app/', '');
-            filePath = filePath.replace('/client/components/', '');            
+            filePath = filePath.replace('/client/components/', '');
             return '@import \'' + filePath + '\';';
           },
           starttag: '// injector',
@@ -573,7 +573,7 @@ module.exports = function (grunt) {
       return grunt.task.run([
         'clean:server',
         'env:all',
-        'injector:sass', 
+        'injector:sass',
         'concurrent:server',
         'injector',
         'wiredep',
@@ -585,7 +585,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'env:all',
-      'injector:sass', 
+      'injector:sass',
       'concurrent:server',
       'injector',
       'wiredep',
@@ -615,7 +615,7 @@ module.exports = function (grunt) {
       return grunt.task.run([
         'clean:server',
         'env:all',
-        'injector:sass', 
+        'injector:sass',
         'concurrent:test',
         'injector',
         'autoprefixer',
@@ -628,7 +628,7 @@ module.exports = function (grunt) {
         'clean:server',
         'env:all',
         'env:test',
-        'injector:sass', 
+        'injector:sass',
         'concurrent:test',
         'injector',
         'wiredep',
@@ -646,7 +646,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'injector:sass', 
+    'injector:sass',
     'concurrent:dist',
     'injector',
     'wiredep',

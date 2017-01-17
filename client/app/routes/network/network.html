@@ -1,0 +1,59 @@
+<div class="default-container row default-title">
+
+    <div class="col-xs-12">
+
+        <h2 class="font-grape">Navtech Network</h2>
+        <p class="font-grey-dark italic">Check the network status of the Navtech Anon Network</p>
+    </div>
+
+</div>
+
+<loading-animation ng-if="loadingHash || loadingServers"></loading-animation>
+
+<div class="colored-unit white">
+
+    <div class="default-container row">
+        <div class="col-xs-12">
+          <p>
+            The Nav Coin anonymous send system or ‘Navtech’ as it’s dubbed in the whitepaper uses a unique technique to disconnect the sender and receiver. The essence of Nav’s anonymous system is the use of a secondary blockchain or ‘Subchain’.
+          </p>
+            <p>
+              If you need help setting up your wallet to use the Navtech Anon Network, please see our <a href="/guides/navtech-anon">Navtech Anon Setup Guide</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit white" ng-if="!loadingServers || !loadingHash">
+  <div class="default-container row">
+    <div class="col-xs-12">
+      <h3 class="font-grape">Network Status</h3>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="server in servers">
+       <div class="font-black icon-tile icon-link-tile full-width relative">
+           <div class="fa font-xxl block fa-server" ng-class="{'font-grey' : server.status !== 'online', 'font-ice' : server.status === 'online'}"></div>
+           <div class="icon-text">
+            <p class="icon-caption bold">{{server.address}}</p>
+           </div>
+           <h4 class="bold icon-label absolute" ng-show="server.status === 'online'">Online</h4>
+           <h4 class="bold icon-label absolute" ng-show="server.status === 'offline'">Offline</h4>
+           <h4 class="bold icon-label absolute" ng-show="server.status === 'maintenance'">Maintenance Mode</h4>
+           <h4 class="bold icon-label absolute" ng-show="server.status === 'development'">Development Mode</h4>
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="colored-unit white" ng-if="!loadingServers || !loadingHash">
+  <div class="default-container row" ng-if="!loadingServers || !loadingHash">
+    <div class="col-xs-12">
+      <h3 class="font-grape" style="margin-bottom: 20px">Client Settings</h3>
+    </div>
+    <div class="col-xs-12">
+      <table class="table table-bordered table-striped" style="margin-bottom: 0">
+        <tr ng-repeat="server in servers"><td class="bold">addanonserver</td><td>{{server.address}}</td></tr>
+        <tr><td class="bold">anonhash</td><td>{{anonhash}}</td></tr>
+      </table>
+    </div>
+  </div>
+</div>

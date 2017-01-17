@@ -6,7 +6,7 @@
 
 //requires attribute data-match='name-of-field-to-match'
 
-var app = angular.module('navajoAngularApp');
+var app = angular.module('navcoinAngularApp');
 
 app.directive('cmMatch', function() {
   return {

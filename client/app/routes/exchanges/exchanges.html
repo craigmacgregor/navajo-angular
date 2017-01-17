@@ -12,17 +12,16 @@
 
 <div class="default-container row" ng-if="!loading">
 
-    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="item in data">
-       <div class="font-black icon-tile icon-link-tile full-width relative exchanges-icon-tile">
-         <div ng-if="item.alert" class="exchanges-alert alert {{item.alert.type}}">{{item.alert.text}}</div>
-
-           <div ng-if="item.link" class="icon-rollover full-width full-height">
+    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="item in merchants">
+       <div class="font-black icon-tile icon-link-tile full-width relative merchants-icon-tile">
+          <p class="merchant-type absolute italic font-grey-dark">{{item.subtext}}</p>
+           <div ng-if="item.url" class="icon-rollover full-width full-height">
                 <div class="icon-link">
-                    <a ng-href="{{item.link}}" target="e" class="btn btn-primary">{{item.button}}</a>
+                    <a ng-href="{{item.url}}" target="e" class="btn btn-primary">Go to {{item.name}}</a>
                 </div>
            </div>
 
-           <div><img ng-src="{{item.icon}}" class="exchanges-icon" /></div>
+           <div><img ng-src="{{item.logo}}" class="merchants-icon" /></div>
            <h4 class="bold icon-label absolute">{{item.name}}</h4>
        </div>
     </div>

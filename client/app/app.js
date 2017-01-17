@@ -1,17 +1,16 @@
 'use strict';
 
-angular.module('navajoAngularApp', [
+angular.module('navcoinAngularApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ui.bootstrap'
+  'ui.bootstrap',
 ])
-  .config(function ($routeProvider, $locationProvider) {
-    $routeProvider
-      .otherwise({
-        redirectTo: '/'
-      });
-
-    $locationProvider.html5Mode(true);
-  });
+.config(function ($routeProvider, $locationProvider) {
+  $routeProvider
+    .otherwise({
+      redirectTo: '/'
+    });
+  $locationProvider.html5Mode(true);
+});

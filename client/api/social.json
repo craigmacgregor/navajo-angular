@@ -14,7 +14,7 @@
     {
         "name" : "Reddit",
         "icon" : "/assets/images/social/reddit.png",
-        "link" : "http://www.reddit.com/r/navajocoin",
+        "link" : "http://www.reddit.com/r/navcoin",
         "button" : "Go to Reddit"
     },
     {
@@ -26,7 +26,7 @@
     {
         "name" : "Slack",
         "icon" : "/assets/images/social/slack.png",
-        "link" : "https://navajocoin.slack.com",
+        "link" : "https://navcoin.slack.com",
         "button" : "Go to Slack"
     },
     {

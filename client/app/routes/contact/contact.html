@@ -23,7 +23,7 @@
 
         </div>
 
-        <form cm-form name='contactForm' ng-class="{hidden: success}">
+        <form cm-form name='contactForm' ng-class="{hidden: success}" class="contact-form">
             <div class="input-group form-input">
                 <span class="input-group-addon"><span class='fa fa-user'></span></span>
                 <input type="text" name='name' class="form-control" placeholder="Name" ng-model='contact.name' cm-notempty>
@@ -46,8 +46,13 @@
             <div  ng-show="error" class=" form-alert alert alert-danger">
                 Something went wrong, please try again later
             </div>
+            <div class="clear-after">
+              <button type='submit' class='btn btn-primary form-submit'>Send</button>
+              <p class="contact-email">
+                or contact us here: <a href="mailto:admin@navcoin.org">admin@navcoin.org</a>
+              </p>
+            </div>
 
-            <button type='submit' class='btn btn-primary form-submit'>Send</button>
         </form>
 
     </div>
@@ -97,7 +102,7 @@
                 </a>
             </div>
             <div>
-                <a class="btn btn-secondary block" href='https://navajocoin.slack.com' target='e'>
+                <a class="btn btn-secondary block" href='https://navcoin-sign-up.herokuapp.com' target='e'>
                     <span class='contact-icon'>
                         <span class='fa fa-slack'></span>
                     </span>
@@ -105,11 +110,11 @@
                 </a>
             </div>
             <div>
-                <a class="btn btn-secondary block" href='https://www.cryptocereal.com' target='e'>
+                <a class="btn btn-secondary block" href='https://telegram.me/joinchat/COuj0kE7K01APpfZSq3i7Q' target='e'>
                     <span class='contact-icon'>
-                        <span class='fa fa-wordpress'></span>
+                        <span class='fa fa-telegram'></span>
                     </span>
-                    Blog
+                    Telegram
                 </a>
             </div>
 

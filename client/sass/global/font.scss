@@ -70,13 +70,13 @@ and open the template in the editor.
         font-size: $font-medium * 0.9!important;
     }
 }
-.font-small {
+.font-small, .font-small p {
     font-size: $font-small!important;
     @media (max-width: $mobile-width){
         font-size: $font-small * 0.9!important;
     }
 }
-.font-xs {
+.font-xs, .font-xs p {
     font-size: $font-xs!important;
     @media (max-width: $mobile-width){
         font-size: $font-xs * 0.9!important;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .controller('UpgradeCtrl', function ($scope, $http, $window, $q) {
 
 

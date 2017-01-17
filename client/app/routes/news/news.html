@@ -23,6 +23,28 @@
     <div ng-if="!error" class="wp-posts-container">
       <div class="default-container row">
         <div class="col-sm-8 wp-posts">
+
+          <div class="pagination">
+            <span class="pagination-label">Page</span>
+            <ul>
+              <li ng-if="pageNumber > 1">
+                <a class="previous-page" ng-href="/news/page/{{pageNumber-1}}"><span class="fa fa-chevron-left"></span></a>
+              </li>
+              <li ng-repeat="page in iteratePages(numPages)">
+                <a class="numbered-page" ng-if="page !== pageNumber" ng-href="/news/page/{{page}}">{{page}}</a>
+                <span class="current-page font-grape" ng-if="page === pageNumber">{{page}}</a>
+              </li>
+              <li ng-if="pageNumber < numPages">
+                <a class="next-page" ng-href="/news/page/{{pageNumber+1}}"><span class="fa fa-chevron-right"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div ng-if="numPosts === 0" style="margin-bottom: 40px;">
+              <h3 class="font-grape">No news items to show</h3>
+              <p>Looks like you may have gone too far! Let's go back to the <a href="/news/page/1">first news page</a>.</p>
+          </div>
+
           <div ng-repeat="(key, post) in posts">
             <a href="/news/articles/post/{{post.slug}}"><h3>{{post.title}}</h3></a>
             <p class="font-grey-dark italic">
@@ -38,11 +60,28 @@
             <p ng-bind-html="post.content"></p>
             <hr ng-if="key+1 < posts.length" />
           </div>
+
+          <div class="pagination">
+            <span class="pagination-label">Page</span>
+            <ul>
+              <li ng-if="pageNumber > 1">
+                <a class="previous-page" ng-href="/news/page/{{pageNumber-1}}"><span class="fa fa-chevron-left"></span></a>
+              </li>
+              <li ng-repeat="page in iteratePages(numPages)">
+                <a class="numbered-page" ng-if="page !== pageNumber" ng-href="/news/page/{{page}}">{{page}}</a>
+                <span class="current-page font-grape" ng-if="page === pageNumber">{{page}}</a>
+              </li>
+              <li ng-if="pageNumber < numPages">
+                <a class="next-page" ng-href="/news/page/{{pageNumber+1}}"><span class="fa fa-chevron-right"></span></a>
+              </li>
+            </ul>
+          </div>
+
         </div>
         <div class="col-sm-4" style="margin-bottom: 40px;">
           <h3 class="font-grape">Recent Publications</h3>
           <div ng-repeat="(key, article) in articles">
-            <div class="font-grey-dark italic">{{article.website}} - {{article.date}}</div>
+            <div class="font-grey-dark italic">{{article.website}} - {{article.date | date : "MMMM dd, yyyy"}}</div>
             <a ng-href="{{article.url}}" target="e">
               <div class="font-medium">{{article.title}}</div>
             </a>

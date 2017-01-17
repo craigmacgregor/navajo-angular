@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .factory('Modal', function ($rootScope, $modal) {
     /**
      * Opens a modal

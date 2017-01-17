@@ -6,7 +6,7 @@
 
 /* REQUIRES bower install pwstrength-bootstrap */
 
-var app = angular.module('navajoAngularApp');
+var app = angular.module('navcoinAngularApp');
 
 app.directive('cmPwstrength', function() {
   return {

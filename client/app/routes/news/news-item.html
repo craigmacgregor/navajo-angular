@@ -46,7 +46,7 @@
       <div class="col-sm-4" style="margin-bottom: 40px;">
         <h3 class="font-grape">Recent Publications</h3>
         <div ng-repeat="(key, article) in articles">
-          <div class="font-grey-dark italic">{{article.website}} - {{article.date}}</div>
+          <div class="font-grey-dark italic">{{article.website}} - {{article.date | date : "MMMM dd, yyyy"}}</div>
           <a ng-href="{{article.url}}" target="e">
             <div class="font-medium">{{article.title}}</div>
           </a>

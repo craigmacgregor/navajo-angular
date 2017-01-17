@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .directive('bootstrapTabs', function(){
     return {
        templateUrl: 'app/components/bootstrap-tabs/bootstrap-tabs.html',

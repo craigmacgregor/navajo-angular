@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 9/08/2015, 3:52:56 PM
     Author     : craig
 */
@@ -11,7 +11,7 @@ and open the template in the editor.
 .icon-tile {
     padding: 40px;
     background-color: darken($grey-light, 5%);
-    
+
     @include border-radius(5px,5px,5px,5px);
     border: 1px solid #DDD;
     margin: 15px 0;
@@ -22,7 +22,24 @@ and open the template in the editor.
     @extend .bg-angled-135;
     @media(max-width:$mobile-width){
         padding: 20px;
-    }    
+    }
+}
+
+.icon-tile-light {
+    padding: 40px;
+    background-color: lighten($grey-light, 5%);
+
+    @include border-radius(5px,5px,5px,5px);
+    border: 1px solid #DDD;
+    margin: 15px 0;
+    .btn {
+        margin-top: 10px;
+    }
+    background-size: 75px 75px;
+    @extend .bg-angled-135;
+    @media(max-width:$mobile-width){
+        padding: 20px;
+    }
 }
 
 .icon-right-col {
@@ -44,6 +61,12 @@ and open the template in the editor.
         position: relative;
         display: block;
     }
+}
+
+.icon-single {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
 }
 
 .icon-tile-plain {
@@ -78,10 +101,14 @@ and open the template in the editor.
     margin-top: 20px;
 }
 
+.icon-image {
+  height: 105px;
+}
+
 .icon-link-tile {
     padding-bottom: 60px;
     display: block;
-    
+
     .icon-link {
         position: absolute;
         height: 31px;
@@ -95,7 +122,7 @@ and open the template in the editor.
             -moz-box-shadow: 0px 0px 20px 0px $grape;
             box-shadow: 0px 0px 20px 0px $grape;
         }
-        
+
     }
 
     &:hover {
@@ -103,7 +130,7 @@ and open the template in the editor.
         .icon-rollover {
             display: block;
         }
-        
+
     }
 }
 

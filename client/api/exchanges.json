@@ -12,6 +12,18 @@
         "button" : "Go to Bittrex"
     },
     {
+        "name" : "Bitsquare",
+        "icon" : "/assets/images/exchanges/bitsquare.png",
+        "link" : "https://bitsquare.io/",
+        "button" : "Go to Bitsquare"
+    },
+    {
+        "name" : "LiteBit (EUR/NAV)",
+        "icon" : "/assets/images/exchanges/litebit.png",
+        "link" : "https://www.litebit.eu/en/buy/navcoin",
+        "button" : "Go to LiteBit"
+    },
+    {
         "name" : "AlcurEX",
         "icon" : "/assets/images/exchanges/alcurex.png",
         "link" : "https://alcurex.com/#NAV-BTC",

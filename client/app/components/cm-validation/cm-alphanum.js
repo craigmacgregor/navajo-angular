@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-var app = angular.module('navajoAngularApp');
+var app = angular.module('navcoinAngularApp');
 
 var ALPHANUM_REGEXP = /^[a-z0-9]+$/i;
 

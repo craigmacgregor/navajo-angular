@@ -1,0 +1,119 @@
+<div class="colored-unit white">
+    <div class="default-container row">
+        <div class="col-xs-12">
+            <h3>Wordpress Store with Nav Coin Payments</h3>
+            <p>
+              Nav Coin has been integrated into the <a href="www.coinpayments.net" target="e">Coin Payments</a> merchant gateway. They offer various methods for accepting Nav Coin payments. This guide is specifically about setting up a new store using wordpress as the website's framework. If you already have your store setup and want to accept Nav Coin I suggest having a look at their other <a href="https://www.coinpayments.net/merchant-tools" target="e">merchant tool options</a>.
+            </p>
+            <p>
+              To see this store in actoin, head over to the <a href="http://store.navcoin.org" target="e">Nav Coin Store</a> where you can puchase some merchandise or make an official donation.
+            </p>
+            <p>
+              This guide assumes that you have some knowledge about web development and wordpress.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="colored-unit grey">
+    <div class="default-container row" id="RegisterCoinPayments">
+        <div class="col-xs-12">
+            <h3 class="font-grape">Register for Coin Payments</h3>
+            <p>
+              Head over to the <a href="https://www.coinpayments.net/register" target="e">Coin Payments Registration</a> page and sign up for an account.
+            </p>
+            <p>
+              Once registered, proceed to the "Coin Settings" page and enable Nav Coin as your payment option.
+            </p>
+            <p>
+              Now go to the "Account Settings" page in top menu. On the "Basic Settings" tab, take note of your Merchant ID.
+            </p>
+            <p>
+              Go to the "Merchant Settings" tab and add your own custom IPN Secret. This is just a a random character string that is used to authenticate your store and can be whatever you like. Take note of this also as we will need it in the following steps.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="colored-unit white">
+    <div class="default-container row" id="SetupWordpress">
+        <div class="col-xs-12">
+            <h3 class="font-grape">Setup Wordpress</h3>
+            <p>
+              Once you have purchased a domain name and web hosting, you will need to install wordpress on your webserver.
+            </p>
+            <p>
+              All the instructions and support for installing wordpress can be found on the <a href="https://wordpress.org" target="e">Wordpress website</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit grey">
+    <div class="default-container row" id="CoinPaymentsPlugin">
+        <div class="col-xs-12">
+            <h3 class="font-grape">Install the Coin Payments plugin</h3>
+            <p>
+              Once Wordpress is installed and working on your webserver, we will need to install the <a href="https://wordpress.org/plugins/coinpayments-payment-gateway-for-woocommerce/" target="e">Coin Payments WooCommerce</a> plugin.
+            </p>
+            <p>
+              It is recommended that you install and activate this plugin before installing the WooCommerce plugin so we can set that up in one step.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit white">
+    <div class="default-container row" id="WooCommerce">
+        <div class="col-xs-12">
+            <h3 class="font-grape">Install the WooCommerce plugin</h3>
+            <p>
+              At this point we will install the <a href="https://wordpress.org/plugins/woocommerce/" target="e">WooCommerce Plugin</a> for wordpress.
+            </p>
+            <p>
+              This plugin is free and comes with all the necessary components to run a fully integrated online store.
+            </p>
+            <p>
+              Once the plugin is installed and activated, proceed through the setup wizard. On the payments step, select the Coin Payments plugin as your payment option. If you don't see this option, check that you have activated the Coin Payments plugin on the plugins page.
+            </p>
+            <p>
+              In the WooCommerce menu, go to the "Settings" submenu item. Click on the "Checkout" tab and click on the "CoinPayments.net" link.
+            </p>
+            <p>
+              In this page, at the least you need to enter your Merchant ID and IPN Secret you noted down from the previous step. Save the changes.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit grey">
+    <div class="default-container row" id="StoreTheme">
+        <div class="col-xs-12">
+            <h3 class="font-grape">Applying a Store Theme</h3>
+            <p>
+              WooCommerce offers <a href="https://woocommerce.com/" target="e">official themes</a> for their store plugin which can be found on their website.
+            </p>
+            <p>
+              For the Nav Coin Store, i decided to buy a paid theme called <a href="https://themeforest.net/item/porto-responsive-wordpress-ecommerce-theme/9207399" target="e">Porto</a> from Theme Forest. It is a great theme with many example configurations which should suit anyones requirements. The example configuration I used as a base was the <a href="http://www.newsmartwave.net/wordpress/porto/shop7/" target="e">Shop 7</a> theme.
+            </p>
+            <p>
+              If you've chosen to use Porto, you will need to install all the plugins which it is dependent on as a first step. Then what I did was use their "Install Demos" option which setup a clone of the "Shop 7" theme including templated products.
+            </p>
+            <p>
+              After installing their demo, prune out any pages, products and menus you dont want and start adding your own products. You can also edit the colour shceme to match your branding through their editor interface.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit white">
+    <div class="default-container row" id="WooCommerce">
+        <div class="col-xs-12">
+            <h3 class="font-grape">Finishing Up</h3>
+            <p>
+              That is pretty much all you need to do. Depending on your store you may also want to setup your shipping rules.
+            </p>
+            <p>
+              For more info on how to configure <a href="https://coinpayments.net/" target="e">CoinPayments</a>, <a href="https://woocommerce.com/" target="e">WooCommerce</a>, <a href="https://themeforest.net/item/porto-responsive-wordpress-ecommerce-theme/9207399" target="e">Porto</a> or <a href="https://wordpress.org" target="e">Wordpress</a> itself please visit their respective websites.
+            </p>
+        </div>
+    </div>
+</div>

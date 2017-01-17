@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .directive('loadingAnimation', function(){
     return {
        templateUrl: "app/components/loader/loader.html"

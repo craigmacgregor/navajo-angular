@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-var app = angular.module('navajoAngularApp');
+var app = angular.module('navcoinAngularApp');
 
 var EMAIL_REGEXP = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 

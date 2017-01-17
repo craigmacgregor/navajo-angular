@@ -1,0 +1,29 @@
+<div class="default-container row default-title">
+
+    <div class="col-xs-12">
+
+        <h2 class="font-grape">NAV Services</h2>
+        <p class="font-grey-dark italic">Services which support Nav Coin</p>
+    </div>
+
+</div>
+
+<loading-animation ng-if="loading"></loading-animation>
+
+<div class="default-container row" ng-if="!loading">
+
+    <div class="col-md-4 col-sm-6 col-xs-12 center" ng-repeat="item in services">
+       <div class="font-black icon-tile icon-link-tile full-width relative services-icon-tile">
+          <p class="merchant-type absolute italic font-grey-dark">{{item.type}}</p>
+           <div ng-if="item.url" class="icon-rollover full-width full-height">
+                <div class="icon-link">
+                    <a ng-href="{{item.url}}" target="e" class="btn btn-primary">Visit Site</a>
+                </div>
+           </div>
+
+           <div><img ng-src="{{item.logo}}" class="services-icon" /></div>
+           <h4 class="bold icon-label absolute">{{item.name}}</h4>
+       </div>
+    </div>
+
+</div>

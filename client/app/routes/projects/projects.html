@@ -1,11 +1,11 @@
 <div class="default-container row default-title">
 
     <div class="col-xs-12">
-        
+
         <h2 class="font-grape">Projects</h2>
         <p class="font-grey-dark italic">Our project road map for NAV Coin</p>
     </div>
-    
+
 </div>
 
 <loading-animation ng-if="loading"></loading-animation>
@@ -23,7 +23,7 @@
 
         <div class="col-sm-10 col-xs-9">
             <h4>{{project.title}}</h4>
-            <p>{{project.text}}</p>
+            <p ng-bind-html="project.description"></p>
         </div>
     </div>
 
@@ -44,26 +44,47 @@
 
         <div class="col-sm-10 col-xs-9">
             <h4>{{project.title}}</h4>
-            <p>{{project.text}}</p>
+            <p ng-bind-html="project.description"></p>
 
              <div class="row">
                 <div class="col-xs-12">
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="{{project.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{project.progress}}%"
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{project.percent}}" aria-valuemin="0" aria-valuemax="100" style="width: {{project.percent}}%"
                             ng-class="{
-                                'progress-bar-success' : project.progress >= 75, 
-                                'progress-bar-info' : project.progress >= 50 && project.progress < 75,
-                                'progress-bar-warning' : project.progress >= 25 && project.progress < 50,
-                                'progress-bar-danger' : project.progress > 0 && project.progress < 25,
+                                'progress-bar-success' : project.percent >= 75,
+                                'progress-bar-info' : project.percent >= 50 && project.percent < 75,
+                                'progress-bar-warning' : project.percent >= 25 && project.percent < 50,
+                                'progress-bar-danger' : project.percent > 0 && project.percent < 25,
                             }">
-                            {{project.progress}}%
+                            {{project.percent}}%
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>    
+    </div>
+
+    <div class="default-container row divider-row">
+        <div class='col-xs-12'>
+            <div class='divider'></div>
+        </div>
+    </div>
+
+    <div class="default-container row" ng-repeat="project in projects.onHold">
+
+        <div class="col-sm-2 col-xs-3">
+            <div class="center project-tile full-width">
+                <span class="fa fa-pause-circle-o font-grey font-xl"></span>
+                <p class="project-caption font-xs italic font-grey-dark">On Hold</p>
+            </div>
+        </div>
+
+        <div class="col-sm-10 col-xs-9">
+            <h4>{{project.title}}</h4>
+            <p ng-bind-html="project.description"></p>
+        </div>
+    </div>
 
     <div class="default-container row divider-row">
         <div class='col-xs-12'>
@@ -82,9 +103,8 @@
 
         <div class="col-sm-10 col-xs-9">
             <h4>{{project.title}}</h4>
-            <p>{{project.text}}</p>
-
+            <p ng-bind-html="project.description"></p>
         </div>
     </div>
-    
+
 </div>

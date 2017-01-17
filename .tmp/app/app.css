@@ -7266,7 +7266,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 9/08/2015, 2:08:34 PM
     Author     : craig
 */
@@ -7279,6 +7279,41 @@ and open the template in the editor.
 .navbar-brand img {
   height: 24px; }
 
+@media (max-width: 1023px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .navbar-text {
+    float: none;
+    margin: 15px 0; }
+
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  .collapsing {
+    overflow: hidden !important; } }
 .colored-unit {
   position: relative;
   padding: 40px 0;
@@ -7305,12 +7340,22 @@ and open the template in the editor.
 .bounty-button {
   margin: 20px 0; }
 
+.calculator-results {
+  margin-top: 20px; }
+
+.calculator-loader {
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative; }
+  .calculator-loader .loader-gif {
+    width: 100%; }
+
 .charity-image-row {
   margin: 40px 0; }
 
-.contact-social.icon-tile {
-  padding: 20px; }
-  .contact-social.icon-tile .btn, .contact-social.icon-tile .wp-posts .more-link, .wp-posts .contact-social.icon-tile .more-link {
+.contact-social.icon-tile, .contact-social.icon-tile-light {
+  padding: 10px 20px 20px 20px; }
+  .contact-social.icon-tile .btn, .contact-social.icon-tile .wp-posts .more-link, .wp-posts .contact-social.icon-tile .more-link, .contact-social.icon-tile-light .btn, .contact-social.icon-tile-light .wp-posts .more-link, .wp-posts .contact-social.icon-tile-light .more-link {
     text-align: left;
     font-size: 24px; }
 
@@ -7321,6 +7366,17 @@ and open the template in the editor.
 
 .contact-check {
   margin-right: 10px; }
+
+.contact-form {
+  margin-bottom: 40px;
+  clear: both; }
+  .contact-form .form-submit {
+    float: left; }
+
+.contact-email {
+  float: left;
+  line-height: 32px;
+  margin: 18px 0 0 20px; }
 
 .exchanges-icon {
   width: 80%;
@@ -7427,6 +7483,36 @@ and open the template in the editor.
 .index-last {
   border-bottom: none; }
 
+.merchants-icon {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 0 10px 0; }
+
+.merchants-alert {
+  margin: 20px;
+  padding: 10px;
+  position: absolute;
+  width: -o-calc(100% - 40px);
+  width: calc(100% - 40px);
+  left: 0;
+  top: 0; }
+
+.merchant-type {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 11px 0; }
+
+.bounty-terms {
+  margin-top: 70px; }
+
+.bounty-address {
+  margin: 20px 0; }
+
+.bounty-button {
+  margin: 20px 0; }
+
 .wp-posts {
   margin: 0 auto;
   margin-bottom: 40px; }
@@ -7437,10 +7523,15 @@ and open the template in the editor.
 .wp-post-listing {
   margin: 0 auto;
   margin-bottom: 40px; }
+  .wp-post-listing blockquote {
+    background-color: #F5F5F5; }
   .wp-post-listing img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 20px 0; }
+    .wp-post-listing img.aligncenter {
+      display: block;
+      margin: 10px auto; }
   .wp-post-listing .wp-caption-text {
     text-align: center;
     margin-top: 5px; }
@@ -7454,16 +7545,72 @@ and open the template in the editor.
   height: 30px;
   padding: 7px; }
 
+.pagination ul {
+  list-style-type: none;
+  display: inline;
+  padding-left: 10px;
+  margin: 0; }
+
+.pagination li {
+  display: inline;
+  margin: 0 2px; }
+
+.next-page, .previous-page, .current-page, .numbered-page, .pagination-label {
+  font-size: 16px;
+  font-weight: bold; }
+
 .project-tile {
   padding: 10px 0; }
 
 .project-caption {
   margin-top: 5px; }
 
+.services-icon {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 0 10px 0; }
+
+.services-alert {
+  margin: 20px;
+  padding: 10px;
+  position: absolute;
+  width: -o-calc(100% - 40px);
+  width: calc(100% - 40px);
+  left: 0;
+  top: 0; }
+
+.merchant-type {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 11px 0; }
+
 .exchanges-icon {
   width: 80%;
   margin: 0 10%;
   padding: 0 0 10px 0; }
+
+.tools-icon {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 0 10px 0; }
+
+.tools-alert {
+  margin: 20px;
+  padding: 10px;
+  position: absolute;
+  width: -o-calc(100% - 40px);
+  width: calc(100% - 40px);
+  left: 0;
+  top: 0; }
+
+.merchant-type {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 11px 0; }
 
 .upgrade-feature-block {
   margin: 40px 0; }
@@ -7504,7 +7651,7 @@ and open the template in the editor.
   background-color: #ac0;
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
-.bg-angled-135, .icon-tile, .icon-rollover {
+.bg-angled-135, .icon-tile, .icon-tile-light, .icon-rollover {
   background-color: #c16;
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
@@ -7671,16 +7818,16 @@ and open the template in the editor.
     .font-medium {
       font-size: 14.4px !important; } }
 
-.font-small {
+.font-small, .font-small p {
   font-size: 14px !important; }
   @media (max-width: 480px) {
-    .font-small {
+    .font-small, .font-small p {
       font-size: 12.6px !important; } }
 
-.font-xs {
+.font-xs, .font-xs p {
   font-size: 12px !important; }
   @media (max-width: 480px) {
-    .font-xs {
+    .font-xs, .font-xs p {
       font-size: 10.8px !important; } }
 
 @font-face {
@@ -7961,7 +8108,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 9/08/2015, 3:52:56 PM
     Author     : craig
 */
@@ -7976,6 +8123,19 @@ and open the template in the editor.
     margin-top: 10px; }
   @media (max-width: 480px) {
     .icon-tile {
+      padding: 20px; } }
+
+.icon-tile-light {
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #DDD;
+  margin: 15px 0;
+  background-size: 75px 75px; }
+  .icon-tile-light .btn, .icon-tile-light .wp-posts .more-link, .wp-posts .icon-tile-light .more-link {
+    margin-top: 10px; }
+  @media (max-width: 480px) {
+    .icon-tile-light {
       padding: 20px; } }
 
 .icon-right-col {
@@ -7996,6 +8156,11 @@ and open the template in the editor.
     .icon-left-col {
       position: relative;
       display: block; } }
+
+.icon-single {
+  height: 100%;
+  display: inline-block;
+  position: absolute; }
 
 .icon-tile-plain {
   height: 100%;
@@ -8024,6 +8189,9 @@ and open the template in the editor.
 
 .icon-caption {
   margin-top: 20px; }
+
+.icon-image {
+  height: 105px; }
 
 .icon-link-tile {
   padding-bottom: 60px;

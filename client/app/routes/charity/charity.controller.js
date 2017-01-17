@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .controller('CharityCtrl', function ($scope, $http, $window, $q) {
 
         $scope.navLoading = true;
@@ -13,12 +13,10 @@ angular.module('navajoAngularApp')
 
         $q.all([promiseN1]).
             then(function(response) {
-              console.log(response);
                 $scope.navBalance = response[0].data.data.balance;
                 $scope.navLoading = false;
             }, function(response) {
                 //error
-                console.log(response);
                 $scope.navError = true;
                 $scope.navLoading = false;
         });

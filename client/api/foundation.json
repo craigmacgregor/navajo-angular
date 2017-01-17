@@ -2,21 +2,15 @@
     "core" : [
         {
             "name" : "Soopy452000",
-            "title" : "Lead Developer",
+            "title" : "Core Developer",
             "profile" : "https://github.com/sherlockcoin"
         },
         {
             "name" : "Craig MacGregor",
             "alias" : "Pakage",
-            "title" : "Senior Developer",
-            "picture" : "",
+            "title" : "Anon Developer",
+            "picture" : "/assets/images/team/craig.jpg",
             "profile" : "https://github.com/craigmacgregor"
-        },
-        {
-            "name" : "Paul Headington",
-            "alias" : "Gilgamesh",
-            "title" : "Senior Developer",
-            "profile" : "https://github.com/paul-headington"
         },
         {
             "name" : "Shahim",
@@ -31,8 +25,14 @@
         {
             "name" : "Sophia Lockhart",
             "title" : "Business Strategist",
+            "picture" : "/assets/images/team/sophia.jpg",
             "profile" : "https://bitcointalk.org/index.php?action=profile;u=681364"
-        }        
+        },
+        {
+            "name" : "flying_triangle",
+            "title" : "Marketing Manager",
+            "profile" : "https://bitcointalk.org/index.php?action=profile;u=883857"
+        }
     ],
     "community" : [
         {

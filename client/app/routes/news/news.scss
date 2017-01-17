@@ -13,10 +13,17 @@
 .wp-post-listing {
   margin: 0 auto;
   margin-bottom: 40px;
+  blockquote {
+    background-color: $grey-light;
+  }
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 20px 0;
+    &.aligncenter {
+      display: block;
+      margin: 10px auto;
+    }
   }
   .wp-caption-text {
     @extend .italic;
@@ -39,4 +46,21 @@
     height: 30px;
     padding: 7px;
   }
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: inline;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 2px;
+}
+
+.next-page, .previous-page, .current-page, .numbered-page, .pagination-label {
+  font-size: $font-medium;
+  font-weight: bold;
 }

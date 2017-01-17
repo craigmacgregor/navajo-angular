@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('navajoAngularApp')
+angular.module('navcoinAngularApp')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/foundation', {

@@ -1,84 +1,12 @@
 'use strict';
 
-angular.module('navajoAngularApp')
-  .controller('NavbarCtrl', function ($scope, $location) {
-    $scope.menu = [
-        {
-            'title': 'Home',
-            'link': '/'
-        },
-        {
-            'title': 'News',
-            'link': '/news'
-        },
-        {
-            'title': 'Projects',
-            'link': '/projects'
-        },
-        {
-            'title': 'Downloads',
-            'link': '/downloads'
-        },
-        {
-            'title': 'Exchanges',
-            'link': '/exchanges'
-        },
-        {
-            'title': 'Tools',
-            'link': '/tools',
-            'items' : [
-                {
-                    'title': 'Block Explorer',
-                    'link': 'https://chainz.cryptoid.info/nav/',
-                    'target': 'e'
-                },
-                {
-                    'title': 'Rich List',
-                    'link': 'https://chainz.cryptoid.info/nav/#!rich',
-                    'target': 'e'
-                },
-                {
-                    'title': 'Faucet',
-                    'link': '/faucet'
-                },
-                {
-                    'title': 'Market Cap',
-                    'link': 'http://coinmarketcap.com/currencies/nav-coin',
-                    'target': 'e'
-                },
-                {
-                    'title': 'Guides',
-                    'link': '/guides'
-                },
-            ]
-        },
-        {
-            'title': 'Community',
-            'link': '/community',
-            'items' : [
-                {
-                    'title': 'Social Channels',
-                    'link': '/social'
-                },
-                {
-                    'title': 'Foundation',
-                    'link': '/foundation'
-                },
-                {
-                    'title': 'Contact',
-                    'link': '/contact'
-                },
-                {
-                    'title': 'Bounty',
-                    'link': '/bounty'
-                },
-                {
-                    'title': 'Charity',
-                    'link': '/charity'
-                }
-            ]
-        }
-    ];
+angular.module('navcoinAngularApp')
+  .controller('NavbarCtrl', function ($scope, $location, $http) {
+    $http.get('/api/navbar.json').
+        then(function(response) {
+
+         $scope.menu = response.data;
+       });
 
     $scope.isCollapsed = true;
 
@@ -91,7 +19,7 @@ angular.module('navajoAngularApp')
       var communityLinks = ['/social', '/foundation', '/contact', '/bounty', '/charity'];
       if(route === '/community' && communityLinks.indexOf(path) !== -1) return true;
 
-      var toolsLinks = ['/faucet', '/guides'];
+      var toolsLinks = ['/faucet', '/guides', '/guides/full-node', '/guides/tor-network', '/guides/navtech-anon'];
       if(route === '/tools' && toolsLinks.indexOf(path) !== -1) return true;
 
       return route === $location.path();

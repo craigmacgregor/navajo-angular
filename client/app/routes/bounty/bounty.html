@@ -2,88 +2,44 @@
 
     <div class="col-xs-12">
 
-        <h2 class="font-grape">Bounty</h2>
-        <p class="font-grey-dark italic">Can you crack the code?</p>
+        <h2 class="font-grape">Bounties</h2>
+        <p class="font-grey-dark italic">See if you can help us and earn NAV while you're at it</p>
     </div>
 
 </div>
 
-<loading-animation ng-show="btcLoading || navLoading"></loading-animation>
-<div class="colored-unit white" ng-show="!btcLoading && !navLoading">
+<loading-animation ng-show="loading"></loading-animation>
+<div class="colored-unit white" ng-show="!loading">
 
     <div class="default-container row">
         <div class="col-xs-12">
 
             <p>
-                It’s pretty easy to get bank records if you’re a bank, government official or perhaps Mr. Robot; even the Bitcoin can be traced to a simple IP address.
-                However, we have created a piece of double encryption sub chain technology that not even a genius can unravel. Are you more than a genius?
+              As a community coin with a small core team we often need help with some of our projects.
+              If you are interested in claiming one of the listed bounties please make sure you contact the team on <a href='mailto:admin@navcoin.org'>admin@navcoin.org</a> before you start.
+              We are only able to pay bounties on tasks which we have authorised.
             </p>
 
-            <p>
-                You’ll need to know more than my mother’s maiden name and the name of my fist pet to crack this one.
-            </p>
-
-
-            <p>We're offering a community raised bounty to anyone who can successfully trace a transaction routed through the NAV anonymous network.
-                To be eligible to receive the bounty, we have to be able to reproduce your findings.
-                If you think you've cracked the code, email your results to <a href='mailto:navbounty@gmail.com'>navbounty@gmail.com</a>.
-            </p>
-            <p>
-                If you'd like to see the bounty grow and drive interest in NAV then please make a donation to either of the wallets below and share the bounty with your networks.
-            </p>
         </div>
     </div>
 </div>
-<div class="colored-unit grey" ng-show="!btcLoading && !navLoading">
-
+<div class="colored-unit" ng-show="!loading" style="border-bottom: none">
+  <div ng-repeat="(key, bounty) in data">
     <div class="default-container row">
-
-        <div class="col-sm-6 center">
-
-            <h3>NAV Bounty Wallet</h3>
-
-            <p class='bold bounty-address'>Address: {{navCoinAddress}}</p>
-            <p class="bold bounty-button">
-                <a class="btn btn-secondary" href="https://chainz.cryptoid.info/nav/address.dws?{{navCoinAddress}}.htm" target="e">View in Block Explorer</a>
-            </p>
-
-            <p class='bold' ng-if="!navError && navBalance">
-                Balance: {{navBalance}} NAV
-            </p>
-            <p class="bold" ng-if="navError || !navBalance">
-                Can't display Balance, please try again later.
-            </p>
-
-        </div>
-
-        <div class="col-xs-12 visible-xs">
-            <div class="divider dashed"></div>
-        </div>
-
-        <div class="col-sm-6 center">
-
-            <h3>Bitcoin Bounty Wallet</h3>
-
-            <p class='bold bounty-address'>Address: {{bitcoinAddress}}</p>
-            <p class='bold bounty-button'>
-                <a class="btn btn-secondary" href="https://blockexplorer.com/address/{{bitcoinAddress}}" target="e">View in Block Explorer</a>
-            </p>
-            <p class='bold' ng-if="!btcError && (bitcoinBalance === 0 || bitcoinBalance > 0)">
-                Balance: {{bitcoinBalance}} BTC<br />
-            </p>
-            <p class="bold" ng-if="btcError || (bitcoinBalance !== 0 && !bitcoinBalance)">
-                Can't display Balance, please try again later.
-            </p>
-
-        </div>
-
+      <div class="col-xs-12">
+        <h3>{{bounty.name}}</h3>
+        <p ng-bind-html="bounty.description"></p>
+        <p ng-bind-html="bounty.terms" class="font-xs italic font-grey-dark"></p>
+        <p>contact <a href='mailto:admin@navcoin.org'>admin@navcoin.org</a></p>
+        <span class="label label-default" ng-if="bounty.nav">{{bounty.nav | number}} NAV</span>
+        <span ng-if="bounty.nav && bounty.btc">+</span>
+        <span class="label label-default" ng-if="bounty.btc">{{bounty.btc | number}} BTC</span>
+      </div>
     </div>
-</div>
-
-<div class="default-container row " ng-show="!btcLoading && !navLoading">
-    <div class="col-xs-12">
-        <p class="bounty-terms">
-            <span class="bold">Terms and Conditions:</span> The bounty will run for a certain period of time (TBC) and if the bounty remains unclaimed at the end of this period, the NAV Foundation may either extend the bounty period or use the funds (or part there of) to help cover some of the running costs of the NAV anonymous network. To claim the bounty you have to privately send reproducible positive results of a traced transaction sent through our anonymous system to navbounty@gmail.com. Publicly posting your findings will result in forfeiting the bounty. Awarding the bounty is up to the discretion of the NAV Development Team. All Rights Reserved.
-        </p>
+    <div class="default-container row divider-row" ng-if="key < data.length -1">
+        <div class='col-xs-12'>
+            <div class='divider' style="margin-top: 40px;"></div>
+        </div>
     </div>
+  </div>
 </div>

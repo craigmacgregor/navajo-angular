@@ -17,7 +17,10 @@
     <meta property="og:description" content="NAV Coin is the worlds first fully anonymous cryptocurrency. NAV Coin offers optional anonymous transactions that are sent through our double encrypted network of servers which all run on decentralized block chain technology." />
     <meta property="og:type" content="article" />
 
-    <meta property="og:image" content="http://www.navcoin.org/assets/images/navajo-coin-social.png" />
+    <meta property="og:image" content="http://www.navcoin.org/assets/images/navcoin-social.png" />
+
+    <script src="https://unpkg.com/prismic.io/dist/prismic.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js"></script>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
@@ -34,13 +37,13 @@
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
   </head>
-  <body ng-app="navajoAngularApp" ng-controller="MainCtrl">
+  <body ng-app="navcoinAngularApp" ng-controller="MainCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div ng-include="'app/components/navbar/navbar.html'"></div>
-    <div ng-include="'app/components/announcement/announcement.html'"></div>
+    <!-- <div ng-include="'app/components/announcement/announcement.html'"></div> -->
     <!-- Add your site or application content here -->
     <div ng-view=""></div>
     <div ng-include="'app/components/footer/footer.html'"></div>
@@ -56,7 +59,7 @@
       ga('send', 'pageview');
     </script>
 
-    <script src="https://use.fontawesome.com/1c7b4e4ebd.js"></script>
+    <script src="https://use.fontawesome.com/5c0bd4d5a2.js"></script>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -71,7 +74,6 @@
       <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
       <script src="../bower_components/angular-route/angular-route.js"></script>
       <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-      <script src="../bower_components/lodash/dist/lodash.compat.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
 
@@ -93,11 +95,16 @@
           <script src="app/components/loader/loader.directive.js"></script>
           <script src="app/components/modal/modal.service.js"></script>
           <script src="app/components/navbar/navbar.controller.js"></script>
+          <script src="app/constants/config.const.js"></script>
+          <script src="app/factory/preloader.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/routes/block/block.controller.js"></script>
           <script src="app/routes/block/block.js"></script>
           <script src="app/routes/bounty/bounty.controller.js"></script>
           <script src="app/routes/bounty/bounty.js"></script>
+          <script src="app/routes/calculator/calculator.controller.js"></script>
+          <script src="app/routes/calculator/calculator.js"></script>
+          <script src="app/routes/calculator/navtechCalc.controller.js"></script>
           <script src="app/routes/charity/charity.controller.js"></script>
           <script src="app/routes/charity/charity.js"></script>
           <script src="app/routes/contact/contact.controller.js"></script>
@@ -114,6 +121,10 @@
           <script src="app/routes/guides/guides.js"></script>
           <script src="app/routes/index/index.controller.js"></script>
           <script src="app/routes/index/index.js"></script>
+          <script src="app/routes/merchants/merchants.controller.js"></script>
+          <script src="app/routes/merchants/merchants.js"></script>
+          <script src="app/routes/network/network.controller.js"></script>
+          <script src="app/routes/network/network.js"></script>
           <script src="app/routes/news/news-item.controller.js"></script>
           <script src="app/routes/news/news.controller.js"></script>
           <script src="app/routes/news/news.js"></script>
@@ -121,8 +132,12 @@
           <script src="app/routes/projects/projects.js"></script>
           <script src="app/routes/rich-list/rich-list.controller.js"></script>
           <script src="app/routes/rich-list/rich-list.js"></script>
+          <script src="app/routes/services/services.controller.js"></script>
+          <script src="app/routes/services/services.js"></script>
           <script src="app/routes/social/social.controller.js"></script>
           <script src="app/routes/social/social.js"></script>
+          <script src="app/routes/tools/tools.controller.js"></script>
+          <script src="app/routes/tools/tools.js"></script>
           <script src="app/routes/upgrade/upgrade.controller.js"></script>
           <script src="app/routes/upgrade/upgrade.js"></script>
           <!-- endinjector -->

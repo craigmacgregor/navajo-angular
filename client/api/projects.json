@@ -1,49 +1,67 @@
 {
     "pending" : [
         {
-            "title" : "Anonymous Merchant Integration",
-            "text" : "We will integrate the merchant gateway with our anonymous network to allow for the anonymous purchasing of products."
-        },
-        {
-            "title" : "Merchant Gateway",
-            "text" : "We will implement both point of sale tools for merhcants to allow users to purchase real products with their NAV coins online and in store."
-        },
-        {
-            "title" : "Mobile Anonymous Sending",
-            "text" : "With the launch of our Android Wallet, we set our sights on one of our next lofty goal; enabling Anonymous Transactions from your mobile!"
+            "title" : "Subchain as a Service",
+            "text" : "We are in discussion with various coins about integrations with our Subchain and Navtech system."
         }
     ],
 
     "inProgress" : [
         {
             "title" : "Web Wallet",
-            "text" : "With our custom X13 Electrum server up and running we are now able to build fully qualified wallet that you can use through your web browser. You could then either run the code from your computer and / or we could integrate it into the NAV website for you to use.",
+            "text" : "An X13 capable, custom Electrum server that can create fully-qualified wallets, and will be released with the option for self-hosting. The NAV team will provide a website and service integration support if you need.",
             "progress" : 95
         },
         {
-            "title" : "Rasperry Pi Staking Unit",
-            "text" : "We are in the process of designing and developing a Raspberry Pi controlled Staking Unit for NAV. The final implementation will be a Raspberry Pi with an interactive touch screen which allows you to setup the wallet address, view the balance and withdraw the coins all from the touch screen. All you will need to do is plug it into the network, send it some coins to stake and it will begin earning you coins. This will allow coins to be earned with very minimal setup and running costs.",
-            "progress" : 80
+            "title" : "Raspberry Pi Staking Unit",
+            "text" : "A low-energy NAV PoS Staking solution based on the Raspberry-Pi platform. NAV’s highly  anticipated touch-screen staking unit, offers a more energy efficient way to setup wallet  a address, view your balance, and an easy to use withdraw option.",
+            "progress" : 95
         },
         {
             "title" : "Decentralization Implementation",
-            "text" : "We are now developing the release candidate for the anonymous decentralization. We are removing the reliance on an API to select an incoming server for processing anonymous transactions. Instead, the server list will be written into the wallet itself and distributed through the existing peer to peer mesh network which distributes the blockchain. Each server will become self registering so they can be brought online and begin processing transactions without human intervention.",
-            "progress" : 70
+            "text" : "The release of the new Navtech value-transfer system, was a key piece of the decentralization network implementation. The new architecture allows Navtech servers to operate in trusted clusters and form their own private mesh network of processing servers which anyone will be able to run and earn rewards from.",
+            "progress" : 85
         },
-
         {
             "title" : "Official Promotional Video",
             "text" : "We will make a short video, which will summarise all features of Navajo Coin and explain it's Anonymous Technology to viewers in easy way. This will attract more average users and investors to Navajo Coin.",
+            "progress" : 80
+        },
+        {
+            "title" : "iOS Nav Ticker",
+            "text" : "We will be releasing Nav price tickers for Android and iOS so you can check the value of your investment on the move.",
             "progress" : 50
+        },
+        {
+            "title" : "Mobile iOS Wallet",
+            "text" : "We are building an iOS wallet for Nav Coin. Users will be able to send and receive NAV using the iOS device of their choice. This wallet will run using the same Electrum server as the Android wallet.",
+            "progress" : 30
+        },
+        {
+            "title" : "Android Anon Send and Staking Wallet",
+            "text" : "We are building a full node wallet for Android. This wallet is based on the QT version of the full node wallet and will be able to stake NAV and send Anonymous Transactions from your mobile!",
+            "progress" : 25
         },
         {
             "title" : "Nav Coin China",
             "text" : "After meeting a group of Business Leaders in Kuala Lumpur, Nav Coin is working towards entering the Chinese Market. We are collaborating with marketing teams from China on Mandarin transations of our website, press releases and wallet along with listings on Chinese Exchanges and CNY pairing.",
-            "progress" : 25
+            "progress" : 20
         }
     ],
 
     "complete" : [
+        {
+            "title" : "Anonymous Merchant Integration",
+            "text" : "Once we have finished the initial merchant gateway, we will integrate the merchant gateway with our anonymous network to allow for the anonymous purchasing of products."
+        },
+        {
+            "title" : "Merchant Gateway",
+            "text" : "Nav Coin has been added to Coin Payments merchant gateway system. This allows merchants to accept Nav Coin in their physical stores and also on their websites."
+        },
+        {
+            "title" : "Android Nav Ticker",
+            "text" : "We will be releasing Nav price tickers for Android and iOS so you can check the value of your investment on the move."
+        },
         {
             "title" : "Thin Client for Desktop",
             "text" : "Our custom X13 Electrum server also enables us to build a thin client for desktop. This will be a great addition to the Nav Coin software suite and give people instant access to their Nav Coin without having to sync the entire block chain!"
@@ -65,7 +83,7 @@
             "text" : "The Research & Development phase of the anonymous decentralization has been completed. The white paper has now been released to the public, press releases sent and NIP1 has been initialized in github."
         },
         {
-            "title" : "Rasperry Pi Staking Unit Beta",
+            "title" : "Raspberry Pi Staking Unit Beta",
             "text" : "The Beta version of the Raspberry Pi image used on the staking devices is ready to be distributed for testing."
         },
         {

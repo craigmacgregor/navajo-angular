@@ -1,0 +1,61 @@
+[
+    {
+        "title": "News",
+        "link": "/news/page/1"
+    },
+    {
+        "title": "Projects",
+        "link": "/projects"
+    },
+    {
+        "title": "Store",
+        "link": "http://store.navcoin.org",
+        "target": "e"
+    },
+    {
+        "title": "Downloads",
+        "link": "/downloads"
+    },
+    {
+        "title": "Exchanges",
+        "link": "/exchanges"
+    },
+    {
+        "title": "Merchants",
+        "link": "/merchants"
+    },
+    {
+        "title": "Tools",
+        "link": "/tools"
+    },
+    {
+        "title": "Services",
+        "link": "/services"
+    },
+    {
+        "title": "Community",
+        "link": "/community",
+        "items" : [
+            {
+                "title": "Social Channels",
+                "link": "/social"
+            },
+            {
+                "title": "Foundation",
+                "link": "/foundation"
+            },
+            {
+                "title": "Contact",
+                "link": "/contact"
+            },
+            {
+                "title": "Bounty",
+                "link": "/bounty"
+            },
+            {
+                "title": "Charity",
+                "link": "/charity"
+            }
+        ]
+    }
+]

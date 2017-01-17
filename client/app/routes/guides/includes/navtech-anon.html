@@ -1,0 +1,94 @@
+<div class="colored-unit white">
+
+    <div class="default-container row" id="NavtechAnonSend">
+        <div class="col-xs-12">
+
+            <h3>Navtech Anon Setup</h3>
+            <p>
+              Sending cyrptocurrency anonymously has never been easier. Follow these simple steps to setup your Nav Coin wallet for sending with ultimate privacy.
+            </p>
+            <p>
+              Initially the Navtech sending feature is only available in the full node version of the Nav Coin wallet. We are aiming to expand this functionality to our thin clients and mobile wallets in the future. For further progress on these projects, please visit our <a href="/projects">projects page</a>.
+            </p>
+            <p>
+              <strong>Disclaimer:</strong> Please be aware this is a blind service. Even we aren't able to trace the transactions. If you have any problem using this service please immediately report it to <a href="mailto:admin@navcoin.org">admin@navcoin.org</a>. In the event your coins are not received by the intended recipient, recovering or tracing your coins is impossible even to us. By using this service you agree that you do so at your own risk of loss.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="colored-unit grey">
+
+    <div class="default-container row" id="AddingNavtechServersToYourConfig">
+        <div class="col-xs-12">
+
+            <h3 class="font-grape">Adding Navtech Servers to Your Config File</h3>
+            <p>
+              <strong>Step 1.</strong> Find your NavCoin2 folder in your users %AppData% directory. The AppData folder is hidden on most operating systems, so make sure you can view hidden files.
+            </p>
+            <ul>
+              <li>
+                <strong>Windows</strong> this is usually C:/Users/&lt;USERNAME&gt;/AppData/Roaming/NavCoin2/
+                <br />
+                (replacing &lt;USERNAME&gt; with your actual computer's username)
+              </li>
+              <li>
+                <strong>OSX</strong> this is usually ~/Library/Application Support/NavCoin2
+              </li>
+              <li>
+                <strong>Linux</strong> this is usually ~/.NavCoin2/
+              </li>
+            </ul>
+            <p>
+              <strong>Step 2.</strong> In this directory open the plain text file called "navcoin.conf". If this file doesnt exist, create it.
+            </p>
+            <p>
+              <strong>Step 3.</strong> At the end of the file add the following lines:
+              <pre><span ng-repeat="server in servers">addanonserver={{server.address}}<br /></span><span>anonhash={{anonhash}}<br /></span></pre>
+              For the full list of available Navtech servers, see our <a href="/network">Navtech Network</a> page.
+            </p>
+          <p>
+            <strong>Step 4.</strong> Save and close this file. Restart your Nav Coin Full Node Wallet.
+          </p>
+          <p>
+            <strong>Step 5.</strong> That is all you need to do. Now when you want to send anonymous transactions, just simply check the "Send NAV Anonymously" checkbox on the send dialog and your transaction will be routed through an anonymous server chosen randomly from this config.
+          </p>
+        </div>
+    </div>
+</div>
+
+<div class="colored-unit white">
+
+    <div class="default-container row" id="AddingTemporaryNavtechServers">
+        <div class="col-xs-12">
+
+          <h3 class="font-grape">Adding Temporary Navtech Servers</h3>
+          <p>
+            <strong>Step 1.</strong> Open you Nav Coin wallet and navigate to the menu "Help > Debug Window".
+          </p>
+          <p>
+            <strong>Step 2.</strong> In the debug window switch to the "Console" tab.
+          </p>
+          <p>
+            <strong>Step 3.</strong> To see all the options for the addanonserver command type "help addanonserver" and press enter.
+          </p>
+          <p>
+            <strong>Step 4.</strong> To add temporary anon servers type each of the following lines into the debug console and press enter after each.
+            <pre><span ng-repeat="server in servers">addanonserver {{server.address}} add<br /></span><span>anonhash {{anonhash}} add<br /></span></pre>
+</pre>
+            For the full list of available Navtech servers, see our <a href="/network">Navtech Network</a> page.
+          </p>
+          <p>
+            <strong>Step 5.</strong> Repeat step 4 with as many anon server IP's and valid md5 hashes as you wish to add for sending.
+          </p>
+          <p>
+            <strong>Step 6.</strong> Close the debug console.
+          </p>
+          <p>
+            <strong>Step 5.</strong> That is all you need to do. Now when you want to send anonymous transactions, just simply check the "Send NAV Anonymously" checkbox on the send dialog and your transaction will be routed through an anonymous server chosen randomly from these manual entries.
+          </p>
+          <p>
+            <strong>Note:</strong> Anon servers added in this way are lost when you shut down your wallet. If you want the IP's to persist, pelase add them to your navcoin.conf file using the guide above.
+          </p>
+        </div>
+    </div>
+</div>

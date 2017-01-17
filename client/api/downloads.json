@@ -2,33 +2,28 @@
   {
     "title": "Nav Coin Full Node Downloads",
     "subtitle": "All the downloads you need for running Nav Coin on your device.",
+    "anchor": "full-node",
     "items": [
       {
         "name" : "Windows Wallet (zip)",
-        "type" : "Wallet Download",
+        "type" : "Navtech Wallet Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/files/NavCoin_3.6.0_Windows_Wallet.zip",
-        "button" : "Download (3.6.0)"
+        "link" : "http://www.navcoin.org/files/NavCoin_3.7.0_Windows_Wallet.zip",
+        "button" : "Download (3.7.0)"
       },
       {
-        "name" : "Windows Installer (exe)",
+        "name" : "OSX Wallet (dmg)",
         "type" : "Wallet Download",
-        "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/files/NavCoin_3.6.0.exe",
-        "button" : "Download (3.6.0)"
+        "icon" : "fa-apple",
+        "button" : "Download (3.7.0)",
+        "link" : "http://www.navcoin.org/files/NavCoin_3.7.0_OSX.dmg"
       },
       {
         "name" : "Linux Source",
-        "type" : "Wallet Download",
+        "type" : "Navtech Wallet Source",
         "icon" : "fa-linux",
         "link" : "https://github.com/navcoindev/navcoin2/tree/master",
-        "button" : "Download (3.6.0)"
-      },
-      {
-        "name" : "OSX Wallet",
-        "type" : "Coming Soon",
-        "icon" : "fa-apple",
-        "button" : "Coming Soon"
+        "button" : "Github (3.7.0)"
       },
       {
         "name" : "Nav Coin Blockchain Data",
@@ -49,19 +44,20 @@
   {
     "title": "Nav Coin Thin Client Downloads",
     "subtitle": "All the downloads you need for running Nav Coin on your device.",
+    "anchor": "thin-client",
     "items": [
       {
         "name" : "Windows Client (Installer)",
         "type" : "Thin Client Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/files/electrum-NAV.3.6.0-setup.exe",
+        "link" : "http://www.navcoin.org/files/electrum-NAV.3.6.0-setup.exe",
         "button" : "Download (3.6.0)"
       },
       {
         "name" : "Windows Client (Portable)",
         "type" : "Thin Client Download",
         "icon" : "fa-windows",
-        "link" : "http://www.navajocoin.org/files/electrum-NAV.3.6.0-portable.exe",
+        "link" : "http://www.navcoin.org/files/electrum-NAV.3.6.0-portable.exe",
         "button" : "Download (3.6.0)"
       },
       {
@@ -90,12 +86,20 @@
   {
     "title": "Nav Coin Mobile Downloads",
     "subtitle": "All the downloads you need for running Nav Coin on your device.",
+    "anchor": "mobile",
     "items": [
       {
         "name" : "Android Wallet",
         "type" : "Wallet Download",
         "icon" : "fa-android",
         "link" : "https://play.google.com/store/apps/details?id=com.coinomi.navcoin.wallet",
+        "button" : "Google Play"
+      },
+      {
+        "name" : "Android Nav Ticker",
+        "type" : "Price Ticker",
+        "icon" : "fa-android",
+        "link" : "https://play.google.com/store/apps/details?id=com.navcoinfoundation.sherlock.navcoin_monitor",
         "button" : "Google Play"
       },
       {
@@ -107,28 +111,43 @@
     ]
   },
   {
-    "title": "Resources",
-    "subtitle": "These downloads are public information about the NAV Coin project",
+    "title": "Browser Tools",
+    "subtitle": "All the tools we offer that integrate with web browsers",
+    "anchor": "browser-tools",
     "items": [
       {
+        "name" : "Chrome Nav Ticker",
+        "type" : "Chrome Extension",
+        "icon" : "fa-chrome",
+        "link" : "https://chrome.google.com/webstore/detail/nav-price-ticker-poloniex/dijibgacnefbbhjknlemhcnbooopfcki?hl=en-US",
+        "button" : "Chrome Store"
+      }
+    ]
+  },
+  {
+    "title": "Resources",
+    "subtitle": "These downloads are public information about the NAV Coin project",
+    "anchor": "resources",
+    "items": [
+      {
+        "name" : "Navtech White Paper 2016",
+        "type" : "PDF",
+        "icon" : "fa-file-pdf-o",
+        "link" : "http://www.navcoin.org/files/navtech-whitepaper-beta-v0.9.pdf",
+        "button" : "Download"
+      },
+      {
+        "name" : "Decentralization White Paper 2016",
+        "type" : "PDF",
+        "icon" : "fa-file-pdf-o",
+        "link" : "http://www.navcoin.org/files/navtech-decentralisation-whitepaper-beta-v0.9.pdf",
+        "button" : "Download"
+      },
+      {
         "name" : "Media Kit",
-        "type" : "Resource Download",
+        "type" : "Github Repo",
         "icon" : "fa-github",
         "link" : "https://github.com/navcoindev/navcoin-media",
-        "button" : "Download"
-      },
-      {
-        "name" : "Decentralization White Paper (pdf)",
-        "type" : "Resource Download",
-        "icon" : "fa-file-pdf-o",
-        "link" : "http://www.navcoin.org/files/nav-decentralized-whitepaper.pdf",
-        "button" : "Download"
-      },
-      {
-        "name" : "Anonymous White Paper 2015 (pdf)",
-        "type" : "Resource Download",
-        "icon" : "fa-file-pdf-o",
-        "link" : "http://www.navcoin.org/files/navajo_whitepaper_march2015.pdf",
         "button" : "Download"
       }
     ]
